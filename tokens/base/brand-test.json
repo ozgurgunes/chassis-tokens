@@ -1,0 +1,160 @@
+{
+  "figma": {
+    "switch": {
+      "brand": {
+        "mode-2": {
+          "value": "true",
+          "type": "boolean"
+        }
+      }
+    }
+  },
+  "color": {
+    "base": {
+      "palette": {
+        "neutral": {
+          "main": {
+            "value": "#757575",
+            "type": "color"
+          }
+        },
+        "danger": {
+          "main": {
+            "value": "#E02D12",
+            "type": "color"
+          }
+        },
+        "success": {
+          "main": {
+            "value": "#0B8A0B",
+            "type": "color"
+          }
+        },
+        "warning": {
+          "main": {
+            "value": "#996E09",
+            "type": "color"
+          }
+        },
+        "info": {
+          "main": {
+            "value": "#098294",
+            "type": "color"
+          }
+        },
+        "brand": {
+          "main": {
+            "value": "#1273E0",
+            "type": "color"
+          }
+        },
+        "accent": {
+          "main": {
+            "value": "#D115C5",
+            "type": "color"
+          }
+        }
+      }
+    }
+  },
+  "typography": {
+    "fontFamily": {
+      "text": {
+        "value": "Helvetica, Arial, sans-serif",
+        "type": "fontFamilies"
+      },
+      "display": {
+        "value": "'Times New Roman', Times, serif",
+        "type": "fontFamilies"
+      },
+      "code": {
+        "value": "'Courier New', Courier, monospace",
+        "type": "fontFamilies"
+      }
+    },
+    "fontWeight": {
+      "text": {
+        "normal": {
+          "value": "Regular",
+          "type": "fontWeights"
+        },
+        "strong": {
+          "value": "Bold",
+          "type": "fontWeights"
+        },
+        "mass": {
+          "value": "Bold",
+          "type": "fontWeights"
+        },
+        "elegant": {
+          "value": "Light",
+          "type": "fontWeights"
+        }
+      },
+      "display": {
+        "normal": {
+          "value": "Regular",
+          "type": "fontWeights"
+        },
+        "strong": {
+          "value": "Bold",
+          "type": "fontWeights"
+        },
+        "mass": {
+          "value": "Bold",
+          "type": "fontWeights"
+        },
+        "elegant": {
+          "value": "Regular",
+          "type": "fontWeights"
+        }
+      },
+      "code": {
+        "normal": {
+          "value": "Regular",
+          "type": "fontWeights"
+        },
+        "strong": {
+          "value": "Bold",
+          "type": "fontWeights"
+        }
+      }
+    }
+  },
+  "borderRadius": {
+    "base": {
+      "xsmall": {
+        "value": "{size.dimension.2}",
+        "type": "borderRadius"
+      },
+      "small": {
+        "value": "{size.dimension.2}",
+        "type": "borderRadius"
+      },
+      "medium": {
+        "value": "{size.dimension.2}",
+        "type": "borderRadius"
+      },
+      "large": {
+        "value": "{size.dimension.2}",
+        "type": "borderRadius"
+      },
+      "xlarge": {
+        "value": "{size.dimension.2}",
+        "type": "borderRadius"
+      },
+      "2xlarge": {
+        "value": "{size.dimension.2}",
+        "type": "borderRadius"
+      },
+      "3xlarge": {
+        "value": "{size.dimension.2}",
+        "type": "borderRadius"
+      },
+      "rare": {
+        "value": "{size.dimension.2}",
+        "type": "borderRadius"
+      }
+    }
+  }
+}

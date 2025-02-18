@@ -1,0 +1,21 @@
+{
+  "tokenSetOrder": [
+    "base/app-base",
+    "base/app-docs",
+    "base/app-test",
+    "base/brand-base",
+    "base/brand-default",
+    "base/brand-test",
+    "base/effect-base",
+    "base/metric-base",
+    "base/metric-px",
+    "base/metric-rem",
+    "base/metric-vw",
+    "base/motion-base",
+    "base/theme-base",
+    "base/theme-light",
+    "base/theme-dark",
+    "brand-chassis/app-base",
+    "brand-chassis/brand-base"
+  ]
+}

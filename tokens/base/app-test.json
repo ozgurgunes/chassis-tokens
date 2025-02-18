@@ -1,0 +1,12 @@
+{
+  "figma": {
+    "switch": {
+      "app": {
+        "mode-2": {
+          "value": "true",
+          "type": "boolean"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "motion": {
+    "duration": {
+      "2xsmall": {
+        "value": "100",
+        "type": "other"
+      },
+      "xsmall": {
+        "value": "150",
+        "type": "other"
+      },
+      "small": {
+        "value": "200",
+        "type": "other"
+      },
+      "medium": {
+        "value": "250",
+        "type": "other"
+      },
+      "large": {
+        "value": "300",
+        "type": "other"
+      },
+      "xlarge": {
+        "value": "500",
+        "type": "other"
+      },
+      "2xlarge": {
+        "value": "800",
+        "type": "other"
+      },
+      "3xlarge": {
+        "value": "1200",
+        "type": "other"
+      }
+    },
+    "easing": {
+      "default": {
+        "value": "bezier(0.25,0.1,0.25,1.0)",
+        "type": "other"
+      },
+      "linear": {
+        "value": "bezier(0.0,0.0,1.0,1.0)",
+        "type": "other"
+      },
+      "ease-in": {
+        "value": "bezier(0.42,0.0,1.0,1.0)",
+        "type": "other"
+      },
+      "ease-out": {
+        "value": "bezier(0.0,0.0,0.58,1.0)",
+        "type": "other"
+      },
+      "ease-in-and-out": {
+        "value": "bezier(0.42,0.0,0.58,1.0)",
+        "type": "other"
+      }
+    },
+    "spring": {
+      "stiffness": {
+        "gentle": {
+          "value": "100",
+          "type": "other"
+        },
+        "quick": {
+          "value": "300",
+          "type": "other"
+        },
+        "bouncy": {
+          "value": "600",
+          "type": "other"
+        },
+        "slow": {
+          "value": "80",
+          "type": "other"
+        }
+      },
+      "damping": {
+        "gentle": {
+          "value": "15",
+          "type": "other"
+        },
+        "quick": {
+          "value": "20",
+          "type": "other"
+        },
+        "bouncy": {
+          "value": "15",
+          "type": "other"
+        },
+        "slow": {
+          "value": "20",
+          "type": "other"
+        }
+      },
+      "mass": {
+        "gentle": {
+          "value": "1",
+          "type": "other"
+        },
+        "quick": {
+          "value": "1",
+          "type": "other"
+        },
+        "bouncy": {
+          "value": "1",
+          "type": "other"
+        },
+        "slow": {
+          "value": "1",
+          "type": "other"
+        }
+      }
+    }
+  }
+}
