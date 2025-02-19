@@ -18,10 +18,9 @@ async function readThemesFile(filePath) {
 
 async function processConfig(cfg, platform) {
   const build_sets = [
-    'default_docs_light',
     'chassis_docs_light',
     'chassis_docs_dark',
-    'chassis_test_light',
+    'test_docs_light',
   ]
   if (build_sets.length && !build_sets.includes(cfg.name)) {
     console.log(`Skipped: ${cfg.name}`)
