@@ -54,10 +54,9 @@ async function transform() {
   const themes = permutateThemes($themes, { separator: '_' })
 
   const buildSets = [
-    'default_docs_light',
     'chassis_docs_light',
     'chassis_docs_dark',
-    'chassis_test_light',
+    'test_docs_light',
   ]
 
   for (const [fileName, tokensets] of Object.entries(themes)) {
