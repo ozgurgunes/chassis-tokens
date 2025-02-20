@@ -71,10 +71,6 @@
         "value": "Outfit, Georgia, 'Times New Roman', Times, serif",
         "type": "fontFamilies"
       },
-      "html": {
-        "value": "{typography.fontFamily.text}",
-        "type": "fontFamilies"
-      },
       "code": {
         "value": "Fira Code, Menlo, Monaco, Consolas, 'Courier New', monospace",
         "type": "fontFamilies"
@@ -82,99 +78,9 @@
       "icon": {
         "value": "Chassis-Icons",
         "type": "fontFamilies"
-      },
-      "jumbo": {
-        "value": "{typography.fontFamily.text}",
-        "type": "fontFamilies"
-      },
-      "hero": {
-        "value": "{typography.fontFamily.text}",
-        "type": "fontFamilies"
-      },
-      "lead": {
-        "value": "{typography.fontFamily.text}",
-        "type": "fontFamilies"
-      },
-      "heading": {
-        "value": "{typography.fontFamily.text}",
-        "type": "fontFamilies"
-      },
-      "title": {
-        "value": "{typography.fontFamily.text}",
-        "type": "fontFamilies"
-      },
-      "body": {
-        "value": "{typography.fontFamily.display}",
-        "type": "fontFamilies"
-      },
-      "link": {
-        "value": "{typography.fontFamily.display}",
-        "type": "fontFamilies"
-      },
-      "highlight": {
-        "value": "{typography.fontFamily.display}",
-        "type": "fontFamilies"
-      },
-      "label": {
-        "value": "{typography.fontFamily.display}",
-        "type": "fontFamilies"
-      },
-      "number": {
-        "value": "{typography.fontFamily.text}",
-        "type": "fontFamilies"
-      },
-      "price": {
-        "value": "{typography.fontFamily.text}",
-        "type": "fontFamilies"
       }
     },
     "fontWeight": {
-      "base": {
-        "jumbo": {
-          "value": "{typography.fontWeight.text.mass}",
-          "type": "fontFamilies"
-        },
-        "hero": {
-          "value": "{typography.fontWeight.text.mass}",
-          "type": "fontFamilies"
-        },
-        "lead": {
-          "value": "{typography.fontWeight.text.normal}",
-          "type": "fontFamilies"
-        },
-        "heading": {
-          "value": "{typography.fontWeight.text.mass}",
-          "type": "fontFamilies"
-        },
-        "title": {
-          "value": "{typography.fontWeight.text.strong}",
-          "type": "fontFamilies"
-        },
-        "body": {
-          "value": "{typography.fontWeight.display.normal}",
-          "type": "fontFamilies"
-        },
-        "link": {
-          "value": "{typography.fontWeight.display.strong}",
-          "type": "fontFamilies"
-        },
-        "highlight": {
-          "value": "{typography.fontWeight.display.strong}",
-          "type": "fontFamilies"
-        },
-        "label": {
-          "value": "{typography.fontWeight.display.strong}",
-          "type": "fontFamilies"
-        },
-        "number": {
-          "value": "{typography.fontWeight.text.normal}",
-          "type": "fontFamilies"
-        },
-        "price": {
-          "value": "{typography.fontWeight.text.normal}",
-          "type": "fontFamilies"
-        }
-      },
       "text": {
         "normal": {
           "value": "Regular",
@@ -211,29 +117,13 @@
           "type": "fontWeights"
         }
       },
-      "html": {
-        "code": {
+      "code": {
+        "normal": {
           "value": "Regular",
           "type": "fontWeights"
         },
-        "blockquote": {
-          "value": "Light Italic",
-          "type": "fontWeights"
-        },
-        "paragraph": {
-          "value": "Regular",
-          "type": "fontWeights"
-        },
-        "heading": {
+        "strong": {
           "value": "Bold",
-          "type": "fontWeights"
-        },
-        "cite": {
-          "value": "Medium",
-          "type": "fontWeights"
-        },
-        "list": {
-          "value": "{typography.fontWeight.html.paragraph}",
           "type": "fontWeights"
         }
       }
