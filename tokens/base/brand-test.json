@@ -3,8 +3,8 @@
     "switch": {
       "brand": {
         "mode-2": {
-          "value": "true",
-          "type": "boolean"
+          "$type": "boolean",
+          "$value": "true"
         }
       }
     }
@@ -14,44 +14,44 @@
       "palette": {
         "neutral": {
           "main": {
-            "value": "#757575",
-            "type": "color"
+            "$type": "color",
+            "$value": "#757575"
           }
         },
         "danger": {
           "main": {
-            "value": "#E02D12",
-            "type": "color"
+            "$type": "color",
+            "$value": "#E02D12"
           }
         },
         "success": {
           "main": {
-            "value": "#0B8A0B",
-            "type": "color"
+            "$type": "color",
+            "$value": "#0B8A0B"
           }
         },
         "warning": {
           "main": {
-            "value": "#996E09",
-            "type": "color"
+            "$type": "color",
+            "$value": "#996E09"
           }
         },
         "info": {
           "main": {
-            "value": "#098294",
-            "type": "color"
+            "$type": "color",
+            "$value": "#098294"
           }
         },
         "brand": {
           "main": {
-            "value": "#1273E0",
-            "type": "color"
+            "$type": "color",
+            "$value": "#1273E0"
           }
         },
         "accent": {
           "main": {
-            "value": "#D115C5",
-            "type": "color"
+            "$type": "color",
+            "$value": "#D115C5"
           }
         }
       }
@@ -60,63 +60,63 @@
   "typography": {
     "fontFamily": {
       "text": {
-        "value": "Helvetica, Arial, sans-serif",
-        "type": "fontFamilies"
+        "$type": "fontFamilies",
+        "$value": "Helvetica, Arial, sans-serif"
       },
       "display": {
-        "value": "'Times New Roman', Times, serif",
-        "type": "fontFamilies"
+        "$type": "fontFamilies",
+        "$value": "'Times New Roman', Times, serif"
       },
       "code": {
-        "value": "'Courier New', Courier, monospace",
-        "type": "fontFamilies"
+        "$type": "fontFamilies",
+        "$value": "'Courier New', Courier, monospace"
       }
     },
     "fontWeight": {
       "text": {
         "normal": {
-          "value": "Regular",
-          "type": "fontWeights"
+          "$type": "fontWeights",
+          "$value": "Regular"
         },
         "strong": {
-          "value": "Bold",
-          "type": "fontWeights"
+          "$type": "fontWeights",
+          "$value": "Bold"
         },
         "mass": {
-          "value": "Bold",
-          "type": "fontWeights"
+          "$type": "fontWeights",
+          "$value": "Bold"
         },
         "elegant": {
-          "value": "Light",
-          "type": "fontWeights"
+          "$type": "fontWeights",
+          "$value": "Light"
         }
       },
       "display": {
         "normal": {
-          "value": "Regular",
-          "type": "fontWeights"
+          "$type": "fontWeights",
+          "$value": "Regular"
         },
         "strong": {
-          "value": "Bold",
-          "type": "fontWeights"
+          "$type": "fontWeights",
+          "$value": "Bold"
         },
         "mass": {
-          "value": "Bold",
-          "type": "fontWeights"
+          "$type": "fontWeights",
+          "$value": "Bold"
         },
         "elegant": {
-          "value": "Regular",
-          "type": "fontWeights"
+          "$type": "fontWeights",
+          "$value": "Regular"
         }
       },
       "code": {
         "normal": {
-          "value": "Regular",
-          "type": "fontWeights"
+          "$type": "fontWeights",
+          "$value": "Regular"
         },
         "strong": {
-          "value": "Bold",
-          "type": "fontWeights"
+          "$type": "fontWeights",
+          "$value": "Bold"
         }
       }
     }
@@ -124,36 +124,36 @@
   "borderRadius": {
     "base": {
       "xsmall": {
-        "value": "{size.dimension.2}",
-        "type": "borderRadius"
+        "$type": "borderRadius",
+        "$value": "{size.dimension.2}"
       },
       "small": {
-        "value": "{size.dimension.2}",
-        "type": "borderRadius"
+        "$type": "borderRadius",
+        "$value": "{size.dimension.2}"
       },
       "medium": {
-        "value": "{size.dimension.2}",
-        "type": "borderRadius"
+        "$type": "borderRadius",
+        "$value": "{size.dimension.2}"
       },
       "large": {
-        "value": "{size.dimension.2}",
-        "type": "borderRadius"
+        "$type": "borderRadius",
+        "$value": "{size.dimension.2}"
       },
       "xlarge": {
-        "value": "{size.dimension.2}",
-        "type": "borderRadius"
+        "$type": "borderRadius",
+        "$value": "{size.dimension.2}"
       },
       "2xlarge": {
-        "value": "{size.dimension.2}",
-        "type": "borderRadius"
+        "$type": "borderRadius",
+        "$value": "{size.dimension.2}"
       },
       "3xlarge": {
-        "value": "{size.dimension.2}",
-        "type": "borderRadius"
+        "$type": "borderRadius",
+        "$value": "{size.dimension.2}"
       },
       "rare": {
-        "value": "{size.dimension.2}",
-        "type": "borderRadius"
+        "$type": "borderRadius",
+        "$value": "{size.dimension.2}"
       }
     }
   }

@@ -2,113 +2,113 @@
   "motion": {
     "duration": {
       "2xsmall": {
-        "value": "100",
-        "type": "other"
+        "$type": "other",
+        "$value": "100"
       },
       "xsmall": {
-        "value": "150",
-        "type": "other"
+        "$type": "other",
+        "$value": "150"
       },
       "small": {
-        "value": "200",
-        "type": "other"
+        "$type": "other",
+        "$value": "200"
       },
       "medium": {
-        "value": "250",
-        "type": "other"
+        "$type": "other",
+        "$value": "250"
       },
       "large": {
-        "value": "300",
-        "type": "other"
+        "$type": "other",
+        "$value": "300"
       },
       "xlarge": {
-        "value": "500",
-        "type": "other"
+        "$type": "other",
+        "$value": "500"
       },
       "2xlarge": {
-        "value": "800",
-        "type": "other"
+        "$type": "other",
+        "$value": "800"
       },
       "3xlarge": {
-        "value": "1200",
-        "type": "other"
+        "$type": "other",
+        "$value": "1200"
       }
     },
     "easing": {
       "default": {
-        "value": "bezier(0.25,0.1,0.25,1.0)",
-        "type": "other"
+        "$type": "other",
+        "$value": "bezier(0.25,0.1,0.25,1.0)"
       },
       "linear": {
-        "value": "bezier(0.0,0.0,1.0,1.0)",
-        "type": "other"
+        "$type": "other",
+        "$value": "bezier(0.0,0.0,1.0,1.0)"
       },
       "ease-in": {
-        "value": "bezier(0.42,0.0,1.0,1.0)",
-        "type": "other"
+        "$type": "other",
+        "$value": "bezier(0.42,0.0,1.0,1.0)"
       },
       "ease-out": {
-        "value": "bezier(0.0,0.0,0.58,1.0)",
-        "type": "other"
+        "$type": "other",
+        "$value": "bezier(0.0,0.0,0.58,1.0)"
       },
       "ease-in-and-out": {
-        "value": "bezier(0.42,0.0,0.58,1.0)",
-        "type": "other"
+        "$type": "other",
+        "$value": "bezier(0.42,0.0,0.58,1.0)"
       }
     },
     "spring": {
       "stiffness": {
         "gentle": {
-          "value": "100",
-          "type": "other"
+          "$type": "other",
+          "$value": "100"
         },
         "quick": {
-          "value": "300",
-          "type": "other"
+          "$type": "other",
+          "$value": "300"
         },
         "bouncy": {
-          "value": "600",
-          "type": "other"
+          "$type": "other",
+          "$value": "600"
         },
         "slow": {
-          "value": "80",
-          "type": "other"
+          "$type": "other",
+          "$value": "80"
         }
       },
       "damping": {
         "gentle": {
-          "value": "15",
-          "type": "other"
+          "$type": "other",
+          "$value": "15"
         },
         "quick": {
-          "value": "20",
-          "type": "other"
+          "$type": "other",
+          "$value": "20"
         },
         "bouncy": {
-          "value": "15",
-          "type": "other"
+          "$type": "other",
+          "$value": "15"
         },
         "slow": {
-          "value": "20",
-          "type": "other"
+          "$type": "other",
+          "$value": "20"
         }
       },
       "mass": {
         "gentle": {
-          "value": "1",
-          "type": "other"
+          "$type": "other",
+          "$value": "1"
         },
         "quick": {
-          "value": "1",
-          "type": "other"
+          "$type": "other",
+          "$value": "1"
         },
         "bouncy": {
-          "value": "1",
-          "type": "other"
+          "$type": "other",
+          "$value": "1"
         },
         "slow": {
-          "value": "1",
-          "type": "other"
+          "$type": "other",
+          "$value": "1"
         }
       }
     }

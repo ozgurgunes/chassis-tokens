@@ -3,8 +3,8 @@
     "switch": {
       "brand": {
         "mode-1": {
-          "value": "true",
-          "type": "boolean"
+          "$type": "boolean",
+          "$value": "true"
         }
       }
     }
@@ -14,48 +14,48 @@
       "palette": {
         "neutral": {
           "main": {
-            "value": "#6F8085",
-            "type": "color"
+            "$type": "color",
+            "$value": "#6F8085"
           }
         },
         "danger": {
           "main": {
-            "value": "#F52314",
-            "type": "color"
+            "$type": "color",
+            "$value": "#F52314"
           }
         },
         "success": {
           "main": {
-            "value": "#10C263",
-            "type": "color"
+            "$type": "color",
+            "$value": "#10C263"
           }
         },
         "warning": {
           "main": {
-            "value": "#F5A300",
-            "type": "color"
+            "$type": "color",
+            "$value": "#F5A300"
           },
           "contrast": {
-            "value": "{color.base.palette.black.main}",
-            "type": "color"
+            "$type": "color",
+            "$value": "{color.base.palette.black.main}"
           }
         },
         "info": {
           "main": {
-            "value": "#1414F5",
-            "type": "color"
+            "$type": "color",
+            "$value": "#1414F5"
           }
         },
         "brand": {
           "main": {
-            "value": "#00A4CC",
-            "type": "color"
+            "$type": "color",
+            "$value": "#00A4CC"
           }
         },
         "accent": {
           "main": {
-            "value": "#F55200",
-            "type": "color"
+            "$type": "color",
+            "$value": "#F55200"
           }
         }
       }
@@ -64,177 +64,67 @@
   "typography": {
     "fontFamily": {
       "text": {
-        "value": "Inter, system-ui, -apple-system, Helvetica, Arial, sans-serif",
-        "type": "fontFamilies"
+        "$type": "fontFamilies",
+        "$value": "Inter, system-ui, -apple-system, Helvetica, Arial, sans-serif"
       },
       "display": {
-        "value": "Outfit, Georgia, 'Times New Roman', Times, serif",
-        "type": "fontFamilies"
-      },
-      "html": {
-        "value": "{typography.fontFamily.text}",
-        "type": "fontFamilies"
+        "$type": "fontFamilies",
+        "$value": "Outfit, Georgia, 'Times New Roman', Times, serif"
       },
       "code": {
-        "value": "Fira Code, Menlo, Monaco, Consolas, 'Courier New', monospace",
-        "type": "fontFamilies"
+        "$type": "fontFamilies",
+        "$value": "Fira Code, Menlo, Monaco, Consolas, 'Courier New', monospace"
       },
       "icon": {
-        "value": "Chassis-Icons",
-        "type": "fontFamilies"
-      },
-      "jumbo": {
-        "value": "{typography.fontFamily.text}",
-        "type": "fontFamilies"
-      },
-      "hero": {
-        "value": "{typography.fontFamily.text}",
-        "type": "fontFamilies"
-      },
-      "lead": {
-        "value": "{typography.fontFamily.text}",
-        "type": "fontFamilies"
-      },
-      "heading": {
-        "value": "{typography.fontFamily.text}",
-        "type": "fontFamilies"
-      },
-      "title": {
-        "value": "{typography.fontFamily.text}",
-        "type": "fontFamilies"
-      },
-      "body": {
-        "value": "{typography.fontFamily.display}",
-        "type": "fontFamilies"
-      },
-      "link": {
-        "value": "{typography.fontFamily.display}",
-        "type": "fontFamilies"
-      },
-      "highlight": {
-        "value": "{typography.fontFamily.display}",
-        "type": "fontFamilies"
-      },
-      "label": {
-        "value": "{typography.fontFamily.display}",
-        "type": "fontFamilies"
-      },
-      "number": {
-        "value": "{typography.fontFamily.text}",
-        "type": "fontFamilies"
-      },
-      "price": {
-        "value": "{typography.fontFamily.text}",
-        "type": "fontFamilies"
+        "$type": "fontFamilies",
+        "$value": "Chassis-Icons"
       }
     },
     "fontWeight": {
-      "base": {
-        "jumbo": {
-          "value": "{typography.fontWeight.text.mass}",
-          "type": "fontFamilies"
-        },
-        "hero": {
-          "value": "{typography.fontWeight.text.mass}",
-          "type": "fontFamilies"
-        },
-        "lead": {
-          "value": "{typography.fontWeight.text.normal}",
-          "type": "fontFamilies"
-        },
-        "heading": {
-          "value": "{typography.fontWeight.text.mass}",
-          "type": "fontFamilies"
-        },
-        "title": {
-          "value": "{typography.fontWeight.text.strong}",
-          "type": "fontFamilies"
-        },
-        "body": {
-          "value": "{typography.fontWeight.display.normal}",
-          "type": "fontFamilies"
-        },
-        "link": {
-          "value": "{typography.fontWeight.display.strong}",
-          "type": "fontFamilies"
-        },
-        "highlight": {
-          "value": "{typography.fontWeight.display.strong}",
-          "type": "fontFamilies"
-        },
-        "label": {
-          "value": "{typography.fontWeight.display.strong}",
-          "type": "fontFamilies"
-        },
-        "number": {
-          "value": "{typography.fontWeight.text.normal}",
-          "type": "fontFamilies"
-        },
-        "price": {
-          "value": "{typography.fontWeight.text.normal}",
-          "type": "fontFamilies"
-        }
-      },
       "text": {
         "normal": {
-          "value": "Regular",
-          "type": "fontWeights"
+          "$type": "fontWeights",
+          "$value": "Regular"
         },
         "strong": {
-          "value": "Medium",
-          "type": "fontWeights"
+          "$type": "fontWeights",
+          "$value": "Medium"
         },
         "mass": {
-          "value": "Semi Bold",
-          "type": "fontWeights"
+          "$type": "fontWeights",
+          "$value": "Semi Bold"
         },
         "elegant": {
-          "value": "Light",
-          "type": "fontWeights"
+          "$type": "fontWeights",
+          "$value": "Light"
         }
       },
       "display": {
         "normal": {
-          "value": "Regular",
-          "type": "fontWeights"
+          "$type": "fontWeights",
+          "$value": "Regular"
         },
         "strong": {
-          "value": "SemiBold",
-          "type": "fontWeights"
+          "$type": "fontWeights",
+          "$value": "SemiBold"
         },
         "mass": {
-          "value": "Bold",
-          "type": "fontWeights"
+          "$type": "fontWeights",
+          "$value": "Bold"
         },
         "elegant": {
-          "value": "Light",
-          "type": "fontWeights"
+          "$type": "fontWeights",
+          "$value": "Light"
         }
       },
-      "html": {
-        "code": {
-          "value": "Regular",
-          "type": "fontWeights"
+      "code": {
+        "normal": {
+          "$type": "fontWeights",
+          "$value": "Regular"
         },
-        "blockquote": {
-          "value": "Light Italic",
-          "type": "fontWeights"
-        },
-        "paragraph": {
-          "value": "Regular",
-          "type": "fontWeights"
-        },
-        "heading": {
-          "value": "Bold",
-          "type": "fontWeights"
-        },
-        "cite": {
-          "value": "Medium",
-          "type": "fontWeights"
-        },
-        "list": {
-          "value": "{typography.fontWeight.html.paragraph}",
-          "type": "fontWeights"
+        "strong": {
+          "$type": "fontWeights",
+          "$value": "Bold"
         }
       }
     }
@@ -242,36 +132,36 @@
   "borderRadius": {
     "base": {
       "xsmall": {
-        "value": "{size.base.2}",
-        "type": "borderRadius"
+        "$type": "borderRadius",
+        "$value": "{size.base.2}"
       },
       "small": {
-        "value": "{size.base.4}",
-        "type": "borderRadius"
+        "$type": "borderRadius",
+        "$value": "{size.base.4}"
       },
       "medium": {
-        "value": "{size.base.6}",
-        "type": "borderRadius"
+        "$type": "borderRadius",
+        "$value": "{size.base.6}"
       },
       "large": {
-        "value": "{size.base.8}",
-        "type": "borderRadius"
+        "$type": "borderRadius",
+        "$value": "{size.base.8}"
       },
       "xlarge": {
-        "value": "{size.base.12}",
-        "type": "borderRadius"
+        "$type": "borderRadius",
+        "$value": "{size.base.12}"
       },
       "2xlarge": {
-        "value": "{size.base.16}",
-        "type": "borderRadius"
+        "$type": "borderRadius",
+        "$value": "{size.base.16}"
       },
       "3xlarge": {
-        "value": "{size.base.20}",
-        "type": "borderRadius"
+        "$type": "borderRadius",
+        "$value": "{size.base.20}"
       },
       "rare": {
-        "value": "{size.base.5}",
-        "type": "borderRadius"
+        "$type": "borderRadius",
+        "$value": "{size.base.5}"
       }
     }
   }
