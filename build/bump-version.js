@@ -15,7 +15,7 @@ const DRY_RUN = process.argv.includes('--dry') || process.argv.includes('--dry-r
 const FILES = [
   'build/font/css.hbs',
   'build/font/scss.hbs',
-  'build/tokens/dictionary.js'
+  'build/tokens/build.js'
 ]
 
 // Blame TC39... https://github.com/benjamingr/RegExp.escape/issues/37

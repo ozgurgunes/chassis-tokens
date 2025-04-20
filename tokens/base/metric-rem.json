@@ -2,288 +2,288 @@
   "size": {
     "dimension": {
       "0": {
-        "value": "0/{size.dimension.scale}rem",
-        "type": "dimension"
+        "$type": "dimension",
+        "$value": "0/{size.dimension.scale}rem"
       },
       "1": {
-        "value": "1/{size.dimension.scale}rem",
-        "type": "dimension"
+        "$type": "dimension",
+        "$value": "1/{size.dimension.scale}rem"
       },
       "2": {
-        "value": "2/{size.dimension.scale}rem",
-        "type": "dimension"
+        "$type": "dimension",
+        "$value": "2/{size.dimension.scale}rem"
       },
       "3": {
-        "value": "3/{size.dimension.scale}rem",
-        "type": "dimension"
+        "$type": "dimension",
+        "$value": "3/{size.dimension.scale}rem"
       },
       "4": {
-        "value": "4/{size.dimension.scale}rem",
-        "type": "dimension"
+        "$type": "dimension",
+        "$value": "4/{size.dimension.scale}rem"
       },
       "5": {
-        "value": "5/{size.dimension.scale}rem",
-        "type": "dimension"
+        "$type": "dimension",
+        "$value": "5/{size.dimension.scale}rem"
       },
       "6": {
-        "value": "6/{size.dimension.scale}rem",
-        "type": "dimension"
+        "$type": "dimension",
+        "$value": "6/{size.dimension.scale}rem"
       },
       "7": {
-        "value": "7/{size.dimension.scale}rem",
-        "type": "dimension"
+        "$type": "dimension",
+        "$value": "7/{size.dimension.scale}rem"
       },
       "8": {
-        "value": "8/{size.dimension.scale}rem",
-        "type": "dimension"
+        "$type": "dimension",
+        "$value": "8/{size.dimension.scale}rem"
       },
       "9": {
-        "value": "9/{size.dimension.scale}rem",
-        "type": "dimension"
+        "$type": "dimension",
+        "$value": "9/{size.dimension.scale}rem"
       },
       "10": {
-        "value": "10/{size.dimension.scale}rem",
-        "type": "dimension"
+        "$type": "dimension",
+        "$value": "10/{size.dimension.scale}rem"
       },
       "12": {
-        "value": "12/{size.dimension.scale}rem",
-        "type": "dimension"
+        "$type": "dimension",
+        "$value": "12/{size.dimension.scale}rem"
       },
       "14": {
-        "value": "14/{size.dimension.scale}rem",
-        "type": "dimension"
+        "$type": "dimension",
+        "$value": "14/{size.dimension.scale}rem"
       },
       "16": {
-        "value": "16/{size.dimension.scale}rem",
-        "type": "dimension"
+        "$type": "dimension",
+        "$value": "16/{size.dimension.scale}rem"
       },
       "18": {
-        "value": "18/{size.dimension.scale}rem",
-        "type": "dimension"
+        "$type": "dimension",
+        "$value": "18/{size.dimension.scale}rem"
       },
       "20": {
-        "value": "20/{size.dimension.scale}rem",
-        "type": "dimension"
+        "$type": "dimension",
+        "$value": "20/{size.dimension.scale}rem"
       },
       "22": {
-        "value": "22/{size.dimension.scale}rem",
-        "type": "dimension"
+        "$type": "dimension",
+        "$value": "22/{size.dimension.scale}rem"
       },
       "24": {
-        "value": "24/{size.dimension.scale}rem",
-        "type": "dimension"
+        "$type": "dimension",
+        "$value": "24/{size.dimension.scale}rem"
       },
       "26": {
-        "value": "26/{size.dimension.scale}rem",
-        "type": "dimension"
+        "$type": "dimension",
+        "$value": "26/{size.dimension.scale}rem"
       },
       "28": {
-        "value": "28/{size.dimension.scale}rem",
-        "type": "dimension"
+        "$type": "dimension",
+        "$value": "28/{size.dimension.scale}rem"
       },
       "30": {
-        "value": "30/{size.dimension.scale}rem",
-        "type": "dimension"
+        "$type": "dimension",
+        "$value": "30/{size.dimension.scale}rem"
       },
       "32": {
-        "value": "32/{size.dimension.scale}rem",
-        "type": "dimension"
+        "$type": "dimension",
+        "$value": "32/{size.dimension.scale}rem"
       },
       "36": {
-        "value": "36/{size.dimension.scale}rem",
-        "type": "dimension"
+        "$type": "dimension",
+        "$value": "36/{size.dimension.scale}rem"
       },
       "40": {
-        "value": "40/{size.dimension.scale}rem",
-        "type": "dimension"
+        "$type": "dimension",
+        "$value": "40/{size.dimension.scale}rem"
       },
       "44": {
-        "value": "44/{size.dimension.scale}rem",
-        "type": "dimension"
+        "$type": "dimension",
+        "$value": "44/{size.dimension.scale}rem"
       },
       "48": {
-        "value": "48/{size.dimension.scale}rem",
-        "type": "dimension"
+        "$type": "dimension",
+        "$value": "48/{size.dimension.scale}rem"
       },
       "52": {
-        "value": "52/{size.dimension.scale}rem",
-        "type": "dimension"
+        "$type": "dimension",
+        "$value": "52/{size.dimension.scale}rem"
       },
       "56": {
-        "value": "56/{size.dimension.scale}rem",
-        "type": "dimension"
+        "$type": "dimension",
+        "$value": "56/{size.dimension.scale}rem"
       },
       "60": {
-        "value": "60/{size.dimension.scale}rem",
-        "type": "dimension"
+        "$type": "dimension",
+        "$value": "60/{size.dimension.scale}rem"
       },
       "64": {
-        "value": "64/{size.dimension.scale}rem",
-        "type": "dimension"
+        "$type": "dimension",
+        "$value": "64/{size.dimension.scale}rem"
       },
       "68": {
-        "value": "68/{size.dimension.scale}rem",
-        "type": "dimension"
+        "$type": "dimension",
+        "$value": "68/{size.dimension.scale}rem"
       },
       "72": {
-        "value": "72/{size.dimension.scale}rem",
-        "type": "dimension"
+        "$type": "dimension",
+        "$value": "72/{size.dimension.scale}rem"
       },
       "76": {
-        "value": "76/{size.dimension.scale}rem",
-        "type": "dimension"
+        "$type": "dimension",
+        "$value": "76/{size.dimension.scale}rem"
       },
       "80": {
-        "value": "80/{size.dimension.scale}rem",
-        "type": "dimension"
+        "$type": "dimension",
+        "$value": "80/{size.dimension.scale}rem"
       },
       "88": {
-        "value": "88/{size.dimension.scale}rem",
-        "type": "dimension"
+        "$type": "dimension",
+        "$value": "88/{size.dimension.scale}rem"
       },
       "96": {
-        "value": "96/{size.dimension.scale}rem",
-        "type": "dimension"
+        "$type": "dimension",
+        "$value": "96/{size.dimension.scale}rem"
       },
       "104": {
-        "value": "104/{size.dimension.scale}rem",
-        "type": "dimension"
+        "$type": "dimension",
+        "$value": "104/{size.dimension.scale}rem"
       },
       "112": {
-        "value": "112/{size.dimension.scale}rem",
-        "type": "dimension"
+        "$type": "dimension",
+        "$value": "112/{size.dimension.scale}rem"
       },
       "120": {
-        "value": "120/{size.dimension.scale}rem",
-        "type": "dimension"
+        "$type": "dimension",
+        "$value": "120/{size.dimension.scale}rem"
       },
       "128": {
-        "value": "128/{size.dimension.scale}rem",
-        "type": "dimension"
+        "$type": "dimension",
+        "$value": "128/{size.dimension.scale}rem"
       },
       "136": {
-        "value": "136/{size.dimension.scale}rem",
-        "type": "dimension"
+        "$type": "dimension",
+        "$value": "136/{size.dimension.scale}rem"
       },
       "160": {
-        "value": "160/{size.dimension.scale}rem",
-        "type": "dimension"
+        "$type": "dimension",
+        "$value": "160/{size.dimension.scale}rem"
       },
       "192": {
-        "value": "192/{size.dimension.scale}rem",
-        "type": "dimension"
+        "$type": "dimension",
+        "$value": "192/{size.dimension.scale}rem"
       },
       "256": {
-        "value": "256/{size.dimension.scale}rem",
-        "type": "dimension"
+        "$type": "dimension",
+        "$value": "256/{size.dimension.scale}rem"
       },
       "320": {
-        "value": "320/{size.dimension.scale}rem",
-        "type": "dimension"
+        "$type": "dimension",
+        "$value": "320/{size.dimension.scale}rem"
       },
       "512": {
-        "value": "512/{size.dimension.scale}rem",
-        "type": "dimension"
+        "$type": "dimension",
+        "$value": "512/{size.dimension.scale}rem"
       },
       "1024": {
-        "value": "1024/{size.dimension.scale}rem",
-        "type": "dimension"
+        "$type": "dimension",
+        "$value": "1024/{size.dimension.scale}rem"
       },
       "scale": {
-        "value": "16",
-        "type": "size"
+        "$type": "size",
+        "$value": "16"
       },
       "05": {
-        "value": "0.5/{size.dimension.scale}rem",
-        "type": "dimension"
+        "$type": "dimension",
+        "$value": "0.5/{size.dimension.scale}rem"
       },
       "d05": {
-        "value": "0.5/{size.dimension.scale}rem",
-        "type": "dimension"
+        "$type": "dimension",
+        "$value": "0.5/{size.dimension.scale}rem"
       },
       "d15": {
-        "value": "1.5/{size.dimension.scale}rem",
-        "type": "dimension"
+        "$type": "dimension",
+        "$value": "1.5/{size.dimension.scale}rem"
       },
       "d25": {
-        "value": "2.5/{size.dimension.scale}rem",
-        "type": "dimension"
+        "$type": "dimension",
+        "$value": "2.5/{size.dimension.scale}rem"
       },
       "n1": {
-        "value": "-1/{size.dimension.scale}rem",
-        "type": "dimension"
+        "$type": "dimension",
+        "$value": "-1/{size.dimension.scale}rem"
       },
       "n2": {
-        "value": "-2/{size.dimension.scale}rem",
-        "type": "dimension"
+        "$type": "dimension",
+        "$value": "-2/{size.dimension.scale}rem"
       },
       "n3": {
-        "value": "-3/{size.dimension.scale}rem",
-        "type": "dimension"
+        "$type": "dimension",
+        "$value": "-3/{size.dimension.scale}rem"
       },
       "n4": {
-        "value": "-4/{size.dimension.scale}rem",
-        "type": "dimension"
+        "$type": "dimension",
+        "$value": "-4/{size.dimension.scale}rem"
       },
       "n5": {
-        "value": "-5/{size.dimension.scale}rem",
-        "type": "dimension"
+        "$type": "dimension",
+        "$value": "-5/{size.dimension.scale}rem"
       },
       "n6": {
-        "value": "-6/{size.dimension.scale}rem",
-        "type": "dimension"
+        "$type": "dimension",
+        "$value": "-6/{size.dimension.scale}rem"
       },
       "n7": {
-        "value": "-7/{size.dimension.scale}rem",
-        "type": "dimension"
+        "$type": "dimension",
+        "$value": "-7/{size.dimension.scale}rem"
       },
       "n8": {
-        "value": "-8/{size.dimension.scale}rem",
-        "type": "dimension"
+        "$type": "dimension",
+        "$value": "-8/{size.dimension.scale}rem"
       },
       "n9": {
-        "value": "-9/{size.dimension.scale}rem",
-        "type": "dimension"
+        "$type": "dimension",
+        "$value": "-9/{size.dimension.scale}rem"
       },
       "n10": {
-        "value": "-10/{size.dimension.scale}rem",
-        "type": "dimension"
+        "$type": "dimension",
+        "$value": "-10/{size.dimension.scale}rem"
       },
       "n12": {
-        "value": "-12/{size.dimension.scale}rem",
-        "type": "dimension"
+        "$type": "dimension",
+        "$value": "-12/{size.dimension.scale}rem"
       },
       "n14": {
-        "value": "-14/{size.dimension.scale}rem",
-        "type": "dimension"
+        "$type": "dimension",
+        "$value": "-14/{size.dimension.scale}rem"
       },
       "n16": {
-        "value": "-16/{size.dimension.scale}rem",
-        "type": "dimension"
+        "$type": "dimension",
+        "$value": "-16/{size.dimension.scale}rem"
       },
       "n18": {
-        "value": "-18/{size.dimension.scale}rem",
-        "type": "dimension"
+        "$type": "dimension",
+        "$value": "-18/{size.dimension.scale}rem"
       },
       "n20": {
-        "value": "-20/{size.dimension.scale}rem",
-        "type": "dimension"
+        "$type": "dimension",
+        "$value": "-20/{size.dimension.scale}rem"
       },
       "n24": {
-        "value": "-24/{size.dimension.scale}rem",
-        "type": "dimension"
+        "$type": "dimension",
+        "$value": "-24/{size.dimension.scale}rem"
       },
       "nd05": {
-        "value": "-0.5/{size.dimension.scale}rem",
-        "type": "dimension"
+        "$type": "dimension",
+        "$value": "-0.5/{size.dimension.scale}rem"
       },
       "nd15": {
-        "value": "-1.5/{size.dimension.scale}rem",
-        "type": "dimension"
+        "$type": "dimension",
+        "$value": "-1.5/{size.dimension.scale}rem"
       },
       "nd25": {
-        "value": "-2.5/{size.dimension.scale}rem",
-        "type": "dimension"
+        "$type": "dimension",
+        "$value": "-2.5/{size.dimension.scale}rem"
       }
     }
   }
