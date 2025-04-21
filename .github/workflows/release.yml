@@ -25,14 +25,6 @@ jobs:
         uses: pnpm/action-setup@v4
         id: pnpm-install
 
-        # Install dependencies
-      - name: Install dependencies
-        run: pnpm install
-
-      # Build the package
-      - name: Build package
-        run: pnpm release
-
       # Publish to npm
       - name: Publish to npm
         env:
