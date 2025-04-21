@@ -57,7 +57,7 @@ Update the version:
 npm run release-version old_version new_version
 ```
 
-Run `assets` & `icons` then create a tarball.
+Run `assets` & `icons`.
 
 ```shell
 npm run release

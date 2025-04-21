@@ -1,5 +1,5 @@
 {
-  "name": "chassis-tokens",
+  "name": "@ozgurgunes/chassis-tokens",
   "version": "0.1.0",
   "description": "Design tokens for Chassis Design System. Includes token transformers, asset manager and icon generator",
   "license": "MIT",
@@ -44,6 +44,9 @@
       }
     }
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "dist": "run-p tokens assets icons",
     "tokens": "node build/tokens/build.js",
@@ -57,7 +60,7 @@
     "icons-dist": "node build/copy-icons.js",
     "icons-zip": "node build/zip-icons.js",
     "release-version": "node build/bump-version.js",
-    "release": "pnpm tokens && pnpm icons && pnpm pack"
+    "release": "pnpm tokens && pnpm icons"
   },
   "devDependencies": {
     "@tokens-studio/sd-transforms": "^1.2.12",
