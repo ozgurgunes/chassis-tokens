@@ -1,12 +1,11 @@
 import fs from 'fs'
 import path from 'path'
 
-const brands = ['chassis', 'test']
-const BRAND_DEFAULT = 'default'
-const apps = {
-  docs: ['web'],
-  test: ['ios', 'android'],
-}
+const packageJson = JSON.parse(
+  fs.readFileSync(path.join(process.cwd(), 'package.json'), 'utf-8')
+)
+const buildOptions = packageJson.chassis.build
+const DEFAULT_BRAND_FOLDER = packageJson.chassis.defaults.brandFolder
 
 // Function to recursively rename files in a directory according to the renaming function
 export function renameFilesRecursively(folderPath, renameFunction) {
@@ -56,10 +55,10 @@ function copyFilesRecursively(src, dest) {
 export async function generateAsssets() {
   try {
     console.log('Copying assets...')
-    brands.forEach(brand => {
-      Object.entries(apps).forEach(([app, platforms]) => {
+    buildOptions.brands.forEach(brand => {
+      Object.entries(buildOptions.apps).forEach(([app, platforms]) => {
         platforms.forEach(platform => {
-          const destPath = `dist/assets/${brand}/${app}-${platform}`
+          const destPath = `dist/assets/${platform.split('-')[0]}/${brand}-${app}`
 
           if (fs.existsSync(destPath)) {
             fs.rmSync(destPath, { recursive: true })
@@ -71,7 +70,7 @@ export async function generateAsssets() {
           fs.mkdirSync(destPath, { recursive: true })
 
           // Copy default brand files
-          copyFilesRecursively(`assets/${BRAND_DEFAULT}/${app}`, destPath)
+          copyFilesRecursively(`assets/${DEFAULT_BRAND_FOLDER}/${app}`, destPath)
 
           // Override with specific brand files if they exist
           const brandAppPath = `assets/${brand}/${app}`

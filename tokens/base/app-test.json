@@ -3,8 +3,8 @@
     "switch": {
       "app": {
         "mode-2": {
-          "value": "true",
-          "type": "boolean"
+          "$type": "boolean",
+          "$value": "true"
         }
       }
     }
