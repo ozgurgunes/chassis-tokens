@@ -1,61 +1,130 @@
-import fs from 'fs'
+/**
+ * @file build.js
+ * @description This file handles the build process for Style Dictionary, including
+ *              registering extensions, generating tasks, and processing configurations.
+ *
+ * @copyright Copyright (c) 2025 Ozgur Gunes
+ * @license MIT
+ */
+
+import { promises, readFileSync } from 'fs'
+import { join } from 'path'
 import StyleDictionary from 'style-dictionary'
-import registerDictionary from './dictionary.js'
-import permutateThemes from './permutateThemes.js'
+import {
+  permutateThemes,
+  register as registerStudio
+} from '@tokens-studio/sd-transforms'
 import config from './config.js'
+import registerFilters from './filters.js'
+import registerTransforms from './transforms.js'
+import registerFormats from './formats.js'
+import cxPrep from './preprocessor.js'
 
-registerDictionary(StyleDictionary)
+const packageJson = JSON.parse(
+  readFileSync(join(process.cwd(), 'package.json'), 'utf-8')
+)
+const buildOptions = packageJson.chassis.build
+const DEFAULT_TOKENS_THEME = packageJson.chassis.defaults.tokensTheme
 
-async function readThemesFile(filePath) {
-  try {
-    const data = await fs.promises.readFile(filePath, 'utf-8')
-    return JSON.parse(data)
-  } catch (error) {
-    console.error(`Error reading file ${filePath}:`, error)
-    throw error
+/**
+ * Registers all necessary extensions for Style Dictionary, including
+ * preprocessors, filters, transforms, formats, and file headers.
+ */
+function registerDictionary() {
+  registerStudio(StyleDictionary, {
+    'ts/color/modifiers': { format: 'hex' }
+  })
+
+  StyleDictionary.registerPreprocessor({
+    name: 'cx/global',
+    preprocessor: dictionary => cxPrep(dictionary)
+  })
+
+  registerFilters(StyleDictionary)
+  registerTransforms(StyleDictionary)
+  registerFormats(StyleDictionary)
+
+  StyleDictionary.registerFileHeader({
+    name: 'cxFileHeader',
+    fileHeader: async (defaultMessages = []) => [
+      ...defaultMessages,
+      `Chassis - Tokens v0.1.0`,
+      `Copyright 2025 Ozgur Gunes`,
+      `Licensed under MIT (https://github.com/ozgurgunes/chassis-tokens/blob/main/LICENSE)`
+    ]
+  })
+}
+
+/**
+ * Generates tasks for all brand, app, platform, and theme combinations.
+ *
+ * @param {Object} tokens - The tokens object containing theme permutations.
+ * @returns {Array<Object>} - An array of task configurations.
+ */
+function generateTasks(tokens) {
+  return buildOptions.brands.flatMap(brand =>
+    Object.entries(buildOptions.apps).flatMap(([app, platforms]) =>
+      platforms.flatMap(platform =>
+        buildOptions.themes.map(theme => {
+          const cfg = config({
+            brand,
+            app,
+            platform,
+            theme,
+            defaultTheme: theme === DEFAULT_TOKENS_THEME
+          })
+          cfg.source = tokens[`${brand}_${app}_${theme}`].map(
+            tokenset => `tokens/${tokenset}.json`
+          )
+          return { brand, app, platform, theme, cfg }
+        })
+      )
+    )
+  )
+}
+
+/**
+ * Processes a single task configuration by cleaning and building the platform.
+ *
+ * @param {Object} task - The task configuration object.
+ * @param {string} task.brand - The brand name.
+ * @param {string} task.app - The application name.
+ * @param {string} task.platform - The target platform (e.g., 'web', 'ios', 'android').
+ * @param {string} task.theme - The theme name.
+ * @param {Object} task.cfg - The Style Dictionary configuration object.
+ */
+async function processTask({ brand, app, platform, theme, cfg }) {
+  if (theme === DEFAULT_TOKENS_THEME) {
+    console.log(`\nStarting: ${brand}/${app}-${platform}`)
+    console.log('==============================================')
+  }
+  const sd = new StyleDictionary(cfg)
+  await sd.cleanPlatform(platform)
+  await sd.buildPlatform(platform)
+  if (theme !== DEFAULT_TOKENS_THEME) {
+    console.log(`\nCompleted: ${brand}/${app}-${platform}\n`)
   }
 }
 
-async function processConfig(cfg, platform) {
-  const build_sets = [
-    'chassis_docs_light',
-    'chassis_docs_dark',
-    'test_docs_light',
-  ]
-  if (build_sets.length && !build_sets.includes(cfg.name)) {
-    console.log(`Skipped: ${cfg.name}`)
-    return
+/**
+ * Main execution function that registers extensions, generates tasks,
+ * and processes each task sequentially.
+ */
+async function run() {
+  registerDictionary()
+
+  const $themes = JSON.parse(
+    await promises.readFile('tokens/$themes.json', 'utf-8')
+  )
+  const tokens = permutateThemes($themes, { separator: '_' })
+  const tasks = generateTasks(tokens)
+
+  for (const task of tasks) {
+    await processTask(task)
   }
-  let options = (platform == 'web') ? 'web' : 'mobile'
-  cfg.source = [
-    `dist/tokens/json/${cfg.name}-${options}.json`
-  ]
-  const sd = StyleDictionary.extend(cfg)
-  sd.cleanPlatform(platform)
-  sd.buildPlatform(platform)
+
+  console.log('==============================================')
+  console.log('\nAll configurations processed successfully.\n')
 }
 
-export async function build() {
-  const $themes = await readThemesFile('tokens/$themes.json')
-  const themes = permutateThemes($themes)
-
-  const configs = Object.entries(themes).map(([name, tokensets]) => config(name))
-
-  console.log('\nBuild started...')
-  console.log('\n==============================================')
-
-  const platforms = Object.keys(configs[0].platforms)
-  for (const platform of platforms) {
-    console.log(`\nProcessing: [${platform}]`)
-    console.log('\n==============================================')
-
-    await Promise.all(configs.map(cfg => processConfig(cfg, platform)))
-
-    console.log('\n==============================================')
-    console.log('\nEnd processing')
-  }
-  console.log('\n==============================================')
-  console.log('\nBuild completed!\n')
-}
-
-build()
+run()

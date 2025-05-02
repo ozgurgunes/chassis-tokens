@@ -1,24 +1,58 @@
-import StyleDictionary from 'style-dictionary'
-const { fileHeader } = StyleDictionary.formatHelpers
-import fs from 'fs'
-import _ from 'lodash'
-import path from 'path'
+/**
+ * @file utils.js
+ * @description This file provides utility functions and mappings for Style Dictionary.
+ *              It includes token type mappings, font weight utilities, and reference handling.
+ *
+ * @copyright Copyright (c) 2025 Ozgur Gunes
+ * @license MIT
+ */
 
-//const fileHeader = StyleDictionary.formatHelpers.fileHeader
-/* Custom function for web desktop dimensions */
-
-const typographyKeyMap = {
-  fontFamily: 'font-family',
-  fontWeight: 'font-weight',
-  fontSize: 'font-size',
-  letterSpacing: 'letter-spacing',
-  lineHeight: 'line-height',
-  paragraphSpacing: 'margin-bottom',
-  textCase: 'text-transform',
-  textDecoration: 'text-decoration',
+/**
+ * A mapping of token types to their respective categories.
+ */
+export const tokenTypes = {
+  color: [
+    'color',
+  ],
+  font: [
+    'fontFamily',
+    'fontSize',
+    'fontStyle',
+    'fontWeight',
+    'letterSpacing',
+    'lineHeight',
+    'paragraphSpacing',
+    'textCase',
+    'textDecoration',
+    'typography',
+  ],
+  gradient: ['gradient'],
+  number: ['duration', 'letterSpacing', 'number', 'opacity'],
+  shadow: ['shadow'],
+  size: [
+    'dimension',
+    'fontSize',
+    'lineHeight',
+    'paragraphSpacing',
+  ],
+  string : [
+    'content',
+    'fontFamily',
+    'fontStyle',
+    'fontWeight',
+    'string',
+    'text',
+    'textCase',
+    'textDecoration',
+    'type',
+  ],
 }
-const fontWeightMap = {
-  hairline: 1,
+
+/**
+ * A mapping of font weight names to their numeric values.
+ */
+export const fontWeightMap = {
+  hairline: 100,
   thin: 100,
   extralight: 200,
   ultralight: 200,
@@ -28,6 +62,7 @@ const fontWeightMap = {
   normal: 400,
   regular: 400,
   buch: 400,
+  book: 400,
   medium: 500,
   kraeftig: 500,
   kräftig: 500,
@@ -37,158 +72,65 @@ const fontWeightMap = {
   bold: 700,
   dreiviertelfett: 700,
   extrabold: 800,
-  ultabold: 800,
+  ultrabold: 800,
   fett: 800,
   black: 900,
   heavy: 900,
   super: 900,
   extrafett: 900,
-  ultra: 1000,
+  ultra: 950,
+  ultrablack: 950,
+  extrablack: 950,
 }
 
-export function getUnit(value, token) {
-  //return token.name.match("desktop") ? unit/16 + "vw" : unit + "px"
-  value = parseFloat(value)
-  if (token.name.match('desktop')) {
-    return value / 16 + 'vw'
-  } else if (token.name.match('mobile')) {
-    return value / 4 + 'vw'
-  } else {
-    return value + 'px'
-  }
-}
-
+/**
+ * Retrieves the numeric font weight for a given value.
+ *
+ * @param {string|number} value - The font weight value (name or numeric).
+ * @returns {number} - The numeric font weight.
+ */
 export function getFontWeight(value) {
-  //return token.name.match("desktop") ? unit/16 + "vw" : unit + "px"
-  if (value && typeof value == 'string')
-    return (
-      fontWeightMap[
-        value
-          .toLowerCase()
-          .replace('italic', '')
-          .replace('oblique', '')
-          .replace(' ', '')
-      ] || 400
-    )
+  if (typeof value === 'string') {
+    const cleanedValue = value.toLowerCase().replace(/normal|italic|oblique|\s/g, '');
+    return fontWeightMap[cleanedValue] || 400;
+  }
+  return value;
+}
+
+/**
+ * Determines the font style (normal, italic, or oblique) from a given value.
+ *
+ * @param {string} value - The font style value.
+ * @returns {string} - The font style ('normal', 'italic', or 'oblique').
+ */
+export function getFontStyle(value) {
+  if (typeof value === 'string') {
+    if (/italic/i.test(value)) return 'italic';
+    if (/oblique/i.test(value)) return 'oblique';
+  }
+  return 'normal';
+}
+
+/**
+ * Checks if a token is referencing another token.
+ *
+ * @param {Object} token - The token object to check.
+ * @returns {boolean} - True if the token is referencing another token, false otherwise.
+ */
+export function isReference(value) {
+  return (typeof value === 'string' && /^\{[^{}]+\}$/.test(value))
+}
+
+/**
+ * Splits a token reference string into its components.
+ *
+ * @param {string} value - The reference string to split.
+ * @returns {Array<string>|string} - An array of reference components if valid, otherwise the original value.
+ */
+export function splitReference(value) {
+  if (isReference(value)) {
+    return value.slice(1, -1).split('.')
+  }
+  console.warn('Not a reference:', value)
   return value
 }
-export function getFontStyle(value) {
-  if (value && typeof value == 'string') {
-    if (value.toLowerCase().match('italic')) {
-      return 'italic'
-    } else if (value.toLowerCase().match('oblique')) {
-      return 'oblique'
-    } else {
-      return 'normal'
-    }
-  }
-  return 'normal'
-}
-
-/* Define Filters */
-const __dirname = path.resolve(path.dirname('')); 
-const formats = {
-  'go/scss-map-flat': function({dictionary, options, file}) {
-    const template = _.template(fs.readFileSync(__dirname + '/build/tokens/templates/scss-map-flat.template'));
-    const { allTokens } = dictionary;
-    return template({allTokens, file, options, fileHeader});
-  },
-  'go/android-resources': function ({ dictionary, options, file }) {
-    const template = _.template(
-      fs.readFileSync(
-        path.join(__dirname, '/build/tokens/templates/android-resources.template'),
-      ),
-    )
-    return template({ dictionary, file, options, fileHeader })
-  },
-  'go/ios-swift-any': function ({ dictionary, options, file, platform }) {
-    const template = _.template(
-      fs.readFileSync(
-        path.join(__dirname, '/build/tokens/templates/ios-swift-class.template'),
-      ),
-    )
-    const { outputReferences } = options
-    options = StyleDictionary.formatHelpers.setSwiftFileProperties(
-      options,
-      'class',
-      platform.transformGroup,
-    )
-    const formatProperty =
-      StyleDictionary.formatHelpers.createPropertyFormatter({
-        outputReferences,
-        dictionary,
-        formatting: {
-          suffix: '',
-        },
-      })
-    let allTokens
-    if (outputReferences) {
-      allTokens = [...dictionary.allTokens].sort(
-        StyleDictionary.formatHelpers.sortByReference(dictionary),
-      )
-    } else {
-      allTokens = [...dictionary.allTokens].sort(
-        StyleDictionary.formatHelpers.sortByName,
-      )
-    }
-
-    return template({ allTokens, file, options, formatProperty, fileHeader })
-  },
-}
-
-
-const actions = {
-  'go/assets': {
-    do: function (dictionary, config) {
-      console.log('Copying assets directory')
-      fs.cpSync('assets', config.buildPath + 'assets', { recursive: true })
-      renameFilesRecursively(
-        config.buildPath + 'assets/icons',
-        renameAndroidAssets,
-      )
-    },
-    undo: function (dictionary, config) {
-      console.log('Cleaning assets directory')
-      fs.rmSync(
-        config.buildPath + 'assets',
-        { recursive: true },
-        function (error) {
-          console.log(error.message)
-        },
-      )
-    },
-  },
-}
-
-// Define your custom renaming function here
-function renameAndroidAssets(oldFileName) {
-  // Modify the oldFileName as needed to create the newFileName
-  const newFileName = `new_${oldFileName}`
-  return newFileName
-}
-
-// Function to recursively rename files in a directory according to the renaming function
-function renameFilesRecursively(folderPath, renameFunction) {
-  // Get a list of all items in the folder
-  const items = fs.readdirSync(folderPath)
-
-  items.forEach(item => {
-    const itemPath = path.join(folderPath, item)
-    const isDirectory = fs.statSync(itemPath).isDirectory()
-
-    if (isDirectory) {
-      // If it's a directory, recursively rename files inside it
-      renameFilesRecursively(itemPath, renameFunction)
-    } else {
-      // If it's a file, apply the rename function
-      const newName = renameFunction(item, folderPath)
-      const newPath = path.join(folderPath, newName)
-
-      // Rename the file
-      fs.renameSync(itemPath, newPath)
-      console.log(`Renamed: ${itemPath} -> ${newPath}`)
-    }
-  })
-}
-
-export { formats, actions }

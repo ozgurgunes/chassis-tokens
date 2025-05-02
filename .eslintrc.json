@@ -5,11 +5,14 @@
     "node": true
   },
   "parserOptions": {
-    "ecmaVersion": 2020,
+    "ecmaVersion": "latest",
     "sourceType": "module"
   },
-  "extends": "eslint:recommended",
+  "extends": ["eslint:recommended", "eslint-config-prettier"],
   "rules": {
+    "no-unused-vars": "warn",
+    "no-console": ["error", { "allow": ["warn", "error"] }],
+    "no-var": "error",
     "no-return-await": "error",
     "object-curly-spacing": [
       "error",
@@ -19,16 +22,6 @@
     "semi": [
       "error",
       "never"
-    ],
-    "strict": "error"
-  },
-  "overrides": [
-    {
-      "files": "docs/assets/js/**",
-      "env": {
-        "browser": true,
-        "node": false
-      }
-    }
-  ]
+    ]
+  }
 }

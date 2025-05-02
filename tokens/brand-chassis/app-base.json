@@ -5,159 +5,159 @@
         "default": {
           "focus": {
             "background": {
-              "value": "{color.context.default.bg-main}",
-              "type": "color"
+              "$type": "color",
+              "$value": "{color.context.default.bg-main}"
             },
             "border": {
-              "value": "{color.context.info.icon-main}",
-              "type": "color"
+              "$type": "color",
+              "$value": "{color.context.info.icon-main}"
             },
             "fg-active": {
-              "value": "{color.context.default.fg-main}",
-              "type": "color"
+              "$type": "color",
+              "$value": "{color.context.default.fg-main}"
             },
             "fg-inactive": {
-              "value": "{color.context.default.fg-subtle}",
-              "type": "color"
+              "$type": "color",
+              "$value": "{color.context.default.fg-subtle}"
             },
             "assist": {
-              "value": "{color.context.info.icon-main}",
-              "type": "color"
+              "$type": "color",
+              "$value": "{color.context.info.icon-main}"
             }
           }
         },
         "alternate": {
           "focus": {
             "background": {
-              "value": "{color.context.alternate.bg-main}",
-              "type": "color"
+              "$type": "color",
+              "$value": "{color.context.alternate.bg-main}"
             },
             "border": {
-              "value": "{color.context.info.icon-main}",
-              "type": "color"
+              "$type": "color",
+              "$value": "{color.context.info.icon-main}"
             },
             "fg-active": {
-              "value": "{color.context.alternate.fg-main}",
-              "type": "color"
+              "$type": "color",
+              "$value": "{color.context.alternate.fg-main}"
             },
             "fg-inactive": {
-              "value": "{color.context.alternate.fg-subtle}",
-              "type": "color"
+              "$type": "color",
+              "$value": "{color.context.alternate.fg-subtle}"
             },
             "assist": {
-              "value": "{color.context.info.icon-main}",
-              "type": "color"
+              "$type": "color",
+              "$value": "{color.context.info.icon-main}"
             }
           }
         }
       },
       "map": {
         "marker-bg": {
-          "value": "{color.context.primary.base-color}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{color.context.primary.base-color}"
         },
         "marker-fg": {
-          "value": "{color.context.primary.contrast-color}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{color.context.primary.contrast-color}"
         },
         "path-ride": {
-          "value": "{color.context.black.indicator-main}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{color.context.black.indicator-main}"
         },
         "path-walk": {
-          "value": "{color.context.neutral.indicator-main}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{color.context.neutral.indicator-main}"
         },
         "path-drive": {
-          "value": "{color.common.map.path-ride}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{color.common.map.path-ride}"
         },
         "path-active": {
-          "value": "{color.context.primary.indicator-main}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{color.context.primary.indicator-main}"
         },
         "path-inactive": {
-          "value": "{color.context.primary.indicator-slight}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{color.context.primary.indicator-slight}"
         },
         "path-inbound": {
-          "value": "{color.common.map.path-ride}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{color.common.map.path-ride}"
         },
         "path-outbound": {
-          "value": "{color.common.map.path-ride}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{color.common.map.path-ride}"
         },
         "point-active": {
-          "value": "{color.context.default.indicator-main}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{color.context.default.indicator-main}"
         },
         "point-inactive": {
-          "value": "{color.context.neutral.indicator-slight}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{color.context.neutral.indicator-slight}"
         },
         "point-home": {
-          "value": "{color.context.default.indicator-main}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{color.context.default.indicator-main}"
         },
         "point-male": {
-          "value": "#08A8EE",
-          "type": "color"
+          "$type": "color",
+          "$value": "#08A8EE"
         },
         "point-female": {
-          "value": "#E149A5",
-          "type": "color"
+          "$type": "color",
+          "$value": "#E149A5"
         },
         "point-selected": {
-          "value": "{color.context.neutral.indicator-main}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{color.context.neutral.indicator-main}"
         },
         "point-boarding": {
-          "value": "{color.context.success.base-color}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{color.context.success.base-color}"
         },
         "point-landing": {
-          "value": "{color.context.danger.base-color}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{color.context.danger.base-color}"
         },
         "trip-start": {
-          "value": "{color.context.success.base-color}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{color.context.success.base-color}"
         },
         "trip-stop": {
-          "value": "{color.context.danger.base-color}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{color.context.danger.base-color}"
         }
       },
       "page": {
         "bg-body": {
-          "value": "{color.context.default.bg-even}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{color.context.default.bg-even}"
         },
         "bg-section": {
-          "value": "{color.context.default.bg-main}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{color.context.default.bg-main}"
         }
       },
       "table": {
         "default": {
           "bg-highlight": {
-            "value": "{color.palette.info.10}",
-            "type": "color"
+            "$type": "color",
+            "$value": "{color.palette.info.10}"
           },
           "indicator-main": {
-            "value": "{color.context.info.icon-main}",
-            "type": "color"
+            "$type": "color",
+            "$value": "{color.context.info.icon-main}"
           }
         },
         "alternate": {
           "bg-highlight": {
-            "value": "{color.palette.info.90}",
-            "type": "color"
+            "$type": "color",
+            "$value": "{color.palette.info.90}"
           },
           "indicator-main": {
-            "value": "{color.context.info.icon-main}",
-            "type": "color"
+            "$type": "color",
+            "$value": "{color.context.info.icon-main}"
           }
         }
       }
@@ -166,20 +166,20 @@
       "nav-top": {
         "segment": {
           "default-item-active-bg": {
-            "value": "{color.context.default.bg-button}",
-            "type": "color"
+            "$type": "color",
+            "$value": "{color.context.default.bg-button}"
           },
           "default-item-active-fg": {
-            "value": "{color.context.default.fg-button}",
-            "type": "color"
+            "$type": "color",
+            "$value": "{color.context.default.fg-button}"
           },
           "alternate-item-active-bg": {
-            "value": "{color.context.alternate.bg-button}",
-            "type": "color"
+            "$type": "color",
+            "$value": "{color.context.alternate.bg-button}"
           },
           "alternate-item-active-fg": {
-            "value": "{color.context.alternate.fg-button}",
-            "type": "color"
+            "$type": "color",
+            "$value": "{color.context.alternate.fg-button}"
           }
         }
       }
@@ -189,30 +189,30 @@
     "common": {
       "modal": {
         "large-padding-y": {
-          "value": "{space.context.xlarge}",
-          "type": "spacing"
+          "$type": "spacing",
+          "$value": "{space.context.xlarge}"
         },
         "large-padding-x": {
-          "value": "{space.context.xlarge}",
-          "type": "spacing"
+          "$type": "spacing",
+          "$value": "{space.context.xlarge}"
         },
         "large-gap": {
-          "value": "{space.context.3xlarge}",
-          "type": "spacing"
+          "$type": "spacing",
+          "$value": "{space.context.3xlarge}"
         }
       },
       "page": {
         "large-padding-y": {
-          "value": "{space.context.xlarge}",
-          "type": "spacing"
+          "$type": "spacing",
+          "$value": "{space.context.xlarge}"
         },
         "large-padding-x": {
-          "value": "{space.context.5xlarge}",
-          "type": "spacing"
+          "$type": "spacing",
+          "$value": "{space.context.5xlarge}"
         },
         "large-gap": {
-          "value": "{space.context.3xlarge}",
-          "type": "spacing"
+          "$type": "spacing",
+          "$value": "{space.context.3xlarge}"
         }
       }
     },
@@ -220,16 +220,16 @@
       "nav-top": {
         "segment": {
           "item-padding-v": {
-            "value": "{space.context.xsmall}",
-            "type": "spacing"
+            "$type": "spacing",
+            "$value": "{space.context.xsmall}"
           },
           "item-padding-h": {
-            "value": "{space.context.small}",
-            "type": "spacing"
+            "$type": "spacing",
+            "$value": "{space.context.small}"
           },
           "frame-padding": {
-            "value": "{space.base.0}",
-            "type": "spacing"
+            "$type": "spacing",
+            "$value": "{space.base.0}"
           }
         }
       }
@@ -239,50 +239,50 @@
     "mobile": {
       "nav-top": {
         "control-floating-action": {
-          "value": "{borderRadius.context.round-40}",
-          "type": "borderRadius"
+          "$type": "borderRadius",
+          "$value": "{borderRadius.context.round-40}"
         },
         "search-input-regular": {
-          "value": "{borderRadius.context.round-36}",
-          "type": "borderRadius"
+          "$type": "borderRadius",
+          "$value": "{borderRadius.context.round-36}"
         },
         "search-input-floating": {
-          "value": "{borderRadius.context.round-40}",
-          "type": "borderRadius"
+          "$type": "borderRadius",
+          "$value": "{borderRadius.context.round-40}"
         },
         "search-trip-button": {
-          "value": "{borderRadius.context.round-40}",
-          "type": "borderRadius"
+          "$type": "borderRadius",
+          "$value": "{borderRadius.context.round-40}"
         },
         "segment-item": {
-          "value": "{borderRadius.context.round-40}",
-          "type": "borderRadius"
+          "$type": "borderRadius",
+          "$value": "{borderRadius.context.round-40}"
         },
         "segment-frame": {
-          "value": "{borderRadius.context.round-40}",
-          "type": "borderRadius"
+          "$type": "borderRadius",
+          "$value": "{borderRadius.context.round-40}"
         },
         "calendar-date-day": {
-          "value": "{borderRadius.context.round-24}",
-          "type": "borderRadius"
+          "$type": "borderRadius",
+          "$value": "{borderRadius.context.round-24}"
         },
         "chip-item": {
-          "value": "{borderRadius.context.round-32}",
-          "type": "borderRadius"
+          "$type": "borderRadius",
+          "$value": "{borderRadius.context.round-32}"
         }
       },
       "button": {
         "medium": {
-          "value": "{borderRadius.context.round-40}",
-          "type": "borderRadius"
+          "$type": "borderRadius",
+          "$value": "{borderRadius.context.round-40}"
         },
         "large": {
-          "value": "{borderRadius.context.round-48}",
-          "type": "borderRadius"
+          "$type": "borderRadius",
+          "$value": "{borderRadius.context.round-48}"
         },
         "small": {
-          "value": "{borderRadius.context.round-32}",
-          "type": "borderRadius"
+          "$type": "borderRadius",
+          "$value": "{borderRadius.context.round-32}"
         }
       }
     }
