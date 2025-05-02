@@ -1925,7 +1925,7 @@
           },
           "bg-highlight": {
             "$type": "color",
-            "$value": "{color.base.palette.primary.05}"
+            "$value": "{color.base.palette.primary.10}"
           },
           "border-main": {
             "$type": "color",
@@ -2233,7 +2233,7 @@
           },
           "bg-highlight": {
             "$type": "color",
-            "$value": "{color.base.palette.black.t-10}"
+            "$value": "{color.base.palette.black.t-20}"
           },
           "border-main": {
             "$type": "color",
@@ -2383,7 +2383,7 @@
           },
           "bg-highlight": {
             "$type": "color",
-            "$value": "{color.base.palette.white.t-10}"
+            "$value": "{color.base.palette.white.t-20}"
           },
           "border-main": {
             "$type": "color",
@@ -2509,7 +2509,7 @@
           },
           "fg-highlight": {
             "$type": "color",
-            "$value": "{color.base.palette.primary.main}"
+            "$value": "{color.base.palette.primary.60}"
           },
           "bg-main": {
             "$type": "color",
@@ -2533,7 +2533,7 @@
           },
           "bg-highlight": {
             "$type": "color",
-            "$value": "{color.base.palette.primary.05}"
+            "$value": "{color.base.palette.primary.30}"
           },
           "border-main": {
             "$type": "color",
@@ -2659,7 +2659,7 @@
           },
           "fg-highlight": {
             "$type": "color",
-            "$value": "{color.base.palette.secondary.main}"
+            "$value": "{color.base.palette.secondary.60}"
           },
           "bg-main": {
             "$type": "color",
@@ -2683,7 +2683,7 @@
           },
           "bg-highlight": {
             "$type": "color",
-            "$value": "{color.base.palette.secondary.05}"
+            "$value": "{color.base.palette.secondary.30}"
           },
           "border-main": {
             "$type": "color",
@@ -2809,7 +2809,7 @@
           },
           "fg-highlight": {
             "$type": "color",
-            "$value": "{color.base.palette.neutral.main}"
+            "$value": "{color.base.palette.neutral.60}"
           },
           "bg-main": {
             "$type": "color",
@@ -2833,7 +2833,7 @@
           },
           "bg-highlight": {
             "$type": "color",
-            "$value": "{color.base.palette.neutral.05}"
+            "$value": "{color.base.palette.neutral.30}"
           },
           "border-main": {
             "$type": "color",
@@ -2959,7 +2959,7 @@
           },
           "fg-highlight": {
             "$type": "color",
-            "$value": "{color.base.palette.danger.main}"
+            "$value": "{color.base.palette.danger.60}"
           },
           "bg-main": {
             "$type": "color",
@@ -2983,7 +2983,7 @@
           },
           "bg-highlight": {
             "$type": "color",
-            "$value": "{color.base.palette.danger.05}"
+            "$value": "{color.base.palette.danger.30}"
           },
           "border-main": {
             "$type": "color",
@@ -3109,7 +3109,7 @@
           },
           "fg-highlight": {
             "$type": "color",
-            "$value": "{color.base.palette.success.main}"
+            "$value": "{color.base.palette.success.60}"
           },
           "bg-main": {
             "$type": "color",
@@ -3133,7 +3133,7 @@
           },
           "bg-highlight": {
             "$type": "color",
-            "$value": "{color.base.palette.success.05}"
+            "$value": "{color.base.palette.success.30}"
           },
           "border-main": {
             "$type": "color",
@@ -3259,7 +3259,7 @@
           },
           "fg-highlight": {
             "$type": "color",
-            "$value": "{color.base.palette.warning.main}"
+            "$value": "{color.base.palette.warning.60}"
           },
           "bg-main": {
             "$type": "color",
@@ -3283,7 +3283,7 @@
           },
           "bg-highlight": {
             "$type": "color",
-            "$value": "{color.base.palette.warning.05}"
+            "$value": "{color.base.palette.warning.30}"
           },
           "border-main": {
             "$type": "color",
@@ -3409,7 +3409,7 @@
           },
           "fg-highlight": {
             "$type": "color",
-            "$value": "{color.base.palette.info.main}"
+            "$value": "{color.base.palette.info.60}"
           },
           "bg-main": {
             "$type": "color",
@@ -3433,7 +3433,7 @@
           },
           "bg-highlight": {
             "$type": "color",
-            "$value": "{color.base.palette.info.05}"
+            "$value": "{color.base.palette.info.30}"
           },
           "border-main": {
             "$type": "color",
@@ -3559,7 +3559,7 @@
           },
           "fg-highlight": {
             "$type": "color",
-            "$value": "{color.base.palette.brand.main}"
+            "$value": "{color.base.palette.brand.60}"
           },
           "bg-main": {
             "$type": "color",
@@ -3583,7 +3583,7 @@
           },
           "bg-highlight": {
             "$type": "color",
-            "$value": "{color.base.palette.brand.05}"
+            "$value": "{color.base.palette.brand.30}"
           },
           "border-main": {
             "$type": "color",
@@ -3709,7 +3709,7 @@
           },
           "fg-highlight": {
             "$type": "color",
-            "$value": "{color.base.palette.accent.main}"
+            "$value": "{color.base.palette.accent.60}"
           },
           "bg-main": {
             "$type": "color",
@@ -3733,7 +3733,7 @@
           },
           "bg-highlight": {
             "$type": "color",
-            "$value": "{color.base.palette.accent.05}"
+            "$value": "{color.base.palette.accent.30}"
           },
           "border-main": {
             "$type": "color",
@@ -4185,7 +4185,7 @@
           },
           "bg-highlight": {
             "$type": "color",
-            "$value": "{color.base.palette.black.t-10}"
+            "$value": "{color.base.palette.black.t-20}"
           },
           "border-main": {
             "$type": "color",
@@ -4335,7 +4335,7 @@
           },
           "bg-highlight": {
             "$type": "color",
-            "$value": "{color.base.palette.white.t-10}"
+            "$value": "{color.base.palette.white.t-20}"
           },
           "border-main": {
             "$type": "color",
@@ -4485,7 +4485,7 @@
           },
           "bg-highlight": {
             "$type": "color",
-            "$value": "{color.base.palette.primary.80}"
+            "$value": "{color.base.palette.primary.70}"
           },
           "border-main": {
             "$type": "color",
@@ -4635,7 +4635,7 @@
           },
           "bg-highlight": {
             "$type": "color",
-            "$value": "{color.base.palette.secondary.80}"
+            "$value": "{color.base.palette.secondary.70}"
           },
           "border-main": {
             "$type": "color",
@@ -4785,7 +4785,7 @@
           },
           "bg-highlight": {
             "$type": "color",
-            "$value": "{color.base.palette.neutral.80}"
+            "$value": "{color.base.palette.neutral.70}"
           },
           "border-main": {
             "$type": "color",
@@ -4935,7 +4935,7 @@
           },
           "bg-highlight": {
             "$type": "color",
-            "$value": "{color.base.palette.danger.80}"
+            "$value": "{color.base.palette.danger.70}"
           },
           "border-main": {
             "$type": "color",
@@ -5085,7 +5085,7 @@
           },
           "bg-highlight": {
             "$type": "color",
-            "$value": "{color.base.palette.success.80}"
+            "$value": "{color.base.palette.success.70}"
           },
           "border-main": {
             "$type": "color",
@@ -5235,7 +5235,7 @@
           },
           "bg-highlight": {
             "$type": "color",
-            "$value": "{color.base.palette.warning.80}"
+            "$value": "{color.base.palette.warning.70}"
           },
           "border-main": {
             "$type": "color",
@@ -5385,7 +5385,7 @@
           },
           "bg-highlight": {
             "$type": "color",
-            "$value": "{color.base.palette.info.80}"
+            "$value": "{color.base.palette.info.70}"
           },
           "border-main": {
             "$type": "color",
@@ -5535,7 +5535,7 @@
           },
           "bg-highlight": {
             "$type": "color",
-            "$value": "{color.base.palette.brand.80}"
+            "$value": "{color.base.palette.brand.70}"
           },
           "border-main": {
             "$type": "color",
@@ -5685,7 +5685,7 @@
           },
           "bg-highlight": {
             "$type": "color",
-            "$value": "{color.base.palette.accent.80}"
+            "$value": "{color.base.palette.accent.70}"
           },
           "border-main": {
             "$type": "color",

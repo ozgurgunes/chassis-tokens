@@ -120,7 +120,7 @@ function resolveContextTypographyValue(token, dictionary) {
       : referenceFs.$value
   const lineHeight =
     referenceFs.$type === 'fontSize'
-      ? `var(--#{$prefix}font-size-${referenceLh.path[2]}-${referenceLh.path[3]})`
+      ? `var(--#{$prefix}line-height-${referenceLh.path[2]}-${referenceLh.path[3]})`
       : referenceLh.$value
 
   const originals = {
