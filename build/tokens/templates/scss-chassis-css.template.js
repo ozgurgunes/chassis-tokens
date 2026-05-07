@@ -67,13 +67,13 @@ function buildTypographyMap({ fontFamily, fontWeight, fontSize, lineHeight, orig
 function resolveReferenceValue(token, dictionary) {
   const ref = splitReference(token.original.$value)
   const refMapping = {
-    'color|context': (ref) => `var(--#{$prefix}${ref[2]}-${ref[3]})`,
-    'color|palette': (ref) => `var(--#{$prefix}${ref[2]}-${ref[3]})`,
-    'space|context': (ref) => `var(--#{$prefix}space-${ref[2]})`,
-    'opacity|context': (ref) => `var(--#{$prefix}opacity-${ref[2]})`,
-    'opacity|level': (ref) => `var(--#{$prefix}opacity-${ref[2]})`,
-    'borderRadius|context': (ref) => `var(--#{$prefix}border-radius-${ref[2]})`,
-    'borderWidth|context': (ref) => `var(--#{$prefix}border-width-${ref[2]})`
+    'color|context': (ref) => `var(--${ref[2]}-${ref[3]})`,
+    'color|palette': (ref) => `var(--${ref[2]}-${ref[3]})`,
+    'space|context': (ref) => `var(--space-${ref[2]})`,
+    'opacity|context': (ref) => `var(--opacity-${ref[2]})`,
+    'opacity|level': (ref) => `var(--opacity-${ref[2]})`,
+    'borderRadius|context': (ref) => `var(--border-radius-${ref[2]})`,
+    'borderWidth|context': (ref) => `var(--border-width-${ref[2]})`
   }
 
   const key = `${ref[0]}|${ref[1] || ''}`.trim()
@@ -87,7 +87,7 @@ function resolveReferenceValue(token, dictionary) {
     const cssProperty = ref[0] === 'borderRadius' ? 'border-radius' : 'border-width'
     // Direct base.context reference
     if (ref[2] === 'context') {
-      return `var(--#{$prefix}${cssProperty}-${ref[3]})`
+      return `var(--${cssProperty}-${ref[3]})`
     }
     // Follow chain: base.<component>.<size> → base.context.<size>
     try {
@@ -96,7 +96,7 @@ function resolveReferenceValue(token, dictionary) {
         const innerRef = splitReference(refToken.original.$value)
         if (innerRef[0] === ref[0] && innerRef.includes('context')) {
           const name = innerRef[innerRef.length - 1]
-          return `var(--#{$prefix}${cssProperty}-${name})`
+          return `var(--${cssProperty}-${name})`
         }
       }
     } catch {
@@ -128,12 +128,12 @@ function resolveContextTypographyValue(token, dictionary) {
 
   const fontSize =
     referenceFs && referenceFs.$type === 'fontSize'
-      ? `var(--#{$prefix}font-size-${referenceFs.path[2]}-${referenceFs.path[3]})`
+      ? `var(--font-size-${referenceFs.path[2]}-${referenceFs.path[3]})`
       : referenceFs.$value
   // If the reference is a percentage, convert it to a decimal
   const lineHeight =
     referenceLh && referenceLh.$type === 'lineHeight'
-      ? `var(--#{$prefix}line-height-${referenceLh.path[2]}-${referenceLh.path[3]})`
+      ? `var(--line-height-${referenceLh.path[2]}-${referenceLh.path[3]})`
       : referenceLh.$value
         ? referenceLh.$value
         : referenceLh.endsWith('%')
@@ -141,8 +141,8 @@ function resolveContextTypographyValue(token, dictionary) {
           : referenceLh
 
   return buildTypographyMap({
-    fontFamily: `var(--#{$prefix}font-family-${fontFamily})`,
-    fontWeight: `var(--#{$prefix}font-weight-${fontWeight[2]}-${fontWeight[3]})`,
+    fontFamily: `var(--font-family-${fontFamily})`,
+    fontWeight: `var(--font-weight-${fontWeight[2]}-${fontWeight[3]})`,
     fontSize,
     lineHeight,
     originals: resolveOriginals(token.original.$value, dictionary)
@@ -161,10 +161,10 @@ function resolveComponentTypographyValue(token, dictionary) {
   const res = getReferences(token.original.$value, dictionary.tokens, { usesDtcg })[0]
 
   return buildTypographyMap({
-    fontFamily: `var(--#{$prefix}font-family-${ref[1]})`,
-    fontWeight: `var(--#{$prefix}font-weight-${ref[3]})`,
-    fontSize: `var(--#{$prefix}font-size-${ref[2]})`,
-    lineHeight: `var(--#{$prefix}line-height-${ref[2]})`,
+    fontFamily: `var(--font-family-${ref[1]})`,
+    fontWeight: `var(--font-weight-${ref[3]})`,
+    fontSize: `var(--font-size-${ref[2]})`,
+    lineHeight: `var(--line-height-${ref[2]})`,
     originals: resolveOriginals(res.original.$value, dictionary)
   })
 }
