@@ -63,7 +63,7 @@
     "fontFamily": {
       "text": {
         "$type": "fontFamilies",
-        "$value": "'Figtree', -apple-system, BlinkMacSystemFont, Roboto, 'Helvetica Neue', sans-serif;"
+        "$value": "'Figtree', -apple-system, BlinkMacSystemFont, Roboto, 'Helvetica Neue', sans-serif"
       },
       "display": {
         "$type": "fontFamilies",
@@ -223,6 +223,20 @@
         "floating-sharp": {
           "$type": "borderRadius",
           "$value": "{borderRadius.base.context.zero}"
+        }
+      },
+      "date-picker": {
+        "main": {
+          "$type": "borderRadius",
+          "$value": "{borderRadius.base.context.medium}"
+        },
+        "menu": {
+          "$type": "borderRadius",
+          "$value": "{borderRadius.base.context.small}"
+        },
+        "day": {
+          "$type": "borderRadius",
+          "$value": "{borderRadius.base.context.round}"
         }
       }
     }
