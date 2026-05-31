@@ -3744,6 +3744,10 @@
               "$type": "color",
               "$value": "rgba({color.base.context.light.default.fg-main}, {opacity.context.fg-slight})"
             },
+            "fg-active": {
+              "$type": "color",
+              "$value": "{color.base.primitive.light.primary.contrast}"
+            },
             "fg-inverse": {
               "$type": "color",
               "$value": "{color.base.primitive.light.neutral.10}"
@@ -3767,6 +3771,10 @@
             "bg-evident": {
               "$type": "color",
               "$value": "{color.base.primitive.light.neutral.10}"
+            },
+            "bg-active": {
+              "$type": "color",
+              "$value": "{color.base.primitive.light.primary.base}"
             },
             "bg-inverse": {
               "$type": "color",
@@ -3894,6 +3902,10 @@
               "$type": "color",
               "$value": "rgba({color.base.context.light.alternate.fg-main}, {opacity.context.fg-slight})"
             },
+            "fg-active": {
+              "$type": "color",
+              "$value": "{color.base.primitive.light.primary.contrast}"
+            },
             "fg-inverse": {
               "$type": "color",
               "$value": "{color.base.primitive.light.neutral.90}"
@@ -3917,6 +3929,10 @@
             "bg-evident": {
               "$type": "color",
               "$value": "{color.base.primitive.light.neutral.95}"
+            },
+            "bg-active": {
+              "$type": "color",
+              "$value": "{color.base.primitive.light.primary.base}"
             },
             "bg-inverse": {
               "$type": "color",
@@ -4044,6 +4060,10 @@
               "$type": "color",
               "$value": "{color.base.primitive.light.black.t-30}"
             },
+            "fg-active": {
+              "$type": "color",
+              "$value": "{color.base.primitive.light.black.contrast}"
+            },
             "fg-inverse": {
               "$type": "color",
               "$value": "{color.base.primitive.light.white.base}"
@@ -4067,6 +4087,10 @@
             "bg-evident": {
               "$type": "color",
               "$value": "{color.base.primitive.light.black.t-20}"
+            },
+            "bg-active": {
+              "$type": "color",
+              "$value": "{color.base.primitive.light.black.base}"
             },
             "bg-inverse": {
               "$type": "color",
@@ -4194,6 +4218,10 @@
               "$type": "color",
               "$value": "{color.base.primitive.light.white.t-30}"
             },
+            "fg-active": {
+              "$type": "color",
+              "$value": "{color.base.primitive.light.white.contrast}"
+            },
             "fg-inverse": {
               "$type": "color",
               "$value": "{color.base.primitive.light.black.base}"
@@ -4217,6 +4245,10 @@
             "bg-evident": {
               "$type": "color",
               "$value": "{color.base.primitive.light.white.t-20}"
+            },
+            "bg-active": {
+              "$type": "color",
+              "$value": "{color.base.primitive.light.white.base}"
             },
             "bg-inverse": {
               "$type": "color",
@@ -4344,6 +4376,10 @@
               "$type": "color",
               "$value": "rgba({color.base.context.light.primary.fg-main}, {opacity.context.fg-slight})"
             },
+            "fg-active": {
+              "$type": "color",
+              "$value": "{color.base.primitive.light.primary.contrast}"
+            },
             "fg-inverse": {
               "$type": "color",
               "$value": "{color.base.primitive.light.primary.10}"
@@ -4367,6 +4403,10 @@
             "bg-evident": {
               "$type": "color",
               "$value": "{color.base.primitive.light.primary.20}"
+            },
+            "bg-active": {
+              "$type": "color",
+              "$value": "{color.base.primitive.light.primary.base}"
             },
             "bg-inverse": {
               "$type": "color",
@@ -4494,6 +4534,10 @@
               "$type": "color",
               "$value": "rgba({color.base.context.light.secondary.fg-main}, {opacity.context.fg-slight})"
             },
+            "fg-active": {
+              "$type": "color",
+              "$value": "{color.base.primitive.light.secondary.contrast}"
+            },
             "fg-inverse": {
               "$type": "color",
               "$value": "{color.base.primitive.light.secondary.10}"
@@ -4517,6 +4561,10 @@
             "bg-evident": {
               "$type": "color",
               "$value": "{color.base.primitive.light.secondary.20}"
+            },
+            "bg-active": {
+              "$type": "color",
+              "$value": "{color.base.primitive.light.secondary.base}"
             },
             "bg-inverse": {
               "$type": "color",
@@ -4644,6 +4692,10 @@
               "$type": "color",
               "$value": "rgba({color.base.context.light.neutral.fg-main}, {opacity.context.fg-slight})"
             },
+            "fg-active": {
+              "$type": "color",
+              "$value": "{color.base.primitive.light.neutral.contrast}"
+            },
             "fg-inverse": {
               "$type": "color",
               "$value": "{color.base.primitive.light.neutral.10}"
@@ -4667,6 +4719,10 @@
             "bg-evident": {
               "$type": "color",
               "$value": "{color.base.primitive.light.neutral.20}"
+            },
+            "bg-active": {
+              "$type": "color",
+              "$value": "{color.base.primitive.light.neutral.base}"
             },
             "bg-inverse": {
               "$type": "color",
@@ -4794,6 +4850,10 @@
               "$type": "color",
               "$value": "rgba({color.base.context.light.danger.fg-main}, {opacity.context.fg-slight})"
             },
+            "fg-active": {
+              "$type": "color",
+              "$value": "{color.base.primitive.light.danger.contrast}"
+            },
             "fg-inverse": {
               "$type": "color",
               "$value": "{color.base.primitive.light.danger.10}"
@@ -4817,6 +4877,10 @@
             "bg-evident": {
               "$type": "color",
               "$value": "{color.base.primitive.light.danger.20}"
+            },
+            "bg-active": {
+              "$type": "color",
+              "$value": "{color.base.primitive.light.danger.base}"
             },
             "bg-inverse": {
               "$type": "color",
@@ -4944,6 +5008,10 @@
               "$type": "color",
               "$value": "rgba({color.base.context.light.success.fg-main}, {opacity.context.fg-slight})"
             },
+            "fg-active": {
+              "$type": "color",
+              "$value": "{color.base.primitive.light.success.contrast}"
+            },
             "fg-inverse": {
               "$type": "color",
               "$value": "{color.base.primitive.light.success.10}"
@@ -4967,6 +5035,10 @@
             "bg-evident": {
               "$type": "color",
               "$value": "{color.base.primitive.light.success.20}"
+            },
+            "bg-active": {
+              "$type": "color",
+              "$value": "{color.base.primitive.light.success.base}"
             },
             "bg-inverse": {
               "$type": "color",
@@ -5094,6 +5166,10 @@
               "$type": "color",
               "$value": "rgba({color.base.context.light.warning.fg-main}, {opacity.context.fg-slight})"
             },
+            "fg-active": {
+              "$type": "color",
+              "$value": "{color.base.primitive.light.warning.contrast}"
+            },
             "fg-inverse": {
               "$type": "color",
               "$value": "{color.base.primitive.light.warning.10}"
@@ -5117,6 +5193,10 @@
             "bg-evident": {
               "$type": "color",
               "$value": "{color.base.primitive.light.warning.20}"
+            },
+            "bg-active": {
+              "$type": "color",
+              "$value": "{color.base.primitive.light.warning.base}"
             },
             "bg-inverse": {
               "$type": "color",
@@ -5244,6 +5324,10 @@
               "$type": "color",
               "$value": "rgba({color.base.context.light.info.fg-main}, {opacity.context.fg-slight})"
             },
+            "fg-active": {
+              "$type": "color",
+              "$value": "{color.base.primitive.light.info.contrast}"
+            },
             "fg-inverse": {
               "$type": "color",
               "$value": "{color.base.primitive.light.info.10}"
@@ -5267,6 +5351,10 @@
             "bg-evident": {
               "$type": "color",
               "$value": "{color.base.primitive.light.info.20}"
+            },
+            "bg-active": {
+              "$type": "color",
+              "$value": "{color.base.primitive.light.info.base}"
             },
             "bg-inverse": {
               "$type": "color",
@@ -5368,306 +5456,6 @@
               "$type": "color",
               "$value": "rgba({color.base.primitive.light.info.contrast}, {opacity.context.fg-slight})"
             }
-          },
-          "brand": {
-            "base-color": {
-              "$type": "color",
-              "$value": "{color.base.primitive.light.brand.base}"
-            },
-            "contrast-color": {
-              "$type": "color",
-              "$value": "{color.base.primitive.light.brand.contrast}"
-            },
-            "transparent-color": {
-              "$type": "color",
-              "$value": "rgba({color.base.primitive.light.brand.50}, {opacity.level.zero})"
-            },
-            "fg-main": {
-              "$type": "color",
-              "$value": "{color.base.primitive.light.brand.60}"
-            },
-            "fg-subtle": {
-              "$type": "color",
-              "$value": "rgba({color.base.context.light.brand.fg-main}, {opacity.context.fg-subtle})"
-            },
-            "fg-slight": {
-              "$type": "color",
-              "$value": "rgba({color.base.context.light.brand.fg-main}, {opacity.context.fg-slight})"
-            },
-            "fg-inverse": {
-              "$type": "color",
-              "$value": "{color.base.primitive.light.brand.10}"
-            },
-            "fg-solid": {
-              "$type": "color",
-              "$value": "{color.base.primitive.light.brand.contrast}"
-            },
-            "fg-highlight": {
-              "$type": "color",
-              "$value": "{color.base.primitive.light.brand.60}"
-            },
-            "bg-main": {
-              "$type": "color",
-              "$value": "{color.base.primitive.light.brand.05}"
-            },
-            "bg-even": {
-              "$type": "color",
-              "$value": "{color.base.primitive.light.brand.10}"
-            },
-            "bg-evident": {
-              "$type": "color",
-              "$value": "{color.base.primitive.light.brand.20}"
-            },
-            "bg-inverse": {
-              "$type": "color",
-              "$value": "{color.base.primitive.light.brand.90}"
-            },
-            "bg-solid": {
-              "$type": "color",
-              "$value": "{color.base.primitive.light.brand.50}"
-            },
-            "bg-highlight": {
-              "$type": "color",
-              "$value": "{color.base.primitive.light.brand.30}"
-            },
-            "border-main": {
-              "$type": "color",
-              "$value": "{color.base.primitive.light.brand.40}"
-            },
-            "border-subtle": {
-              "$type": "color",
-              "$value": "rgba({color.base.context.light.brand.fg-main}, {opacity.context.border-subtle})"
-            },
-            "icon-main": {
-              "$type": "color",
-              "$value": "{color.base.primitive.light.brand.50}"
-            },
-            "icon-subtle": {
-              "$type": "color",
-              "$value": "rgba({color.base.context.light.brand.fg-main}, {opacity.context.icon-subtle})"
-            },
-            "icon-slight": {
-              "$type": "color",
-              "$value": "rgba({color.base.context.light.brand.icon-main}, {opacity.context.icon-slight})"
-            },
-            "cue-main": {
-              "$type": "color",
-              "$value": "{color.base.primitive.light.brand.50}"
-            },
-            "cue-slight": {
-              "$type": "color",
-              "$value": "rgba({color.base.context.light.brand.cue-main}, {opacity.context.cue-slight})"
-            },
-            "link-main": {
-              "$type": "color",
-              "$value": "{color.base.primitive.light.brand.50}"
-            },
-            "link-hover": {
-              "$type": "color",
-              "$value": "{color.base.primitive.light.brand.40}"
-            },
-            "link-active": {
-              "$type": "color",
-              "$value": "{color.base.primitive.light.brand.50}"
-            },
-            "link-visited": {
-              "$type": "color",
-              "$value": "{color.base.primitive.light.brand.60}"
-            },
-            "dim-main": {
-              "$type": "color",
-              "$value": "{color.base.primitive.light.brand.t-5070}"
-            },
-            "dim-subtle": {
-              "$type": "color",
-              "$value": "{color.base.primitive.light.brand.t-5030}"
-            },
-            "dim-slight": {
-              "$type": "color",
-              "$value": "{color.base.primitive.light.brand.t-5010}"
-            },
-            "bg-idle": {
-              "$type": "color",
-              "$value": "{color.base.primitive.light.brand.50}"
-            },
-            "bg-hover": {
-              "$type": "color",
-              "$value": "{color.base.primitive.light.brand.40}"
-            },
-            "bg-press": {
-              "$type": "color",
-              "$value": "{color.base.primitive.light.brand.60}"
-            },
-            "bg-disabled": {
-              "$type": "color",
-              "$value": "{color.base.primitive.light.brand.20}"
-            },
-            "fg-idle": {
-              "$type": "color",
-              "$value": "{color.base.primitive.light.brand.contrast}"
-            },
-            "fg-hover": {
-              "$type": "color",
-              "$value": "rgba({color.base.primitive.light.brand.contrast}, {opacity.level.90})"
-            },
-            "fg-press": {
-              "$type": "color",
-              "$value": "rgba({color.base.primitive.light.brand.contrast}, {opacity.level.90})"
-            },
-            "fg-disabled": {
-              "$type": "color",
-              "$value": "rgba({color.base.primitive.light.brand.contrast}, {opacity.context.fg-slight})"
-            }
-          },
-          "accent": {
-            "base-color": {
-              "$type": "color",
-              "$value": "{color.base.primitive.light.accent.base}"
-            },
-            "contrast-color": {
-              "$type": "color",
-              "$value": "{color.base.primitive.light.accent.contrast}"
-            },
-            "transparent-color": {
-              "$type": "color",
-              "$value": "rgba({color.base.primitive.light.accent.50}, {opacity.level.zero})"
-            },
-            "fg-main": {
-              "$type": "color",
-              "$value": "{color.base.primitive.light.accent.60}"
-            },
-            "fg-subtle": {
-              "$type": "color",
-              "$value": "rgba({color.base.context.light.accent.fg-main}, {opacity.context.fg-subtle})"
-            },
-            "fg-slight": {
-              "$type": "color",
-              "$value": "rgba({color.base.context.light.accent.fg-main}, {opacity.context.fg-slight})"
-            },
-            "fg-inverse": {
-              "$type": "color",
-              "$value": "{color.base.primitive.light.accent.10}"
-            },
-            "fg-solid": {
-              "$type": "color",
-              "$value": "{color.base.primitive.light.accent.contrast}"
-            },
-            "fg-highlight": {
-              "$type": "color",
-              "$value": "{color.base.primitive.light.accent.60}"
-            },
-            "bg-main": {
-              "$type": "color",
-              "$value": "{color.base.primitive.light.accent.05}"
-            },
-            "bg-even": {
-              "$type": "color",
-              "$value": "{color.base.primitive.light.accent.10}"
-            },
-            "bg-evident": {
-              "$type": "color",
-              "$value": "{color.base.primitive.light.accent.20}"
-            },
-            "bg-inverse": {
-              "$type": "color",
-              "$value": "{color.base.primitive.light.accent.90}"
-            },
-            "bg-solid": {
-              "$type": "color",
-              "$value": "{color.base.primitive.light.accent.50}"
-            },
-            "bg-highlight": {
-              "$type": "color",
-              "$value": "{color.base.primitive.light.accent.30}"
-            },
-            "border-main": {
-              "$type": "color",
-              "$value": "{color.base.primitive.light.accent.40}"
-            },
-            "border-subtle": {
-              "$type": "color",
-              "$value": "rgba({color.base.context.light.accent.fg-main}, {opacity.context.border-subtle})"
-            },
-            "icon-main": {
-              "$type": "color",
-              "$value": "{color.base.primitive.light.accent.50}"
-            },
-            "icon-subtle": {
-              "$type": "color",
-              "$value": "rgba({color.base.context.light.accent.fg-main}, {opacity.context.icon-subtle})"
-            },
-            "icon-slight": {
-              "$type": "color",
-              "$value": "rgba({color.base.context.light.accent.icon-main}, {opacity.context.icon-slight})"
-            },
-            "cue-main": {
-              "$type": "color",
-              "$value": "{color.base.primitive.light.accent.50}"
-            },
-            "cue-slight": {
-              "$type": "color",
-              "$value": "rgba({color.base.context.light.accent.cue-main}, {opacity.context.cue-slight})"
-            },
-            "link-main": {
-              "$type": "color",
-              "$value": "{color.base.primitive.light.accent.50}"
-            },
-            "link-hover": {
-              "$type": "color",
-              "$value": "{color.base.primitive.light.accent.40}"
-            },
-            "link-active": {
-              "$type": "color",
-              "$value": "{color.base.primitive.light.accent.50}"
-            },
-            "link-visited": {
-              "$type": "color",
-              "$value": "{color.base.primitive.light.accent.60}"
-            },
-            "dim-main": {
-              "$type": "color",
-              "$value": "{color.base.primitive.light.accent.t-5070}"
-            },
-            "dim-subtle": {
-              "$type": "color",
-              "$value": "{color.base.primitive.light.accent.t-5030}"
-            },
-            "dim-slight": {
-              "$type": "color",
-              "$value": "{color.base.primitive.light.accent.t-5010}"
-            },
-            "bg-idle": {
-              "$type": "color",
-              "$value": "{color.base.primitive.light.accent.50}"
-            },
-            "bg-hover": {
-              "$type": "color",
-              "$value": "{color.base.primitive.light.accent.40}"
-            },
-            "bg-press": {
-              "$type": "color",
-              "$value": "{color.base.primitive.light.accent.60}"
-            },
-            "bg-disabled": {
-              "$type": "color",
-              "$value": "{color.base.primitive.light.accent.20}"
-            },
-            "fg-idle": {
-              "$type": "color",
-              "$value": "{color.base.primitive.light.accent.contrast}"
-            },
-            "fg-hover": {
-              "$type": "color",
-              "$value": "rgba({color.base.primitive.light.accent.contrast}, {opacity.level.90})"
-            },
-            "fg-press": {
-              "$type": "color",
-              "$value": "rgba({color.base.primitive.light.accent.contrast}, {opacity.level.90})"
-            },
-            "fg-disabled": {
-              "$type": "color",
-              "$value": "rgba({color.base.primitive.light.accent.contrast}, {opacity.context.fg-slight})"
-            }
           }
         },
         "dark": {
@@ -5696,6 +5484,10 @@
               "$type": "color",
               "$value": "rgba({color.base.context.dark.default.fg-main}, {opacity.context.fg-slight})"
             },
+            "fg-active": {
+              "$type": "color",
+              "$value": "{color.base.primitive.dark.primary.contrast}"
+            },
             "fg-inverse": {
               "$type": "color",
               "$value": "{color.base.primitive.dark.neutral.90}"
@@ -5719,6 +5511,10 @@
             "bg-evident": {
               "$type": "color",
               "$value": "{color.base.primitive.dark.neutral.80}"
+            },
+            "bg-active": {
+              "$type": "color",
+              "$value": "{color.base.primitive.dark.primary.base}"
             },
             "bg-inverse": {
               "$type": "color",
@@ -5842,6 +5638,10 @@
               "$type": "color",
               "$value": "rgba({color.base.context.dark.alternate.fg-main}, {opacity.context.fg-subtle})"
             },
+            "fg-active": {
+              "$type": "color",
+              "$value": "{color.base.primitive.dark.primary.contrast}"
+            },
             "fg-slight": {
               "$type": "color",
               "$value": "rgba({color.base.context.dark.alternate.fg-main}, {opacity.context.fg-slight})"
@@ -5869,6 +5669,10 @@
             "bg-evident": {
               "$type": "color",
               "$value": "{color.base.primitive.dark.neutral.90}"
+            },
+            "bg-active": {
+              "$type": "color",
+              "$value": "{color.base.primitive.dark.primary.base}"
             },
             "bg-inverse": {
               "$type": "color",
@@ -5996,6 +5800,10 @@
               "$type": "color",
               "$value": "{color.base.primitive.dark.black.t-30}"
             },
+            "fg-active": {
+              "$type": "color",
+              "$value": "{color.base.primitive.dark.black.contrast}"
+            },
             "fg-inverse": {
               "$type": "color",
               "$value": "{color.base.primitive.dark.white.base}"
@@ -6019,6 +5827,10 @@
             "bg-evident": {
               "$type": "color",
               "$value": "{color.base.primitive.dark.black.t-30}"
+            },
+            "bg-active": {
+              "$type": "color",
+              "$value": "{color.base.primitive.dark.black.base}"
             },
             "bg-inverse": {
               "$type": "color",
@@ -6146,6 +5958,10 @@
               "$type": "color",
               "$value": "{color.base.primitive.dark.white.t-30}"
             },
+            "fg-active": {
+              "$type": "color",
+              "$value": "{color.base.primitive.dark.white.contrast}"
+            },
             "fg-inverse": {
               "$type": "color",
               "$value": "{color.base.primitive.dark.black.base}"
@@ -6169,6 +5985,10 @@
             "bg-evident": {
               "$type": "color",
               "$value": "{color.base.primitive.dark.white.t-30}"
+            },
+            "bg-active": {
+              "$type": "color",
+              "$value": "{color.base.primitive.dark.white.base}"
             },
             "bg-inverse": {
               "$type": "color",
@@ -6296,6 +6116,10 @@
               "$type": "color",
               "$value": "rgba({color.base.context.dark.primary.fg-main}, {opacity.context.fg-slight})"
             },
+            "fg-active": {
+              "$type": "color",
+              "$value": "{color.base.primitive.dark.primary.contrast}"
+            },
             "fg-inverse": {
               "$type": "color",
               "$value": "{color.base.primitive.dark.primary.90}"
@@ -6319,6 +6143,10 @@
             "bg-evident": {
               "$type": "color",
               "$value": "{color.base.primitive.dark.primary.80}"
+            },
+            "bg-active": {
+              "$type": "color",
+              "$value": "{color.base.primitive.dark.primary.base}"
             },
             "bg-inverse": {
               "$type": "color",
@@ -6446,6 +6274,10 @@
               "$type": "color",
               "$value": "rgba({color.base.context.dark.secondary.fg-main}, {opacity.context.fg-slight})"
             },
+            "fg-active": {
+              "$type": "color",
+              "$value": "{color.base.primitive.dark.secondary.contrast}"
+            },
             "fg-inverse": {
               "$type": "color",
               "$value": "{color.base.primitive.dark.secondary.90}"
@@ -6469,6 +6301,10 @@
             "bg-evident": {
               "$type": "color",
               "$value": "{color.base.primitive.dark.secondary.80}"
+            },
+            "bg-active": {
+              "$type": "color",
+              "$value": "{color.base.primitive.dark.secondary.base}"
             },
             "bg-inverse": {
               "$type": "color",
@@ -6596,6 +6432,10 @@
               "$type": "color",
               "$value": "rgba({color.base.context.dark.neutral.fg-main}, {opacity.context.fg-slight})"
             },
+            "fg-active": {
+              "$type": "color",
+              "$value": "{color.base.primitive.dark.neutral.contrast}"
+            },
             "fg-inverse": {
               "$type": "color",
               "$value": "{color.base.primitive.dark.neutral.90}"
@@ -6619,6 +6459,10 @@
             "bg-evident": {
               "$type": "color",
               "$value": "{color.base.primitive.dark.neutral.80}"
+            },
+            "bg-active": {
+              "$type": "color",
+              "$value": "{color.base.primitive.dark.neutral.base}"
             },
             "bg-inverse": {
               "$type": "color",
@@ -6746,6 +6590,10 @@
               "$type": "color",
               "$value": "rgba({color.base.context.dark.danger.fg-main}, {opacity.context.fg-slight})"
             },
+            "fg-active": {
+              "$type": "color",
+              "$value": "{color.base.primitive.dark.danger.contrast}"
+            },
             "fg-inverse": {
               "$type": "color",
               "$value": "{color.base.primitive.dark.danger.90}"
@@ -6769,6 +6617,10 @@
             "bg-evident": {
               "$type": "color",
               "$value": "{color.base.primitive.dark.danger.80}"
+            },
+            "bg-active": {
+              "$type": "color",
+              "$value": "{color.base.primitive.dark.danger.base}"
             },
             "bg-inverse": {
               "$type": "color",
@@ -6896,6 +6748,10 @@
               "$type": "color",
               "$value": "rgba({color.base.context.dark.success.fg-main}, {opacity.context.fg-slight})"
             },
+            "fg-active": {
+              "$type": "color",
+              "$value": "{color.base.primitive.dark.success.contrast}"
+            },
             "fg-inverse": {
               "$type": "color",
               "$value": "{color.base.primitive.dark.success.90}"
@@ -6919,6 +6775,10 @@
             "bg-evident": {
               "$type": "color",
               "$value": "{color.base.primitive.dark.success.80}"
+            },
+            "bg-active": {
+              "$type": "color",
+              "$value": "{color.base.primitive.dark.success.base}"
             },
             "bg-inverse": {
               "$type": "color",
@@ -7046,6 +6906,10 @@
               "$type": "color",
               "$value": "rgba({color.base.context.dark.warning.fg-main}, {opacity.context.fg-slight})"
             },
+            "fg-active": {
+              "$type": "color",
+              "$value": "{color.base.primitive.dark.warning.contrast}"
+            },
             "fg-inverse": {
               "$type": "color",
               "$value": "{color.base.primitive.dark.warning.90}"
@@ -7069,6 +6933,10 @@
             "bg-evident": {
               "$type": "color",
               "$value": "{color.base.primitive.dark.warning.80}"
+            },
+            "bg-active": {
+              "$type": "color",
+              "$value": "{color.base.primitive.dark.warning.base}"
             },
             "bg-inverse": {
               "$type": "color",
@@ -7196,6 +7064,10 @@
               "$type": "color",
               "$value": "rgba({color.base.context.dark.info.fg-main}, {opacity.context.fg-slight})"
             },
+            "fg-active": {
+              "$type": "color",
+              "$value": "{color.base.primitive.dark.info.contrast}"
+            },
             "fg-inverse": {
               "$type": "color",
               "$value": "{color.base.primitive.dark.info.90}"
@@ -7219,6 +7091,10 @@
             "bg-evident": {
               "$type": "color",
               "$value": "{color.base.primitive.dark.info.80}"
+            },
+            "bg-active": {
+              "$type": "color",
+              "$value": "{color.base.primitive.dark.info.base}"
             },
             "bg-inverse": {
               "$type": "color",
@@ -7319,306 +7195,6 @@
             "fg-disabled": {
               "$type": "color",
               "$value": "rgba({color.base.primitive.dark.info.contrast}, {opacity.context.fg-slight})"
-            }
-          },
-          "brand": {
-            "base-color": {
-              "$type": "color",
-              "$value": "{color.base.primitive.dark.brand.base}"
-            },
-            "contrast-color": {
-              "$type": "color",
-              "$value": "{color.base.primitive.dark.brand.contrast}"
-            },
-            "transparent-color": {
-              "$type": "color",
-              "$value": "rgba({color.base.primitive.dark.brand.50}, {opacity.level.zero})"
-            },
-            "fg-main": {
-              "$type": "color",
-              "$value": "{color.base.primitive.dark.brand.40}"
-            },
-            "fg-subtle": {
-              "$type": "color",
-              "$value": "rgba({color.base.context.dark.brand.fg-main}, {opacity.context.fg-subtle})"
-            },
-            "fg-slight": {
-              "$type": "color",
-              "$value": "rgba({color.base.context.dark.brand.fg-main}, {opacity.context.fg-slight})"
-            },
-            "fg-inverse": {
-              "$type": "color",
-              "$value": "{color.base.primitive.dark.brand.90}"
-            },
-            "fg-solid": {
-              "$type": "color",
-              "$value": "{color.base.primitive.dark.brand.contrast}"
-            },
-            "fg-highlight": {
-              "$type": "color",
-              "$value": "{color.base.primitive.dark.brand.30}"
-            },
-            "bg-main": {
-              "$type": "color",
-              "$value": "{color.base.primitive.dark.brand.95}"
-            },
-            "bg-even": {
-              "$type": "color",
-              "$value": "{color.base.primitive.dark.brand.90}"
-            },
-            "bg-evident": {
-              "$type": "color",
-              "$value": "{color.base.primitive.dark.brand.80}"
-            },
-            "bg-inverse": {
-              "$type": "color",
-              "$value": "{color.base.primitive.dark.brand.10}"
-            },
-            "bg-solid": {
-              "$type": "color",
-              "$value": "{color.base.primitive.dark.brand.50}"
-            },
-            "bg-highlight": {
-              "$type": "color",
-              "$value": "{color.base.primitive.dark.brand.70}"
-            },
-            "border-main": {
-              "$type": "color",
-              "$value": "{color.base.primitive.dark.brand.60}"
-            },
-            "border-subtle": {
-              "$type": "color",
-              "$value": "rgba({color.base.context.dark.brand.fg-main}, {opacity.context.border-subtle})"
-            },
-            "icon-main": {
-              "$type": "color",
-              "$value": "{color.base.primitive.dark.brand.50}"
-            },
-            "icon-subtle": {
-              "$type": "color",
-              "$value": "rgba({color.base.context.dark.brand.fg-main}, {opacity.context.icon-subtle})"
-            },
-            "icon-slight": {
-              "$type": "color",
-              "$value": "rgba({color.base.context.dark.brand.icon-main}, {opacity.context.icon-slight})"
-            },
-            "cue-main": {
-              "$type": "color",
-              "$value": "{color.base.primitive.dark.brand.50}"
-            },
-            "cue-slight": {
-              "$type": "color",
-              "$value": "rgba({color.base.context.dark.brand.cue-main}, {opacity.context.cue-slight})"
-            },
-            "link-main": {
-              "$type": "color",
-              "$value": "{color.base.primitive.dark.brand.40}"
-            },
-            "link-hover": {
-              "$type": "color",
-              "$value": "{color.base.primitive.dark.brand.30}"
-            },
-            "link-active": {
-              "$type": "color",
-              "$value": "{color.base.primitive.dark.brand.40}"
-            },
-            "link-visited": {
-              "$type": "color",
-              "$value": "{color.base.primitive.dark.brand.30}"
-            },
-            "dim-main": {
-              "$type": "color",
-              "$value": "{color.base.primitive.dark.brand.t-5070}"
-            },
-            "dim-subtle": {
-              "$type": "color",
-              "$value": "{color.base.primitive.dark.brand.t-5030}"
-            },
-            "dim-slight": {
-              "$type": "color",
-              "$value": "{color.base.primitive.dark.brand.t-5010}"
-            },
-            "bg-idle": {
-              "$type": "color",
-              "$value": "{color.base.primitive.dark.brand.50}"
-            },
-            "bg-hover": {
-              "$type": "color",
-              "$value": "{color.base.primitive.dark.brand.40}"
-            },
-            "bg-press": {
-              "$type": "color",
-              "$value": "{color.base.primitive.dark.brand.60}"
-            },
-            "bg-disabled": {
-              "$type": "color",
-              "$value": "{color.base.primitive.dark.brand.80}"
-            },
-            "fg-idle": {
-              "$type": "color",
-              "$value": "{color.base.primitive.dark.brand.contrast}"
-            },
-            "fg-hover": {
-              "$type": "color",
-              "$value": "rgba({color.base.primitive.dark.brand.contrast}, {opacity.level.90})"
-            },
-            "fg-press": {
-              "$type": "color",
-              "$value": "rgba({color.base.primitive.dark.brand.contrast}, {opacity.level.90})"
-            },
-            "fg-disabled": {
-              "$type": "color",
-              "$value": "rgba({color.base.primitive.dark.brand.contrast}, {opacity.context.fg-slight})"
-            }
-          },
-          "accent": {
-            "base-color": {
-              "$type": "color",
-              "$value": "{color.base.primitive.dark.accent.base}"
-            },
-            "contrast-color": {
-              "$type": "color",
-              "$value": "{color.base.primitive.dark.accent.contrast}"
-            },
-            "transparent-color": {
-              "$type": "color",
-              "$value": "rgba({color.base.primitive.dark.accent.50}, {opacity.level.zero})"
-            },
-            "fg-main": {
-              "$type": "color",
-              "$value": "{color.base.primitive.dark.accent.40}"
-            },
-            "fg-subtle": {
-              "$type": "color",
-              "$value": "rgba({color.base.context.dark.accent.fg-main}, {opacity.context.fg-subtle})"
-            },
-            "fg-slight": {
-              "$type": "color",
-              "$value": "rgba({color.base.context.dark.accent.fg-main}, {opacity.context.fg-slight})"
-            },
-            "fg-inverse": {
-              "$type": "color",
-              "$value": "{color.base.primitive.dark.accent.90}"
-            },
-            "fg-solid": {
-              "$type": "color",
-              "$value": "{color.base.primitive.dark.accent.contrast}"
-            },
-            "fg-highlight": {
-              "$type": "color",
-              "$value": "{color.base.primitive.dark.accent.30}"
-            },
-            "bg-main": {
-              "$type": "color",
-              "$value": "{color.base.primitive.dark.accent.95}"
-            },
-            "bg-even": {
-              "$type": "color",
-              "$value": "{color.base.primitive.dark.accent.90}"
-            },
-            "bg-evident": {
-              "$type": "color",
-              "$value": "{color.base.primitive.dark.accent.80}"
-            },
-            "bg-inverse": {
-              "$type": "color",
-              "$value": "{color.base.primitive.dark.accent.10}"
-            },
-            "bg-solid": {
-              "$type": "color",
-              "$value": "{color.base.primitive.dark.accent.50}"
-            },
-            "bg-highlight": {
-              "$type": "color",
-              "$value": "{color.base.primitive.dark.accent.70}"
-            },
-            "border-main": {
-              "$type": "color",
-              "$value": "{color.base.primitive.dark.accent.60}"
-            },
-            "border-subtle": {
-              "$type": "color",
-              "$value": "rgba({color.base.context.dark.accent.fg-main}, {opacity.context.border-subtle})"
-            },
-            "icon-main": {
-              "$type": "color",
-              "$value": "{color.base.primitive.dark.accent.50}"
-            },
-            "icon-subtle": {
-              "$type": "color",
-              "$value": "rgba({color.base.context.dark.accent.fg-main}, {opacity.context.icon-subtle})"
-            },
-            "icon-slight": {
-              "$type": "color",
-              "$value": "rgba({color.base.context.dark.accent.icon-main}, {opacity.context.icon-slight})"
-            },
-            "cue-main": {
-              "$type": "color",
-              "$value": "{color.base.primitive.dark.accent.50}"
-            },
-            "cue-slight": {
-              "$type": "color",
-              "$value": "rgba({color.base.context.dark.accent.cue-main}, {opacity.context.cue-slight})"
-            },
-            "link-main": {
-              "$type": "color",
-              "$value": "{color.base.primitive.dark.accent.40}"
-            },
-            "link-hover": {
-              "$type": "color",
-              "$value": "{color.base.primitive.dark.accent.30}"
-            },
-            "link-active": {
-              "$type": "color",
-              "$value": "{color.base.primitive.dark.accent.40}"
-            },
-            "link-visited": {
-              "$type": "color",
-              "$value": "{color.base.primitive.dark.accent.30}"
-            },
-            "dim-main": {
-              "$type": "color",
-              "$value": "{color.base.primitive.dark.accent.t-5070}"
-            },
-            "dim-subtle": {
-              "$type": "color",
-              "$value": "{color.base.primitive.dark.accent.t-5030}"
-            },
-            "dim-slight": {
-              "$type": "color",
-              "$value": "{color.base.primitive.dark.accent.t-5010}"
-            },
-            "bg-idle": {
-              "$type": "color",
-              "$value": "{color.base.primitive.dark.accent.50}"
-            },
-            "bg-hover": {
-              "$type": "color",
-              "$value": "{color.base.primitive.dark.accent.40}"
-            },
-            "bg-press": {
-              "$type": "color",
-              "$value": "{color.base.primitive.dark.accent.60}"
-            },
-            "bg-disabled": {
-              "$type": "color",
-              "$value": "{color.base.primitive.dark.accent.80}"
-            },
-            "fg-idle": {
-              "$type": "color",
-              "$value": "{color.base.primitive.dark.accent.contrast}"
-            },
-            "fg-hover": {
-              "$type": "color",
-              "$value": "rgba({color.base.primitive.dark.accent.contrast}, {opacity.level.90})"
-            },
-            "fg-press": {
-              "$type": "color",
-              "$value": "rgba({color.base.primitive.dark.accent.contrast}, {opacity.level.90})"
-            },
-            "fg-disabled": {
-              "$type": "color",
-              "$value": "rgba({color.base.primitive.dark.accent.contrast}, {opacity.context.fg-slight})"
             }
           }
         }
