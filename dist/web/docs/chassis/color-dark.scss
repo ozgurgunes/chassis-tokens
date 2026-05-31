@@ -4,7 +4,7 @@
 //
 
 // Do not edit directly, this file was auto-generated.
-// Generated on Sun, 31 May 2026 09:25:39 GMT
+// Generated on Sun, 31 May 2026 12:45:08 GMT
 // Chassis - Tokens v0.1.4
 // Copyright 2026 Ozgur Gunes
 // Licensed under MIT (https://github.com/chassis-ui/tokens/blob/main/LICENSE)
@@ -870,9 +870,9 @@ $cx-color-dropdown-icon-idle: var(--default-icon-main) !default;
 $cx-color-dropdown-fg-hover: var(--default-fg-highlight) !default;
 $cx-color-dropdown-bg-hover: var(--default-bg-highlight) !default;
 $cx-color-dropdown-icon-hover: var(--default-fg-highlight) !default;
-$cx-color-dropdown-fg-active: var(--primary-fg-solid) !default;
-$cx-color-dropdown-bg-active: var(--primary-bg-solid) !default;
-$cx-color-dropdown-icon-active: var(--primary-fg-solid) !default;
+$cx-color-dropdown-fg-active: var(--default-fg-active) !default;
+$cx-color-dropdown-bg-active: var(--default-bg-active) !default;
+$cx-color-dropdown-icon-active: var(--default-fg-active) !default;
 $cx-color-dropdown-fg-disabled: var(--default-fg-slight) !default;
 $cx-color-dropdown-bg-disabled: var(--default-transparent-color) !default;
 $cx-color-dropdown-icon-disabled: var(--default-icon-slight) !default;
@@ -942,15 +942,15 @@ $cx-color-page-bg-body: var(--default-bg-main) !default;
 $cx-color-page-bg-section: var(--default-bg-main) !default;
 $cx-color-pagination-dot-idle: var(--default-fg-slight) !default;
 $cx-color-pagination-dot-active: var(--default-fg-main) !default;
-$cx-color-progress-fg-past: var(--neutral-contrast-color) !default;
-$cx-color-progress-bg-past: var(--neutral-base-color) !default;
-$cx-color-progress-border-past: var(--neutral-base-color) !default;
-$cx-color-progress-fg-current: var(--primary-contrast-color) !default;
-$cx-color-progress-bg-current: var(--primary-base-color) !default;
-$cx-color-progress-border-current: var(--primary-base-color) !default;
-$cx-color-progress-fg-next: var(--default-contrast-color) !default;
-$cx-color-progress-bg-next: var(--default-base-color) !default;
-$cx-color-progress-border-next: var(--default-base-color) !default;
+$cx-color-progress-fg-past: var(--default-contrast-color) !default;
+$cx-color-progress-bg-past: var(--default-base-color) !default;
+$cx-color-progress-border-past: var(--default-base-color) !default;
+$cx-color-progress-fg-current: var(--default-fg-active) !default;
+$cx-color-progress-bg-current: var(--default-bg-active) !default;
+$cx-color-progress-border-current: var(--default-bg-active) !default;
+$cx-color-progress-fg-next: var(--default-fg-main) !default;
+$cx-color-progress-bg-next: var(--default-bg-evident) !default;
+$cx-color-progress-border-next: var(--default-bg-evident) !default;
 $cx-color-section-fg-large: var(--default-fg-main) !default;
 $cx-color-section-fg-medium: var(--default-fg-main) !default;
 $cx-color-section-fg-small: var(--default-fg-main) !default;
@@ -964,7 +964,7 @@ $cx-color-table-bg-data: var(--default-bg-main) !default;
 $cx-color-table-bg-alt: var(--default-bg-even) !default;
 $cx-color-table-bg-hover: var(--default-bg-evident) !default;
 $cx-color-table-bg-active: var(--default-bg-highlight) !default;
-$cx-color-table-bg-edit: var(--warning-10) !default;
+$cx-color-table-bg-edit: var(--warning-bg-even) !default;
 $cx-color-table-cue-active: var(--default-cue-main) !default;
 $cx-color-table-border-main: var(--default-border-subtle) !default;
 $cx-color-table-icon-sort: var(--default-fg-subtle) !default;

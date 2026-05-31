@@ -160,7 +160,7 @@
         },
         "large": {
           "$type": "borderRadius",
-          "$value": "{dimension.base.10}"
+          "$value": "{dimension.base.8}"
         },
         "xlarge": {
           "$type": "borderRadius",
@@ -172,7 +172,11 @@
         },
         "3xlarge": {
           "$type": "borderRadius",
-          "$value": "{dimension.base.20}"
+          "$value": "{dimension.base.24}"
+        },
+        "4xlarge": {
+          "$type": "borderRadius",
+          "$value": "{dimension.base.32}"
         }
       },
       "badge": {
