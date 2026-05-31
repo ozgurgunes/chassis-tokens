@@ -162,20 +162,6 @@
     }
   },
   "space": {
-    "modal": {
-      "large-padding-y": {
-        "$type": "spacing",
-        "$value": "{space.context.xlarge}"
-      },
-      "large-padding-x": {
-        "$type": "spacing",
-        "$value": "{space.context.xlarge}"
-      },
-      "large-gap-body": {
-        "$type": "spacing",
-        "$value": "{space.context.3xlarge}"
-      }
-    },
     "page": {
       "large-padding-y": {
         "$type": "spacing",

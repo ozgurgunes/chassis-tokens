@@ -3897,27 +3897,27 @@
     "modal": {
       "large-padding-y": {
         "$type": "spacing",
-        "$value": "{space.unit.32}"
+        "$value": "{space.unit.24}"
       },
       "large-padding-x": {
         "$type": "spacing",
-        "$value": "{space.unit.32}"
+        "$value": "{space.unit.24}"
       },
-      "large-gap-body": {
+      "large-gap": {
         "$type": "spacing",
-        "$value": "{space.unit.32}"
+        "$value": "{space.unit.24}"
       },
       "medium-padding-y": {
         "$type": "spacing",
-        "$value": "{space.unit.24}"
+        "$value": "{space.unit.16}"
       },
       "medium-padding-x": {
         "$type": "spacing",
-        "$value": "{space.unit.24}"
+        "$value": "{space.unit.16}"
       },
-      "medium-gap-body": {
+      "medium-gap": {
         "$type": "spacing",
-        "$value": "{space.unit.24}"
+        "$value": "{space.unit.16}"
       },
       "small-padding-y": {
         "$type": "spacing",
@@ -3927,7 +3927,7 @@
         "$type": "spacing",
         "$value": "{space.unit.16}"
       },
-      "small-gap-body": {
+      "small-gap": {
         "$type": "spacing",
         "$value": "{space.unit.16}"
       }
