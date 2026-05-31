@@ -3903,7 +3903,7 @@
         "$type": "spacing",
         "$value": "{space.unit.32}"
       },
-      "large-gap": {
+      "large-gap-body": {
         "$type": "spacing",
         "$value": "{space.unit.32}"
       },
@@ -3915,7 +3915,7 @@
         "$type": "spacing",
         "$value": "{space.unit.24}"
       },
-      "medium-gap": {
+      "medium-gap-body": {
         "$type": "spacing",
         "$value": "{space.unit.24}"
       },
@@ -3927,7 +3927,7 @@
         "$type": "spacing",
         "$value": "{space.unit.16}"
       },
-      "small-gap": {
+      "small-gap-body": {
         "$type": "spacing",
         "$value": "{space.unit.16}"
       }

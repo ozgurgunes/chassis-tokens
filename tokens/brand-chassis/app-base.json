@@ -171,7 +171,7 @@
         "$type": "spacing",
         "$value": "{space.context.xlarge}"
       },
-      "large-gap": {
+      "large-gap-body": {
         "$type": "spacing",
         "$value": "{space.context.3xlarge}"
       }
