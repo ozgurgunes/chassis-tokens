@@ -76,7 +76,7 @@ function resolveReferenceValue(token, dictionary) {
   const ref = splitReference(token.original.$value)
   const refMapping = {
     'color|context': (ref) => `$${prefix}color-context-${ref[2]}-${ref[3]}`,
-    'color|palette': (ref) => `$${prefix}color-palette-${ref[2]}-${ref[3]}`,
+    'color|primitive': (ref) => `$${prefix}color-primitive-${ref[2]}-${ref[3]}`,
     'space|context': (ref) => `$${prefix}space-context-${ref[2]}`,
     'opacity|context': (ref) => `$${prefix}opacity-${ref[2]}`,
     'opacity|level': (ref) => `$${prefix}opacity-${ref[2]}`,

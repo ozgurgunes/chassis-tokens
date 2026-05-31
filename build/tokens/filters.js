@@ -23,7 +23,7 @@ export default function (StyleDictionary) {
     filter: (token) => {
       return (
         (tokenTypes.color.includes(token.$type) &&
-          !['palette', 'context', 'utility'].includes(token.path[1])) ||
+          !['primitive', 'context', 'utility'].includes(token.path[1])) ||
         tokenTypes.font.includes(token.$type) ||
         tokenTypes.gradient.includes(token.$type) ||
         tokenTypes.number.includes(token.$type) ||
@@ -42,7 +42,7 @@ export default function (StyleDictionary) {
     filter: (token) => {
       return (
         tokenTypes.color.includes(token.$type) &&
-        !['palette', 'context', 'utility'].includes(token.path[1])
+        !['primitive', 'context', 'utility'].includes(token.path[1])
       )
     }
   })

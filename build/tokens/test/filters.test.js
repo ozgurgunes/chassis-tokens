@@ -46,7 +46,7 @@ describe('Token Filters', () => {
       const filterFn = colorFilterCall[0].filter
 
       expect(filterFn({ $type: 'color', path: ['theme', 'primary'] })).toBe(true)
-      expect(filterFn({ $type: 'color', path: ['theme', 'palette'] })).toBe(false)
+      expect(filterFn({ $type: 'color', path: ['theme', 'primitive'] })).toBe(false)
       expect(filterFn({ $type: 'number', path: ['spacing', 'small'] })).toBe(false)
     })
   })
