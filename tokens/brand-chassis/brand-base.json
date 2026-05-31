@@ -182,15 +182,15 @@
       "badge": {
         "medium": {
           "$type": "borderRadius",
-          "$value": "{borderRadius.base.context.round}"
+          "$value": "{borderRadius.base.context.full}"
         },
         "large": {
           "$type": "borderRadius",
-          "$value": "{borderRadius.base.context.round}"
+          "$value": "{borderRadius.base.context.full}"
         },
         "small": {
           "$type": "borderRadius",
-          "$value": "{borderRadius.base.context.round}"
+          "$value": "{borderRadius.base.context.full}"
         }
       },
       "button": {
@@ -210,15 +210,15 @@
       "chip": {
         "medium": {
           "$type": "borderRadius",
-          "$value": "{borderRadius.base.context.round}"
+          "$value": "{borderRadius.base.context.full}"
         },
         "large": {
           "$type": "borderRadius",
-          "$value": "{borderRadius.base.context.round}"
+          "$value": "{borderRadius.base.context.full}"
         },
         "small": {
           "$type": "borderRadius",
-          "$value": "{borderRadius.base.context.round}"
+          "$value": "{borderRadius.base.context.full}"
         }
       },
       "form-input": {

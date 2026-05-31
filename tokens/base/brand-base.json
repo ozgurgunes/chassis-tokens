@@ -7724,7 +7724,7 @@
           "$type": "borderRadius",
           "$value": "{dimension.base.12}"
         },
-        "round": {
+        "full": {
           "$type": "borderRadius",
           "$value": "{dimension.base.256}"
         }

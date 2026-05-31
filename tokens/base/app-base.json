@@ -3609,7 +3609,7 @@
         "$type": "spacing",
         "$value": "{space.unit.32}"
       },
-      "large-gap": {
+      "large-gap-main": {
         "$type": "spacing",
         "$value": "{space.unit.24}"
       },
@@ -3625,7 +3625,7 @@
         "$type": "spacing",
         "$value": "{space.unit.16}"
       },
-      "small-gap": {
+      "small-gap-main": {
         "$type": "spacing",
         "$value": "{space.unit.16}"
       },
@@ -4029,9 +4029,9 @@
         "$type": "borderRadius",
         "$value": "{borderRadius.base.context.4xlarge}"
       },
-      "round": {
+      "full": {
         "$type": "borderRadius",
-        "$value": "{borderRadius.base.context.round}"
+        "$value": "{borderRadius.base.context.full}"
       }
     },
     "asset": {
@@ -4175,11 +4175,11 @@
       },
       "dot-idle": {
         "$type": "borderRadius",
-        "$value": "{borderRadius.context.round}"
+        "$value": "{borderRadius.context.full}"
       },
       "dot-active": {
         "$type": "borderRadius",
-        "$value": "{borderRadius.context.round}"
+        "$value": "{borderRadius.context.full}"
       }
     },
     "section": {
