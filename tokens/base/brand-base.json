@@ -278,7 +278,7 @@
             },
             "base": {
               "$type": "color",
-              "$value": "{color.base.primitive.light.brand.base}"
+              "$value": "#1273E0"
             },
             "transparent": {
               "$type": "color",
@@ -470,7 +470,7 @@
             },
             "base": {
               "$type": "color",
-              "$value": "{color.base.primitive.light.accent.base}"
+              "$value": "#D115C5"
             },
             "transparent": {
               "$type": "color",

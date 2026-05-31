@@ -13,6 +13,18 @@
     "base": {
       "primitive": {
         "light": {
+          "primary": {
+            "base": {
+              "$type": "color",
+              "$value": "#00A4CC"
+            }
+          },
+          "secondary": {
+            "base": {
+              "$type": "color",
+              "$value": "#F55200"
+            }
+          },
           "neutral": {
             "base": {
               "$type": "color",
