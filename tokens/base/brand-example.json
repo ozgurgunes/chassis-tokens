@@ -11,7 +11,7 @@
   },
   "color": {
     "base": {
-      "palette": {
+      "primitive": {
         "light": {
           "neutral": {
             "base": {

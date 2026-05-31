@@ -11,7 +11,7 @@
   },
   "color": {
     "base": {
-      "palette": {
+      "primitive": {
         "light": {
           "neutral": {
             "base": {
@@ -38,7 +38,7 @@
             },
             "contrast": {
               "$type": "color",
-              "$value": "{color.base.palette.light.black.base}"
+              "$value": "{color.base.primitive.light.black.base}"
             }
           },
           "info": {

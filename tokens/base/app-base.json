@@ -3073,7 +3073,7 @@
       },
       "bg-edit": {
         "$type": "color",
-        "$value": "{color.palette.warning.10}"
+        "$value": "{color.primitive.warning.10}"
       },
       "cue-active": {
         "$type": "color",
@@ -4561,7 +4561,7 @@
             "y": "{dimension.base.0}",
             "blur": "{dimension.base.0}",
             "spread": "{dimension.base.0}",
-            "color": "{color.palette.black.transparent}",
+            "color": "{color.primitive.black.transparent}",
             "type": "dropShadow"
           }
         ]
@@ -4752,7 +4752,7 @@
         "$type": "boxShadow",
         "$value": [
           {
-            "color": "{color.palette.black.t-20}",
+            "color": "{color.primitive.black.t-20}",
             "type": "dropShadow",
             "x": "{dimension.base.5}",
             "y": "{dimension.base.0}",
@@ -4760,7 +4760,7 @@
             "spread": "{dimension.base.n5}"
           },
           {
-            "color": "{color.palette.black.t-10}",
+            "color": "{color.primitive.black.t-10}",
             "type": "dropShadow",
             "x": "{dimension.base.d25}",
             "y": "{dimension.base.0}",
