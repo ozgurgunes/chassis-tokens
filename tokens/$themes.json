@@ -4859,7 +4859,10 @@
       "typography.lineHeight.code.medium": "ffd7cf51bdb49daaa3e2721ee44aa5c92198d756",
       "typography.lineHeight.code.small": "21a56210d1035d345a3c3c4e14e9b878c1bcb019",
       "borderRadius.base.context.zero": "3d230df118c33aa581ab79f1963fae50c01c29a1",
-      "borderRadius.base.context.round": "440748aeb5ee9d68cc0bd6cfb3eef1728ca2c337"
+      "borderRadius.base.context.round": "440748aeb5ee9d68cc0bd6cfb3eef1728ca2c337",
+      "borderRadius.base.date-picker.main": "2385a2f76b3c5e8e01904bf9c4bf026e7a4089e1",
+      "borderRadius.base.date-picker.menu": "6b0b09a31a3e42ac43344ca48cfc0e10d2ce65cf",
+      "borderRadius.base.date-picker.day": "801c4716e001bab46a683714884153531f7e5f77"
     },
     "$figmaStyleReferences": {},
     "group": "brand"
