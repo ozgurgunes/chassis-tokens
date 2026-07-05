@@ -88,7 +88,7 @@ The simplest approach is to import all tokens into your SCSS:
 // Import theme tokens
 @import "@chassis-ui/tokens/dist/web/docs/chassis/color-light";
 
-// Import screen tokens  
+// Import screen tokens
 @import "@chassis-ui/tokens/dist/web/docs/chassis/number-large";
 
 // Now use tokens in your styles
@@ -110,7 +110,7 @@ Import only what you need for smaller bundle sizes:
 @import "@chassis-ui/tokens/dist/web/docs/chassis/main";
 @import "@chassis-ui/tokens/dist/web/docs/chassis/color-light";
 
-// component.scss  
+// component.scss
 .card {
   background: $cx-color-context-default-bg-main;
   padding: $cx-space-base-16;
@@ -157,7 +157,7 @@ Use data attributes to switch themes (recommended):
 // Override for dark mode
 [data-cx-theme="dark"] {
   @import "@chassis-ui/tokens/dist/web/docs/chassis/color-dark";
-  
+
   .component {
     background: $cx-color-context-default-bg-main;
     color: $cx-color-context-default-fg-main;
@@ -183,7 +183,7 @@ Convert SCSS variables to CSS custom properties for runtime theme switching:
 
 [data-cx-theme="dark"] {
   @import "@chassis-ui/tokens/dist/web/docs/chassis/color-dark";
-  
+
   --bg-main: #{$cx-color-context-default-bg-main};
   --fg-main: #{$cx-color-context-default-fg-main};
   --primary-bg: #{$cx-color-context-primary-bg-solid};
@@ -234,7 +234,7 @@ Import different screen sizes based on your responsive strategy:
 // Medium screens (tablets)
 @media (max-width: 992px) {
   @import "@chassis-ui/tokens/dist/web/docs/chassis/number-medium";
-  
+
   .container {
     padding: $cx-space-container-padding-block $cx-space-container-padding-inline;
   }
@@ -243,7 +243,7 @@ Import different screen sizes based on your responsive strategy:
 // Small screens (mobile)
 @media (max-width: 768px) {
   @import "@chassis-ui/tokens/dist/web/docs/chassis/number-small";
-  
+
   .container {
     padding: $cx-space-container-padding-block $cx-space-container-padding-inline;
   }
@@ -264,7 +264,7 @@ Import different screen sizes based on your responsive strategy:
 // Medium screens and up
 @media (min-width: 768px) {
   @import "@chassis-ui/tokens/dist/web/docs/chassis/number-medium";
-  
+
   .heading {
     font-size: $cx-typography-fontSize-text-2xlarge;
   }
@@ -273,7 +273,7 @@ Import different screen sizes based on your responsive strategy:
 // Large screens and up
 @media (min-width: 992px) {
   @import "@chassis-ui/tokens/dist/web/docs/chassis/number-large";
-  
+
   .heading {
     font-size: $cx-typography-fontSize-text-3xlarge;
   }
@@ -414,7 +414,7 @@ Astro has built-in SCSS support:
 <style lang="scss">
   @import "@chassis-ui/tokens/dist/web/docs/chassis/main";
   @import "@chassis-ui/tokens/dist/web/docs/chassis/color-light";
-  
+
   .card {
     background: $cx-color-context-default-bg-main;
     padding: $cx-space-base-16;
@@ -561,29 +561,29 @@ type Theme = 'light' | 'dark';
 
 class ThemeManager {
   private current: Theme = 'light';
-  
+
   constructor() {
     this.load();
     this.applyMediaQuery();
   }
-  
+
   set(theme: Theme) {
     this.current = theme;
     document.documentElement.setAttribute('data-cx-theme', theme);
     localStorage.setItem('cx-theme', theme);
   }
-  
+
   toggle() {
     this.set(this.current === 'light' ? 'dark' : 'light');
   }
-  
+
   private load() {
     const saved = localStorage.getItem('cx-theme') as Theme;
     if (saved) {
       this.set(saved);
     }
   }
-  
+
   private applyMediaQuery() {
     const query = window.matchMedia('(prefers-color-scheme: dark)');
     if (!localStorage.getItem('cx-theme')) {
@@ -754,7 +754,7 @@ body {
   border: $cx-border-width-button-main solid transparent;
   font: $cx-font-button-medium;
   cursor: pointer;
-  
+
   &:hover {
     background: $cx-color-context-primary-bg-hover;
   }
@@ -790,13 +790,13 @@ import { useState } from 'react';
 
 function App() {
   const [theme, setTheme] = useState('light');
-  
+
   const toggleTheme = () => {
     const newTheme = theme === 'light' ? 'dark' : 'light';
     setTheme(newTheme);
     document.documentElement.setAttribute('data-cx-theme', newTheme);
   };
-  
+
   return (
     <div className="app">
       <button onClick={toggleTheme}>

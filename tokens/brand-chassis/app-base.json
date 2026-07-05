@@ -142,7 +142,7 @@
       "default": {
         "bg-highlight": {
           "$type": "color",
-          "$value": "{color.palette.info.10}"
+          "$value": "{color.primitive.info.10}"
         },
         "cue-main": {
           "$type": "color",
@@ -152,7 +152,7 @@
       "alternate": {
         "bg-highlight": {
           "$type": "color",
-          "$value": "{color.palette.info.90}"
+          "$value": "{color.primitive.info.90}"
         },
         "cue-main": {
           "$type": "color",
@@ -162,20 +162,6 @@
     }
   },
   "space": {
-    "modal": {
-      "large-padding-y": {
-        "$type": "spacing",
-        "$value": "{space.context.xlarge}"
-      },
-      "large-padding-x": {
-        "$type": "spacing",
-        "$value": "{space.context.xlarge}"
-      },
-      "large-gap": {
-        "$type": "spacing",
-        "$value": "{space.context.3xlarge}"
-      }
-    },
     "page": {
       "large-padding-y": {
         "$type": "spacing",

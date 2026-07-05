@@ -162,7 +162,7 @@ function getConfigValueAtPath(path: string) {
 
 function replaceInFrontmatter(
   record: Record<string, unknown>,
-  replacer: (value: string) => string // eslint-disable-line no-unused-vars
+  replacer: (_value: string) => string
 ) {
   for (const [key, value] of Object.entries(record)) {
     if (typeof value === 'string') {

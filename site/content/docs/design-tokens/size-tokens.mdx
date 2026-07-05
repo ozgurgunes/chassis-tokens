@@ -17,6 +17,7 @@ Size tokens are organized into a two-layer system where base sizing values are d
 **How it works:**
 
 The system progresses from foundational to applied:
+
 1. **Base sizes** (`size.unit.*`) provide raw dimensional values (0-1024px)
 2. **Contextual sizes** (`size.context.*`) assign semantic meaning (xsmall, small, medium, large, etc.)
 3. **Component sizes** (`size.[component].*`) define specific dimensions for UI components
@@ -236,12 +237,14 @@ Component-specific size tokens define exact dimensions for UI elements.
 ### Best Practices
 
 **Do:**
+
 - Use contextual size tokens for flexible, semantic sizing
 - Reference component size tokens for specific UI elements
 - Stick to the 8-point grid when possible
 - Document the purpose when using non-standard sizes
 
 **Don't:**
+
 - Create arbitrary size values—always use tokens
 - Use sizes smaller than 32px for primary interactive elements
 - Mix sizing systems inconsistently

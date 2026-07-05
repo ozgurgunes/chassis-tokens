@@ -1,5 +1,55 @@
 # Changelog
 
+## [0.3.0] - 2026-07-04
+
+### Added
+- HTML validation build script (build/html-validate.js) replacing the vnu-jar based site:lint:vnu step
+- Pagefind site search integration (pagefind.yml, site:pagefind script)
+- Additional design token documentation content (border-radius, border-width, font, opacity, shadow, size, space, and typography tokens)
+- `fg-active`/`bg-active` color tokens for every context role (default, alternate, primary, secondary, neutral, danger, success, warning, info, black, white)
+- `4xlarge` border-radius scale step
+- Explicit primary/secondary brand base colors for the chassis and example brands
+- Alert component box-shadow token
+
+### Changed
+- Renamed homepage section components folder from sections/ to homepage/
+- Refactored SCSS chassis-css and scss-variables build templates
+- Reworked site/src/libs/astro.ts, config.ts, data.ts, and shortcode.ts helpers
+- Replaced Prism code highlighting with Shiki
+- Updated Astro, PostCSS, and TypeScript configuration for the docs site
+- Renamed `color.*.palette.*` token group to `color.*.primitive.*` across base, theme, and effect tokens
+- Consolidated pixel-based border-radius presets (`round`, `round-8` … `round-96`) into a single `full` token
+- Updated breakpoint and container sizing scale to standard values (breakpoints 992/1200/1400 → 1024/1280/1536; containers 1140/1320 → 1200/1440)
+- Replaced elevation-based box-shadow references (`shadow.elevation.default.*`) with semantic `shadow.context.small/medium/large` tokens
+- Redesigned chevron-down icon asset used by the accordion indicator, button caret, and select caret
+- Reassigned progress, tab, and edit component color roles from primary/neutral contexts to default/warning contexts
+- Split `large-gap`/`small-gap` spacing tokens into `-main` and `-body` variants; adjusted dropdown and modal padding/gap values
+- Regenerated all distribution files and token theme definitions for Android, iOS, and web platforms
+- Refreshed getting-started and use-in-project documentation (Figma Variables, Style Dictionary, Tokens Studio, Android/iOS/Web application guides)
+
+### Removed
+- Unused site shortcodes and libs: Code.astro, Example.astro, ResponsiveImage.astro, chassis.ts, placeholder.ts, prism.ts, algolia-plugin.js
+- Unused static scripts: example-mode.js, validate-forms.js
+- `preview` root script (superseded by `astro:preview`)
+- `brand` and `accent` semantic color contexts (primitive-level brand/accent color scales remain available)
+- Chassis brand-specific modal spacing overrides (now inherit from base tokens)
+
+## [0.2.0] - 2026-05-11
+
+### Added
+- GitHub Actions publish-release workflow (.github/workflows/publish-release.yml)
+- Token distribution zip build script (build/zip-tokens.js) and `tokens:zip` script
+
+### Changed
+- Upgraded Astro, ESLint, and related devDependencies
+- Switched `@chassis-ui/css` and `@chassis-ui/docs` from git branch references to published npm versions
+- Refactored website sections and homepage copy
+- Updated package descriptions and site configuration
+
+### Removed
+- Legacy release workflow (.github/workflows/release.yml)
+- Unused site assets: application.js, color-modes.js, search.js, sidebar.js, snippets partials, Blockquote.astro, window.d.ts, docs-versions.yml, versions.astro
+
 ## [0.1.4] - 2026-04-16
 
 ### Added

@@ -28,7 +28,7 @@ Before working with Chassis Tokens and Tokens Studio, ensure we have the followi
 - **Tokens Studio Plugin**: Install the Tokens Studio plugin from the [Figma Community](https://www.figma.com/community/plugin/843461159747178978/Tokens-Studio-for-Figma).
 - **Basic Git Knowledge**: Understanding of branches, commits, and pull requests for token version control.
 
-### Remote Storage 
+### Remote Storage
 
 Chassis Tokens uses Tokens Studio's remote storage feature to host design tokens in a Git repository. This allows for version control, collaboration, and easy access to the latest token definitions.
 
@@ -71,7 +71,7 @@ This architecture supports both horizontal scaling (multiple brands) and vertica
 
 ### Base Sets
 
-Base sets are the foundational token sets that define all the design tokens used in the design system. 
+Base sets are the foundational token sets that define all the design tokens used in the design system.
 
 The example below demonstrates the definition of color tokens in a base set along with the usage of token references and extensions for modifying the base color value.
 
@@ -102,10 +102,12 @@ The example below demonstrates the definition of color tokens in a base set alon
   // More colors...
 }
 ```
+
 <Callout type="info">
 The `$extensions` property allows us to transform token values dynamically by using  Tokens Studio's color modifiers. This is particularly powerful for creating color scales from a single base color. Extensions are processed during sync to Figma and when generating output via Style Dictionary, ensuring consistent color transformations across all platforms.
 
 Read more about [Color Modifiers](https://docs.tokens.studio/manage-tokens/token-types/color/modified) in Tokens Studio documentation.
+
 </Callout>
 
 ### Modding Sets
@@ -136,6 +138,7 @@ File and token names are simplified in these examples for clarity. In practice, 
 ### Set Status
 
 When configuring token sets in Tokens Studio, each set can have one of the following statuses:
+
 - **Source**: Tokens in this set are available for referencing by other sets but are not directly enabled for use in Figma or Style Dictionary.
 - **Enable**: Tokens in this set are enabled for use in Figma and Style Dictionary. They will be synced to Figma as Variables and included in the generated Style Dictionary output.
 - **Disable**: Tokens in this set are neither available for referencing nor enabled for use. They are effectively ignored.
@@ -144,7 +147,7 @@ See the Tokens Studio [documentation](https://docs.tokens.studio/manage-tokens/t
 
 ## Theming System
 
-Tokens Studio's theming system lets us create and manage multiple design variations using Theme Groups and Theme Options. 
+Tokens Studio's theming system lets us create and manage multiple design variations using Theme Groups and Theme Options.
 
 - **Theme Groups** are collections of theme options that share a common set of tokens but can have different values for specific tokens. Theme groups are synced to Figma as Variable Collections.
 - **Theme Options** are individual themes within a Theme Group that enable or disable specific token sets. These are synced to Figma as Variable Modes.
@@ -183,7 +186,7 @@ App                                 -> Theme group
 This three-layer architecture is a deliberate design decision that provides specific benefits:
 
 - Three groups cover the primary axes of variation in most design systems
-- Maximum flexibility, minimal duplication, clear separation of concerns 
+- Maximum flexibility, minimal duplication, clear separation of concerns
 - Easy to add new brands, themes, or apps independently
 - Additional groups add complexity without proportional benefit
 - We can extend within existing groups (e.g., multiple app options) rather than adding new groups
@@ -244,7 +247,7 @@ Chassis assumes that all applications will use the same border radius values for
 
 ### Theme Group
 
-The **Theme Group** contains color tokens organized by theme mode (light, dark, high contrast, etc.). These are the color tokens **we use** while designing our UI and building the components. 
+The **Theme Group** contains color tokens organized by theme mode (light, dark, high contrast, etc.). These are the color tokens **we use** while designing our UI and building the components.
 
 - **Purpose**: Define color mode variations (light, dark, high contrast)
 - **Changes when**: User switches color preference or accessibility mode
@@ -279,8 +282,8 @@ color.base.context.light.primary.fg-subtle - (Brand)
 ↓
 rgba({color.base.palette.light.primary.60}, {opacity.context.fg-subtle}) - (Brand)
 ```
-This architecture allows us to switch both brand and color modes **independently**. Changing from Brand A to Brand B keeps the same light/dark theme, and switching from light to dark mode keeps the same brand.
 
+This architecture allows us to switch both brand and color modes **independently**. Changing from Brand A to Brand B keeps the same light/dark theme, and switching from light to dark mode keeps the same brand.
 
 ### App Group
 
@@ -421,9 +424,7 @@ Suppose we're adding "Brand C" to our design system.
     // Following sets...
   ]
 }
-``` 
-
-
+```
 
 **Step 3**: Update `tokens/$themes.json` to add Brand C as a new theme option in the Brand group:
 
@@ -445,6 +446,7 @@ Suppose we're adding "Brand C" to our design system.
 ```
 
 **Result**: Brand C is now available as a selectable option in the Brand theme group. When selected:
+
 - All color tokens in Theme group automatically reference Brand C's color palette
 - Typography tokens use Brand C's font families
 - Border radius follows Brand C's style
@@ -514,6 +516,7 @@ Let's create a "Holiday" theme variation that adds festive colors for primary bu
 ```
 
 **Result**: The holiday theme overrides specific primary colors while:
+
 - Keeping all other theme tokens from theme-light intact
 - Still referencing the active Brand's color palette for all other primary context colors
 - Maintaining all component tokens from App group referencing the updated Theme tokens
@@ -605,6 +608,7 @@ We need to add tokens for a new "Toast" component that should work across all br
 ```
 
 **Result**: Toast component tokens are now available and:
+
 - Reference existing Theme group colors (which adapt to brand and color mode)
 - Use spacing and sizing tokens from App group for consistency
 - Typography references ensure toasts match the overall text hierarchy
@@ -669,6 +673,7 @@ Suppose our tablet app needs slightly different spacing and font size than the m
 ```
 
 **Result**: The tablet app variation:
+
 - Overrides spacing and font values for toast component.
 - Keeps all color and border radius tokens as in mobile app (or base).
 - Can be combined with any Brand and Theme options independently
@@ -728,7 +733,7 @@ Token names are structured as a dot-separated path if they have multiple variant
 
 ```
 {category}.{component}.{variant}.{property}-{state}
-or 
+or
 {category}.{component}.{state}.{property}-{variant}
 ```
 
@@ -763,6 +768,7 @@ When tokens transformed with Style Dictionary, nested and flat structures are tr
 Chassis Tokens follows `{category}-{variation}.json` naming pattern for token set files:
 
 **Categories:**
+
 - `metric-*`: Dimension, opacity, and measurement tokens
 - `brand-*`: Brand identity tokens (colors, typography, borders)
 - `theme-*`: Color mode variations
@@ -772,16 +778,19 @@ Chassis Tokens follows `{category}-{variation}.json` naming pattern for token se
 - `screen-*`: Breakpoint and responsive tokens
 
 **Variations:**
+
 - `base`: Foundation tokens used across all variations
 - `{mode}`: Overrides for specific theme option.
 
 **Examples:**
+
 - `brand-base.json` - Base brand tokens
 - `brand-acme.json` - Acme brand overrides
 - `theme-dark.json` - Dark mode overrides
 - `app-web.json` - Web platform tokens
 
 This naming convention makes it immediately clear:
+
 - What type of tokens are in the file
 - When the file should be used
 - How the file relates to others in the system
@@ -791,6 +800,7 @@ This naming convention makes it immediately clear:
 For more complex scenarios, token sets can be grouped in folders by category or purpose:
 
 **Examples:**
+
 - `brand-a/brand-base.json` - Default identity for Brand A
 - `brand-a/brand-alt.json` - Alternative theme for Brand A
 - `brand-a/app-base.json` - Application tokens for Brand A
@@ -811,6 +821,7 @@ Understanding how Tokens Studio resolves token values is crucial for avoiding co
 **Example Resolution:**
 
 Given this theme configuration:
+
 ```
 1. brand-base.json (enabled) - defines color.primary.base = "#0000FF"
 2. brand-a.json (enabled) - overrides color.primary.base = "#FF0000"
@@ -826,7 +837,6 @@ Given this theme configuration:
 - ❌ Wrong set order: Important overrides loaded before base values
 - ❌ Source vs Enable confusion: Referencing tokens from a "Disable" set
 
-
 ### When to Create New Token Sets
 
 **Create a new set when:**
@@ -834,20 +844,20 @@ Given this theme configuration:
 ✅ Adding a complete brand identity  
 ✅ Adding a new color mode (e.g., high contrast)  
 ✅ Adding platform-specific variations  
-✅ Creating a temporary experimental theme  
+✅ Creating a temporary experimental theme
 
 **Modify existing sets when:**
 
 ✅ Adjusting values within current brand  
 ✅ Adding new component tokens to existing platform  
 ✅ Fixing bugs or inconsistencies  
-✅ Refining existing color scales  
+✅ Refining existing color scales
 
 **Avoid creating sets for:**
 
 ❌ One-off component variations (use component props instead)  
 ❌ Page-specific overrides (use local Figma variables)  
-❌ Temporary design explorations (use branches instead)  
+❌ Temporary design explorations (use branches instead)
 
 ### Token Documentation
 
@@ -868,6 +878,7 @@ Use `$description` field for tokens that need explanation:
 **Maintain a token changelog:**
 
 Document significant token changes in commit messages:
+
 - What tokens changed
 - Why they changed
 - Impact on existing designs
@@ -876,6 +887,7 @@ Document significant token changes in commit messages:
 **Create token inventory documentation:**
 
 Maintain a separate document listing:
+
 - All available token categories
 - Naming conventions for each category
 - When to use each token type
@@ -944,6 +956,7 @@ Before pushing token changes:
 ## Related Topics
 
 **Design Token Fundamentals:**
+
 - [Color Tokens]([[docsref:/design-tokens/color-tokens]]) - Deep dive into color system architecture
 - [Typography Tokens]([[docsref:/design-tokens/typography-tokens]]) - Font and text styling tokens
 - [Sizing Tokens]([[docsref:/design-tokens/size-tokens]]) - Layout and sizing system
@@ -954,10 +967,12 @@ Before pushing token changes:
 - [Opacity Tokens]([[docsref:/design-tokens/opacity-tokens]]) - Define and manage opacity tokens
 
 **Workflow Documentation:**
+
 - [Using Tokens in Figma]([[docsref:/getting-started/figma-variables]]) - Applying tokens to designs
 - [Style Dictionary Setup]([[docsref:/getting-started/style-dictionary]]) - Generating code from tokens
 
 **Implementation Guides:**
+
 - [Web Applications]([[docsref:/use-in-project/web-applications]]) - Implementing tokens in CSS and JS
 - [iOS Applications]([[docsref:/use-in-project/ios-applications]]) - Implementing tokens in Swift
 - [Android Applications]([[docsref:/use-in-project/android-applications]]) - Implementing tokens in XML
@@ -971,6 +986,7 @@ Common issues and their solutions when working with Chassis Tokens and Tokens St
 **Problem**: Tokens not syncing from Git repository
 
 **Solutions:**
+
 - Verify Git credentials are still valid (re-authenticate if needed)
 - Check repository and branch names are correct
 - Ensure file path points to `tokens/` directory
@@ -980,6 +996,7 @@ Common issues and their solutions when working with Chassis Tokens and Tokens St
 **Problem**: Changes not appearing in Figma Variables
 
 **Solutions:**
+
 - Click "Push to Figma" button in Tokens Studio after syncing
 - Refresh the Figma Variables panel
 - Check if the correct theme options are selected
@@ -990,6 +1007,7 @@ Common issues and their solutions when working with Chassis Tokens and Tokens St
 **Problem**: Token shows error "Cannot resolve reference"
 
 **Solutions:**
+
 - Verify the referenced token exists in an enabled token set
 - Check token path spelling and case sensitivity
 - Ensure referenced token set is loaded before the referencing set
@@ -998,6 +1016,7 @@ Common issues and their solutions when working with Chassis Tokens and Tokens St
 **Problem**: Circular reference detected
 
 **Solutions:**
+
 - Review token reference chain to find the loop
 - Break the circle by using a direct value at one point
 - Restructure tokens to have a clear hierarchy (base → derivative)
@@ -1007,6 +1026,7 @@ Common issues and their solutions when working with Chassis Tokens and Tokens St
 **Problem**: Changing theme doesn't update variable values
 
 **Solutions:**
+
 - Check if we've switched the correct theme group (Brand vs Theme vs App)
 - Some variables may be scoped to specific modes
 - Try detaching and reapplying variables to design elements
@@ -1015,6 +1035,7 @@ Common issues and their solutions when working with Chassis Tokens and Tokens St
 **Problem**: Variables show old values after token update
 
 **Solutions:**
+
 - Clear Tokens Studio cache (Settings → Advanced → Clear Cache)
 - Force sync from Git repository
 - Close and reopen Figma file
@@ -1025,6 +1046,7 @@ Common issues and their solutions when working with Chassis Tokens and Tokens St
 **Problem**: Token has unexpected value
 
 **Solutions:**
+
 - Check the token set order in theme configuration
 - Later sets override earlier ones - verify override precedence
 - Use Tokens Studio's "Inspect" feature to see token resolution
@@ -1033,6 +1055,7 @@ Common issues and their solutions when working with Chassis Tokens and Tokens St
 **Problem**: Color looks different in Figma vs code
 
 **Solutions:**
+
 - Verify color space settings (sRGB vs P3)
 - Check if color modifications are applied correctly
 - Ensure Style Dictionary config matches Figma transform
@@ -1043,8 +1066,8 @@ Common issues and their solutions when working with Chassis Tokens and Tokens St
 **Problem**: Merge conflicts in token files
 
 **Solutions:**
+
 - Pull latest changes before making token edits
 - Coordinate with team on which token sets to edit
 - Use smaller, focused token sets to reduce conflict surface area
 - When conflicts occur, carefully merge JSON maintaining valid syntax
-

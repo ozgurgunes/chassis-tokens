@@ -17,10 +17,12 @@ Chassis Tokens uses a layered typography architecture where foundational tokens 
 **How it works:**
 
 Brand group tokens define the core typographic identity:
+
 - Font families for different text categories (text, display, code)
 - Font weights with semantic names (normal, strong, mass, elegant)
 
 App group tokens combine these foundational elements with size and spacing values to create complete typography styles ready for use in components:
+
 - `font.text.medium.normal` combines fontFamily, fontWeight, fontSize, lineHeight, and other properties
 - Composite tokens automatically adapt when brand fonts or weights change
 
@@ -64,6 +66,7 @@ Font family tokens define the typefaces used throughout the design system. These
 </CxTable>
 
 ### Example Values
+
 ```json
 {
   "typography": {
@@ -103,6 +106,7 @@ where `[family]` can be `text`, `display`, or `code`.
 ### Weight Hierarchy
 
 The semantic naming provides a clear hierarchy:
+
 - **elegant**: Minimal visual weight, used sparingly for sophisticated treatments
 - **normal**: Default weight for most content
 - **strong**: Clear emphasis without overpowering

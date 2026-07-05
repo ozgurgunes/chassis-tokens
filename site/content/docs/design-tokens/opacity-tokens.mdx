@@ -17,6 +17,7 @@ Opacity tokens are defined in the **metric-base** token set, which is part of th
 **How it works:**
 
 Opacity tokens provide standard transparency values that can be applied to colors:
+
 - Used in rgba() color functions to create transparent variations
 - Referenced by semantic opacity tokens for specific UI purposes
 - Applied directly to elements for visual effects like overlays and dimming
@@ -172,12 +173,14 @@ This pattern allows changing transparency levels globally by adjusting opacity t
 ### Best Practices
 
 **Do:**
+
 - Use contextual opacity tokens for semantic elements (fg-subtle, border-main)
 - Use base opacity tokens when creating new transparent color variations
 - Document the purpose when using non-standard opacity values
 - Test opacity against both light and dark backgrounds
 
 **Don't:**
+
 - Use arbitrary opacity values—always reference tokens
 - Stack multiple semi-transparent elements without testing visibility
 - Rely solely on opacity to convey critical information

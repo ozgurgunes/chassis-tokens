@@ -17,6 +17,7 @@ Border radius tokens use a two-layer architecture where base radius values are d
 **How it works:**
 
 The system provides brand flexibility with application consistency:
+
 1. **Base border radius** (`borderRadius.base.*`) defines brand-specific rounding values
 2. **Contextual border radius** (`borderRadius.context.*`) references base values with semantic names
 3. **Component border radius** (`borderRadius.[component].*`) assigns specific rounding to UI elements
@@ -66,6 +67,7 @@ Base border radius tokens are defined in the Brand group and establish the brand
 Brands can override these values to achieve different visual styles:
 
 **Sharp Style** (Minimal rounding):
+
 ```json
 {
   "borderRadius.base.small": "2px",
@@ -75,6 +77,7 @@ Brands can override these values to achieve different visual styles:
 ```
 
 **Rounded Style** (Moderate rounding):
+
 ```json
 {
   "borderRadius.base.small": "6px",
@@ -84,6 +87,7 @@ Brands can override these values to achieve different visual styles:
 ```
 
 **Highly Rounded Style** (Soft rounding):
+
 ```json
 {
   "borderRadius.base.small": "8px",
@@ -256,6 +260,7 @@ Component-specific border radius tokens assign rounding to individual UI element
 ### Best Practices
 
 **Do:**
+
 - Use component tokens for specific UI elements
 - Use contextual tokens for custom components
 - Maintain consistency across similar elements
@@ -263,6 +268,7 @@ Component-specific border radius tokens assign rounding to individual UI element
 - Use brand base tokens for global style changes
 
 **Don't:**
+
 - Use arbitrary radius values—always reference tokens
 - Mix different rounding styles inconsistently
 - Use excessive rounding that distorts content

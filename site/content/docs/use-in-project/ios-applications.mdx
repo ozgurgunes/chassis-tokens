@@ -163,10 +163,10 @@ end
 ```ruby
 target 'YourApp' do
   use_frameworks!
-  
+
   # From local path
   pod 'ChassisTokens', :path => '../ChassisTokens'
-  
+
   # Or from Git
   # pod 'ChassisTokens', :git => 'https://github.com/chassis-ui/tokens.git'
 end
@@ -201,15 +201,15 @@ import UIKit
 class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         // Background colors
         view.backgroundColor = DesignTokens.cxColorContextDefaultBgMain
-        
+
         // Create a card view
         let cardView = UIView()
         cardView.backgroundColor = DesignTokens.cxColorContextDefaultBgEvident
         cardView.layer.cornerRadius = DesignTokens.cxBorderRadiusBase8
-        
+
         // Add shadow
         cardView.layer.shadowColor = DesignTokens.cxColorShadowDefault.cgColor
         cardView.layer.shadowOffset = CGSize(width: 0, height: 2)
@@ -224,23 +224,23 @@ class ViewController: UIViewController {
 ```swift
 class ButtonView: UIView {
     private let button = UIButton()
-    
+
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupLayout()
     }
-    
+
     private func setupLayout() {
         button.translatesAutoresizingMaskIntoConstraints = false
         addSubview(button)
-        
+
         NSLayoutConstraint.activate([
             button.topAnchor.constraint(equalTo: topAnchor, constant: DesignTokens.cxSpaceBase16),
             button.leadingAnchor.constraint(equalTo: leadingAnchor, constant: DesignTokens.cxSpaceBase16),
             button.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -DesignTokens.cxSpaceBase16),
             button.heightAnchor.constraint(equalToConstant: DesignTokens.cxSizeButtonMediumHeight)
         ])
-        
+
         // Button styling
         button.backgroundColor = DesignTokens.cxColorContextPrimaryBgSolid
         button.setTitleColor(DesignTokens.cxColorContextPrimaryFgSolid, for: .normal)
@@ -261,7 +261,7 @@ class ButtonView: UIView {
 class LabelView: UIView {
     private let titleLabel = UILabel()
     private let bodyLabel = UILabel()
-    
+
     private func setupLabels() {
         // Title
         titleLabel.font = UIFont(
@@ -269,7 +269,7 @@ class LabelView: UIView {
             size: DesignTokens.cxTypographyFontSizeText3xlarge
         )
         titleLabel.textColor = DesignTokens.cxColorContextDefaultFgMain
-        
+
         // Body text
         bodyLabel.font = UIFont(
             name: DesignTokens.cxTypographyFontFamilyText,
@@ -293,7 +293,7 @@ struct ContentView: View {
         VStack(spacing: CGFloat(DesignTokens.cxSpaceBase16)) {
             Text("Hello, World!")
                 .foregroundColor(Color(DesignTokens.cxColorContextDefaultFgMain))
-            
+
             RoundedRectangle(cornerRadius: DesignTokens.cxBorderRadiusBase8)
                 .fill(Color(DesignTokens.cxColorContextPrimaryBgSolid))
                 .frame(height: DesignTokens.cxSizeBase64)
@@ -315,11 +315,11 @@ extension Color {
     static var bgMain: Color {
         Color(DesignTokens.cxColorContextDefaultBgMain)
     }
-    
+
     static var fgMain: Color {
         Color(DesignTokens.cxColorContextDefaultFgMain)
     }
-    
+
     static var primaryBg: Color {
         Color(DesignTokens.cxColorContextPrimaryBgSolid)
     }
@@ -357,17 +357,17 @@ import UIKit
 
 class ThemeManager {
     static let shared = ThemeManager()
-    
+
     enum Theme {
         case light
         case dark
     }
-    
+
     private(set) var currentTheme: Theme = .light
-    
+
     func applyTheme(_ theme: Theme) {
         currentTheme = theme
-        
+
         // Import appropriate color tokens
         switch theme {
         case .light:
@@ -377,7 +377,7 @@ class ThemeManager {
             // Use color-dark.swift tokens
             break
         }
-        
+
         // Post notification for UI updates
         NotificationCenter.default.post(name: .themeDidChange, object: nil)
     }
@@ -425,7 +425,7 @@ enum DeviceSize {
     case small  // iPhone SE, iPhone 8
     case medium // iPhone 12, iPhone 13
     case large  // iPhone 14 Pro Max, iPad
-    
+
     static var current: DeviceSize {
         let width = UIScreen.main.bounds.width
         switch width {
@@ -488,6 +488,7 @@ class TokenManager {
 **Problem**: Cannot find 'DesignTokens' in scope
 
 **Solution**: Ensure Swift files are added to your target:
+
 1. Select file in Xcode navigator
 2. Open File Inspector
 3. Check Target Membership
@@ -497,6 +498,7 @@ class TokenManager {
 **Problem**: Colors appear incorrect
 
 **Solution**: Verify color space and alpha values:
+
 ```swift
 // Check color components
 let color = DesignTokens.cxColorContextPrimaryBgSolid
@@ -574,21 +576,21 @@ jobs:
       - uses: actions/checkout@v3
         with:
           submodules: recursive
-      
+
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
           node-version: '18'
-      
+
       - name: Install pnpm
         run: npm install -g pnpm
-      
+
       - name: Generate Tokens
         run: |
           cd Submodules/ChassisTokens
           pnpm install
           pnpm tokens --platform ios --brand chassis --app yourapp
-      
+
       - name: Build iOS App
         run: xcodebuild -project YourApp.xcodeproj -scheme YourApp
 ```

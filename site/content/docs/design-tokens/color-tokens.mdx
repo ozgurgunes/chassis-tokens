@@ -153,7 +153,6 @@ Two special context colors exist in addition to the palette-based contexts: `def
 | `white` | Pure white surfaces, contrast against dark backgrounds, and light mode foundations. |
 </CxTable>
 
-
 ### Key Context Colors
 
 Key context colors reference the foundational palette colors and serve as the basis for all other context color variations.
@@ -222,7 +221,6 @@ Border colors define the appearance of component boundaries, dividers, and separ
 | `color.context.[color-name].border-main` | Standard border for components, cards, inputs, and layout divisions. Provides clear visual separation. |
 | `color.context.[color-name].border-subtle` | Subtle separator with transparency. Used for lightweight dividers, table borders, and when minimal visual weight is needed. |
 </CxTable>
-
 
 ### Icon Colors
 
@@ -656,6 +654,7 @@ Component color tokens follow consistent naming patterns: `color.[component].[va
 ### Best Practices
 
 **Do:**
+
 - Use semantic context colors (`color.context.primary.*`) over base palette colors
 - Reference component tokens when building UI components
 - Test color combinations in both light and dark themes
@@ -663,6 +662,7 @@ Component color tokens follow consistent naming patterns: `color.[component].[va
 - Pair colors that reference each other (e.g., `fg-main` with `bg-main`)
 
 **Don't:**
+
 - Use palette colors directly in components (use context colors)
 - Mix light and dark theme colors
 - Override token values with hard-coded colors
