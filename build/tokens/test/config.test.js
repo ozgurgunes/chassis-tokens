@@ -92,7 +92,7 @@ describe('Style Dictionary Configuration Generator', () => {
       const config = configModule.default(params)
 
       expect(config.platforms.web).toBeDefined()
-      expect(config.platforms.web.buildPath).toContain('dist/web/chassis-docs/')
+      expect(config.platforms.web.buildPath).toContain('dist/web/docs/chassis/')
       expect(config.platforms.web.files).toBeInstanceOf(Array)
     })
 
@@ -106,7 +106,7 @@ describe('Style Dictionary Configuration Generator', () => {
       const config = configModule.default(params)
 
       expect(config.platforms.ios).toBeDefined()
-      expect(config.platforms.ios.buildPath).toContain('dist/ios/chassis-test/')
+      expect(config.platforms.ios.buildPath).toContain('dist/ios/test/chassis/')
       expect(config.platforms.ios.files).toBeInstanceOf(Array)
     })
 
@@ -120,7 +120,7 @@ describe('Style Dictionary Configuration Generator', () => {
       const config = configModule.default(params)
 
       expect(config.platforms.android).toBeDefined()
-      expect(config.platforms.android.buildPath).toContain('dist/android/chassis-test/')
+      expect(config.platforms.android.buildPath).toContain('dist/android/test/chassis/')
       expect(config.platforms.android.files).toBeInstanceOf(Array)
     })
   })
@@ -132,19 +132,19 @@ describe('Style Dictionary Configuration Generator', () => {
           brand: 'chassis',
           app: 'docs',
           platform: 'web',
-          expected: 'dist/web/chassis-docs/'
+          expected: 'dist/web/docs/chassis/'
         },
         {
           brand: 'test',
           app: 'mobile',
           platform: 'ios',
-          expected: 'dist/ios/test-mobile/'
+          expected: 'dist/ios/mobile/test/'
         },
         {
           brand: 'custom',
           app: 'admin',
           platform: 'android',
-          expected: 'dist/android/custom-admin/'
+          expected: 'dist/android/admin/custom/'
         }
       ]
 
@@ -195,7 +195,7 @@ describe('Style Dictionary Configuration Generator', () => {
 
       // Web should have scss format
       const webFiles = webConfig.platforms.web.files
-      expect(webFiles.some((f) => f.format === 'cx/scss-variables')).toBe(true)
+      expect(webFiles.some((f) => f.format === 'cx/scss-chassis-css')).toBe(true)
 
       // iOS should have swift format
       const iosFiles = iosConfig.platforms.ios.files

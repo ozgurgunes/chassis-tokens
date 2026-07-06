@@ -68,12 +68,12 @@ When token values change in the repository:
 Once designs use variables, updating token values requires zero manual design changes. Pull → Push → Publish. All connected designs update automatically.
 </Callout>
 
-
 ### Sync Behavior
 
 Understanding how Tokens Studio handles the sync process:
 
 **What gets synced:**
+
 - ✅ All tokens from enabled token sets in the selected theme options
 - ✅ Token references and aliases are resolved to their final values
 - ✅ Color modifications (lighten, darken, alpha) are applied
@@ -81,12 +81,14 @@ Understanding how Tokens Studio handles the sync process:
 - ✅ Token metadata and descriptions (if configured)
 
 **What doesn't sync:**
+
 - ❌ Tokens in disabled token sets
 - ❌ Tokens marked as "Source" only (available for reference but not exported)
 - ❌ Comments in JSON files
 - ❌ Custom `$extensions` properties (except Tokens Studio specific ones)
 
 **Sync conflicts:**
+
 - ⚠️ If a Variable already exists with the same name, Tokens Studio updates its value
 - ⚠️ If a Collection exists with the same name, Tokens Studio adds or updates Modes within it
 - ⚠️ Manual Variables created outside Tokens Studio are preserved unless they conflict
@@ -147,6 +149,7 @@ App (Theme Group)            → App (Variable Collection)
 ```
 
 This structure enables designers to:
+
 - Switch brands by changing the Brand collection's mode
 - Toggle between light/dark themes by changing the Theme collection's mode
 - Preview platform-specific sizing by changing the App collection's mode
@@ -157,17 +160,20 @@ This structure enables designers to:
 Each Variable Collection in Figma corresponds to one Theme Group in Chassis Tokens:
 
 **Brand Collection:**
+
 - Contains color palette, typography, and border radius tokens
 - Modes represent different brand identities
 - Typically includes 1500+ variables depending on token system complexity
 - Not directly used in design but serves as the foundational source for Theme and App collection variables
 
 **Theme Collection:**
+
 - Contains palette, context and shadow colors to use in designs.
 - Modes represent color mode variations (light, dark, high contrast)
 - Variables alias the Brand collection colors, adapting them for each mode
 
 **App Collection:**
+
 - Contains component specific variables in addition to general sizing, spacing, borders, etc...
 - Modes represent platform or context variations
 - Variables may alias Theme or Brand collections depending on the token type
@@ -181,6 +187,7 @@ Variable Collections appear in Figma's Variables panel in the order they're sync
 Modes within a Collection represent different variations of the same set of variables:
 
 **Mode Behavior:**
+
 - Each Mode provides different values for the same variable names
 - Only one Mode per Collection can be active at a time
 - Switching Modes updates all instances using variables from that Collection
@@ -190,7 +197,7 @@ Modes within a Collection represent different variations of the same set of vari
 
 ```
 Button Properties:
-- Background Color: 
+- Background Color:
   color/button/primary/bg-idle (from App Collection)
   ↓ aliases to
   color/context/primary/bg-idle (from Theme Collection)
@@ -202,7 +209,7 @@ Active Modes:
 - Theme Collection: Dark Mode
 - App Collection: Mobile Mode
 
-Result: 
+Result:
 Button shows Brand A's primary color in its dark mode variant with mobile-optimized spacing
 ```
 
@@ -235,7 +242,7 @@ These variables are still available for reference in other variables but won't a
 
 It is important to set appropriate Variable Scopes to ensure that variables only appear in relevant property dropdowns. This improves the designer experience by showing only applicable variables when styling elements. See [Figma docs](https://help.figma.com/hc/en-us/articles/15145852043927-Create-and-manage-variables-and-collections) for more details on scopes.
 
-To set scopes, select the variables in the Variables panel, click "Edit variable", click "Scope" tab and check the appropriate scope options in the right panel. 
+To set scopes, select the variables in the Variables panel, click "Edit variable", click "Scope" tab and check the appropriate scope options in the right panel.
 
 **Suggested scopes for Chassis Tokens variables:**
 
@@ -299,6 +306,7 @@ Button Component (Container Frame with Auto Layout)
 ```
 
 **Result:**
+
 - Button automatically adapts to active Brand mode
 - Switches colors for theme modes of active brand (light/dark)
 - Adjusts sizing, spacing and border styles for app modes (web/mobile)
@@ -340,6 +348,7 @@ Header Component
 ```
 
 **Results:**
+
 - When Brand A + Light Theme is active, only `logo-a-light` is visible
 - When Brand A + Dark Theme is active, only `logo-a-dark` is visible
 - When Brand B + Light Theme is active, only `logo-b-light` is visible
@@ -350,13 +359,14 @@ Header Component
 Using App collection modes to create responsive layouts:
 
 **Token Setup:**
+
 ```json
 // app-web.json (Web mode)
 "space.section.padding-x": {
   "$value": "64"
 }
 
-// app-mobile.json (Mobile mode) 
+// app-mobile.json (Mobile mode)
 "space.section.padding-x": {
   "$value": "16"
 }
@@ -365,6 +375,7 @@ Using App collection modes to create responsive layouts:
 **In Figma:**
 
 Apply `space/section/padding-x` to section frame padding:
+
 - Web mode: 64px horizontal padding
 - Mobile mode: 16px horizontal padding
 
@@ -378,7 +389,6 @@ When presenting designs or sharing prototypes, you can switch Variable Modes in 
 - Create separate pages for each app mode to show responsive designs for different devices or platforms.
 - Create separate sections in your prototype for different theme modes to demonstrate light/dark mode variations.
 
-
 ## Troubleshooting
 
 Common issues when working with Figma Variables and how to resolve them.
@@ -388,6 +398,7 @@ Common issues when working with Figma Variables and how to resolve them.
 **Problem**: Token Studio plugin crashes or shows error during sync
 
 **Solutions:**
+
 - Verify your token files have valid JSON syntax (no trailing commas, missing brackets)
 - Check for circular token references (tokens referencing each other in a loop)
 - Ensure your Git repository connection is stable and authenticated
@@ -399,6 +410,7 @@ Common issues when working with Figma Variables and how to resolve them.
 **Problem**: Variables not appearing in Figma after sync
 
 **Solutions:**
+
 - Verify you clicked "Push to Figma" (not just "Pull from [Storage]")
 - Check that token sets are marked as "Enable" not just "Source"
 - Ensure you have edit permissions on the Figma file
@@ -410,6 +422,7 @@ Common issues when working with Figma Variables and how to resolve them.
 **Problem**: Some variables synced but others missing
 
 **Solutions:**
+
 - Verify token files have valid JSON syntax (no trailing commas, missing brackets)
 - Check that missing tokens are in enabled token sets for selected theme options
 - Look for token reference errors (referencing non-existent tokens)
@@ -421,18 +434,19 @@ Common issues when working with Figma Variables and how to resolve them.
 **Problem**: Sync taking very long
 
 **Solutions:**
+
 - First sync always takes longest (creating everything fresh)
 - Subsequent syncs should be faster—if not, check for issues
 - Verify stable internet connection (tokens pulled from Git)
 - Try clearing Tokens Studio cache and syncing again
 - Large color palettes with many modifications slow sync—optimize where possible
 
-
 ### Wrong or Missing Values
 
 **Problem**: Variable shows wrong value
 
 **Solutions:**
+
 - Verify correct theme options are selected in Tokens Studio
 - Check token set order—later sets override earlier ones
 - Inspect token in Tokens Studio to see resolved value chain
@@ -444,6 +458,7 @@ Common issues when working with Figma Variables and how to resolve them.
 **Problem**: Variable doesn't update when switching modes
 
 **Solutions:**
+
 - Ensure the variable belongs to the Collection whose mode you're switching
 - Check if variable is mode-independent (same value in all modes)
 - Verify token set for that mode is enabled in theme configuration
@@ -454,6 +469,7 @@ Common issues when working with Figma Variables and how to resolve them.
 **Problem**: Changing Brand mode doesn't update Theme colors
 
 **Solutions:**
+
 - Verify Theme tokens reference Brand tokens (not hard-coded values)
 - Check that Brand collection has all necessary modes synced
 - Ensure Frame has the correct Brand mode applied
@@ -464,6 +480,7 @@ Common issues when working with Figma Variables and how to resolve them.
 **Problem**: Some elements update with mode change, others don't
 
 **Solutions:**
+
 - Check if non-updating elements use variables or fixed values
 - Verify non-updating elements reference variables from the correct Collection
 - Ensure all parent frames have appropriate modes set
@@ -474,6 +491,7 @@ Common issues when working with Figma Variables and how to resolve them.
 **Problem**: Variable doesn't appear in property dropdown
 
 **Solutions:**
+
 - Check variable scopes—may not include the property you're trying to apply to
 - Use search in variable dropdown instead of scrolling
 - Manually edit variable scopes in Figma Variables panel
@@ -484,6 +502,7 @@ Common issues when working with Figma Variables and how to resolve them.
 **Problem**: Wrong variables appear in property dropdown
 
 **Solutions:**
+
 - Variable scopes may be too broad (e.g., color token scoped to all properties)
 - Adjust scopes manually in Variables panel
 - Use clear naming convention that indicates intended use (`.bg-*`, `.fg-*`)
@@ -493,6 +512,7 @@ Common issues when working with Figma Variables and how to resolve them.
 **Problem**: Updated variables not appearing in consuming files
 
 **Solutions:**
+
 - Verify you published the library after syncing tokens
 - Check that consuming files have updates available (Libraries panel shows notification)
 - Click "Review update" and accept changes in consuming files
@@ -504,6 +524,7 @@ Common issues when working with Figma Variables and how to resolve them.
 **Problem**: Breaking changes after publish
 
 **Solutions:**
+
 - If variable names changed, consuming files lose variable connections
 - Communicate variable name changes before publishing
 - Keep old variables as deprecated for 1-2 versions if possible
@@ -512,10 +533,12 @@ Common issues when working with Figma Variables and how to resolve them.
 ## Related Topics
 
 **Getting Started:**
+
 - [Tokens Studio]([[docsref:/getting-started/tokens-studio]]) - Set up and configure Tokens Studio plugin
 - [Style Dictionary]([[docsref:/getting-started/style-dictionary]]) - Generate code outputs from tokens
 
 **Design Token Architecture:**
+
 - [Color Tokens]([[docsref:/design-tokens/color-tokens]]) - Color system and palette structure
 - [Typography Tokens]([[docsref:/design-tokens/typography-tokens]]) - Font and text styling
 - [Shadow Tokens]([[docsref:/design-tokens/shadow-tokens]]) - Elevation and shadow system

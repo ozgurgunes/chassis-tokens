@@ -75,6 +75,7 @@ Build options are defined in `package.json` under the `chassis` key:
 ```
 
 This configuration defines:
+
 - **Brands**: Available brand identities to build
 - **Themes**: Color mode variations to generate
 - **Screens**: (Optional) Responsive breakpoint sizes. When configured, generates separate number files per screen (e.g., `number-large.scss`). When omitted or empty, generates a single `number.scss` file
@@ -114,6 +115,7 @@ pnpm tokens --brand chassis --theme light dark --app docs
 ```
 
 **Available options:**
+
 - `--brand <brands...>` — Filter by brand
 - `--theme <themes...>` — Filter by theme
 - `--app <apps...>` — Filter by app
@@ -157,6 +159,7 @@ $cx-border-radius-accordion-main: 0.375rem !default;
 ```
 
 **Configuration:**
+
 - Base font size: `16px`
 - Size transform: `cx/size/rem`
 - Prefix: configurable (default: `cx`)
@@ -181,6 +184,7 @@ public class Tokens {
 ```
 
 **Configuration:**
+
 - Naming convention: PascalCase
 - Color output: UIColor with RGBA
 - Imports: UIKit
@@ -199,6 +203,7 @@ Generates Android XML resource files:
 ```
 
 **Configuration:**
+
 - Naming convention: snake_case
 - Size units: dp (density-independent pixels)
 - Color format: Hex
@@ -256,11 +261,12 @@ $cx-shadow-context-small: 0rem 0rem 0.0625rem 0rem rgba(0, 0, 0, 0.1), 0rem 0rem
 ```
 
 **Includes:**
+
 - Brand group color tokens
 - App group color tokens
 - All dimension or number tokens (size, space, opacity, etc.)
 - Base typography tokens
-- Composite typography tokens (font.*) as Sass maps
+- Composite typography tokens (font.\*) as Sass maps
 - Shadow tokens
 - Gradient tokens
 
@@ -391,7 +397,7 @@ Only color tokens (excludes palette, context, utility):
 ### cx/themeTokens
 
 Only theme-level color tokens:
-  
+
 ```javascript
 // Includes: color.palette.*, color.context.*
 // Excludes: color.base.*, color.utility.*
@@ -427,6 +433,7 @@ $cx-font-context-lead: ("font-family": var(--#{$prefix}font-family-text), "font-
 ```
 
 **Features:**
+
 - File header with copyright and license
 - CSS custom property references for colors, spacing, and typography
 - Enables runtime theme switching without recompilation
@@ -455,6 +462,7 @@ $cx-font-context-lead: ("font-family": $cx-typography-font-family-text, "font-we
 ```
 
 **Features:**
+
 - File header with copyright and license
 - Dynamic prefix from platform config (e.g., `cx`, `mnd`, or none)
 - Proper lineHeight conversion to `em` units and letterSpacing to `em`
@@ -482,6 +490,7 @@ public class Tokens {
 ```
 
 **Features:**
+
 - PascalCase property names
 - Native iOS types (UIColor, CGFloat)
 - Proper import statements
@@ -500,6 +509,7 @@ Generates Android XML resource files:
 ```
 
 **Features:**
+
 - snake_case resource names
 - Proper XML structure
 - Type-specific resource tags
@@ -580,6 +590,7 @@ const tokens = permutateThemes($themes, { separator: '_' })
 ```
 
 This creates permutations like:
+
 - `chassis_docs_light`
 - `chassis_docs_dark`
 - `chassis_demo_light_large`
@@ -596,6 +607,7 @@ Common issues and solutions when working with Style Dictionary.
 **Problem**: "Token not found" or "Cannot resolve reference"
 
 **Solutions:**
+
 - Verify token files exist in `tokens/` directory
 - Check `$themes.json` configuration for correct token set references
 - Ensure theme option has correct token sets enabled
@@ -604,6 +616,7 @@ Common issues and solutions when working with Style Dictionary.
 **Problem**: Build completes but files are empty
 
 **Solutions:**
+
 - Check filter configuration - tokens may be filtered out
 - Verify token types match filter criteria
 - Review preprocessor logic for token modifications
@@ -613,6 +626,7 @@ Common issues and solutions when working with Style Dictionary.
 **Problem**: Size values not converting to correct units
 
 **Solutions:**
+
 - Check platform configuration specifies correct transforms
 - Verify `basePxFontSize` is set for rem/vw transforms
 - Ensure token type matches transform filter
@@ -620,6 +634,7 @@ Common issues and solutions when working with Style Dictionary.
 **Problem**: Colors not formatted correctly
 
 **Solutions:**
+
 - Verify `ts/color/modifiers` transform is registered
 - Check color tokens have valid hex or rgba values
 - Review platform-specific color format requirements
@@ -629,6 +644,7 @@ Common issues and solutions when working with Style Dictionary.
 **Problem**: Generated files in wrong directory
 
 **Solutions:**
+
 - Check `buildPath` in platform configuration
 - Verify brand and app names match directory structure
 - Review `config/` file path generation logic
@@ -636,6 +652,7 @@ Common issues and solutions when working with Style Dictionary.
 **Problem**: Missing tokens in output
 
 **Solutions:**
+
 - Verify tokens pass the filter for that file
 - Check token set is enabled in theme configuration
 - Review file generation logic in `config/`
@@ -643,11 +660,13 @@ Common issues and solutions when working with Style Dictionary.
 ### Platform-Specific Issues
 
 **iOS:**
+
 - Ensure UIKit import is included
 - Verify PascalCase naming convention
 - Check CGFloat types for numeric values
 
 **Android:**
+
 - Validate XML structure
 - Ensure snake_case naming
 - Check dp/sp units for dimensions
@@ -659,11 +678,13 @@ Guidelines for working effectively with Style Dictionary in Chassis Tokens.
 ### Token Organization
 
 **Separate concerns:**
+
 - Keep base tokens platform-agnostic
 - Use platform-specific transforms for output
 - Organize tokens by component or feature
 
 **Use semantic naming:**
+
 ```scss
 // ✅ Good - semantic meaning
 $cx-color-button-primary-bg-default
@@ -685,6 +706,7 @@ pnpm tokens --brand chassis --theme light
 ```
 
 **Cache build artifacts:**
+
 - Style Dictionary caches results when possible
 - Only rebuild when token files change
 - Use CI/CD to build on commits
@@ -694,14 +716,17 @@ pnpm tokens --brand chassis --theme light
 **Commit built files strategically:**
 
 Option 1: Commit dist files for direct consumption
+
 - Pros: Consumers don't need to build
 - Cons: Larger repository size
 
 Option 2: Build during publish/deploy
+
 - Pros: Smaller repository
 - Cons: Requires build step in CI/CD
 
 **Document build requirements:**
+
 - Specify Node.js version
 - Document npm scripts
 - Include build instructions in README
@@ -722,6 +747,7 @@ pnpm validate
 ```
 
 **Test platform output:**
+
 - Import generated files in target projects
 - Verify values match design specifications
 - Test theme switching functionality
@@ -729,16 +755,19 @@ pnpm validate
 ### Custom Extensions
 
 **When to create custom transforms:**
+
 - Platform requires specific format
 - Need specialized value conversion
 - Implementing design system conventions
 
 **When to create custom filters:**
+
 - Grouping tokens by feature
 - Platform-specific token subsets
 - Performance optimization
 
 **When to create custom formats:**
+
 - New platform not supported by default
 - Specific file structure required
 - Integration with existing systems
@@ -746,6 +775,7 @@ pnpm validate
 ## Related Topics
 
 **Design Token Fundamentals:**
+
 - [Color Tokens]([[docsref:/design-tokens/color-tokens]]) - Deep dive into color system architecture
 - [Typography Tokens]([[docsref:/design-tokens/typography-tokens]]) - Font and text styling tokens
 - [Sizing Tokens]([[docsref:/design-tokens/size-tokens]]) - Layout and sizing system
@@ -756,6 +786,7 @@ pnpm validate
 - [Opacity Tokens]([[docsref:/design-tokens/opacity-tokens]]) - Define and manage opacity tokens
 
 **Implementation Guides:**
+
 - [Web Applications]([[docsref:/use-in-project/web-applications]]) - Implementing tokens in CSS and JS
 - [iOS Applications]([[docsref:/use-in-project/ios-applications]]) - Implementing tokens in Swift
 - [Android Applications]([[docsref:/use-in-project/android-applications]]) - Implementing tokens in XML

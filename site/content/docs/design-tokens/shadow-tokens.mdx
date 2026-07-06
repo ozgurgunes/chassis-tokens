@@ -17,6 +17,7 @@ Shadow tokens are defined in the **App group** and use an elevation-based system
 **How it works:**
 
 The system provides progressive elevation:
+
 1. **Contextual shadows** (`shadow.context.*`) define semantic shadow styles (none, small, medium, large, inset)
 2. **Elevation shadows** (`shadow.elevation.*`) create a systematic depth scale
 3. **Component shadows** (`shadow.[component].*`) assign specific shadows to UI elements
@@ -152,30 +153,35 @@ Context color elevation shadows maintain the same geometric properties (x, y, bl
 ### Elevation Hierarchy
 
 **Levels 05-10** (Minimal elevation):
+
 - Extremely subtle depth
 - Pressed button states
 - Slightly raised cards
 - Minimal visual separation
 
 **Levels 20-30** (Light elevation):
+
 - Hover states for interactive elements
 - Standard cards and panels
 - Dropdown triggers on hover
 - Active/selected states
 
 **Levels 40-50** (Medium elevation):
+
 - Modal dialogs
 - Dropdown menus and popovers
 - Floating action buttons
 - Prominent cards
 
 **Levels 60-70** (High elevation):
+
 - Important overlays
 - Critical notifications
 - Toast notifications
 - Top navigation bars
 
 **Levels 80-95** (Maximum elevation):
+
 - Highest priority content
 - Context menus
 - Tooltips over modals
@@ -320,6 +326,7 @@ Elements that appear above the page:
 ### Best Practices
 
 **Do:**
+
 - Use component tokens for specific UI elements
 - Use elevation system for systematic depth
 - Test shadows in both light and dark modes
@@ -327,6 +334,7 @@ Elements that appear above the page:
 - Keep blur radius reasonable (< 24px for most cases)
 
 **Don't:**
+
 - Use arbitrary shadow values—always reference tokens
 - Create "floating" interfaces with too many elevated elements
 - Use shadows on every element—reserve for emphasis

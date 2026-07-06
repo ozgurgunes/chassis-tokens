@@ -10,7 +10,6 @@ import { describe, test, expect, beforeEach, afterEach, vi } from 'vitest'
 // Mock all external dependencies at the top level
 vi.mock('fs')
 vi.mock('path')
-vi.mock('minimist')
 vi.mock('style-dictionary')
 vi.mock('@tokens-studio/sd-transforms')
 vi.mock('../config/index.js')

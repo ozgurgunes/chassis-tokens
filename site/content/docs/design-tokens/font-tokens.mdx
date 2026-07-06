@@ -21,11 +21,13 @@ Chassis Tokens uses a comprehensive typography system with multiple layers:
 ### Foundational Layer (Brand Group)
 
 **Font Families**: Brand-specific typeface definitions
+
 - `typography.fontFamily.text` - Body text font
 - `typography.fontFamily.display` - Heading font
 - `typography.fontFamily.code` - Monospace font
 
 **Font Weights**: Semantic weight definitions
+
 - `typography.fontWeight.[family].normal` - Default weight
 - `typography.fontWeight.[family].strong` - Bold weight
 - `typography.fontWeight.[family].mass` - Extra bold weight
@@ -34,6 +36,7 @@ Chassis Tokens uses a comprehensive typography system with multiple layers:
 ### Modular Layer (App Group)
 
 **Individual Properties**:
+
 - `typography.fontSize.*` - Size scales
 - `typography.lineHeight.*` - Line height scales
 - `typography.letterSpacing.*` - Letter spacing values
@@ -70,6 +73,7 @@ These are the "font tokens" that combine all properties:
 ### Text Family Styles
 
 Composite typography tokens using the text font family:
+
 - `font.text.[size].normal` - Regular weight text
 - `font.text.[size].strong` - Bold text
 - `font.text.[size].mass` - Extra bold text
@@ -80,6 +84,7 @@ Where `[size]` can be: 2xsmall, xsmall, small, medium, large, xlarge, 2xlarge, 3
 ### Display Family Styles
 
 Composite typography tokens using the display font family:
+
 - `font.display.[size].normal` - Display headings
 - `font.display.[size].strong` - Bold display text
 - `font.display.[size].mass` - Extra bold display text
@@ -88,6 +93,7 @@ Composite typography tokens using the display font family:
 ### Code Family Styles
 
 Composite typography tokens using the code font family:
+
 - `font.code.small.normal` - Small code text
 - `font.code.medium.normal` - Medium code text
 - `font.code.large.normal` - Large code text
@@ -96,6 +102,7 @@ Composite typography tokens using the code font family:
 ### Contextual Font Styles
 
 Semantic typography tokens for specific content types:
+
 - `font.context.jumbo` - Largest heading (96px)
 - `font.context.hero` - Hero heading (64px)
 - `font.context.lead` - Lead paragraph
@@ -107,6 +114,7 @@ Semantic typography tokens for specific content types:
 ### Component Font Styles
 
 Component-specific typography tokens:
+
 - `font.button.[size]` - Button labels
 - `font.form-input.*` - Input field text
 - `font.badge.[size]` - Badge text
@@ -175,12 +183,15 @@ For comprehensive information about the typography system including:
 ### Font Token Naming Pattern
 
 **Composite tokens**: `font.[family].[size].[weight]`
+
 - Example: `font.text.medium.strong`
 
 **Contextual tokens**: `font.context.[semantic-name]`
+
 - Example: `font.context.heading`
 
 **Component tokens**: `font.[component].[variant]`
+
 - Example: `font.button.large`
 
 ## Architecture Diagram
@@ -212,10 +223,12 @@ App Group (Component)
 If you're migrating from systems that separate "font tokens" from "typography tokens":
 
 **In Chassis Tokens**:
+
 - What you might call "font tokens" = typography primitive tokens (fontFamily, fontWeight)
 - What you might call "text style tokens" = font tokens (composite typography)
 
 **Practical mapping**:
+
 - Old: Apply font family + font size + line height separately
 - New: Use single `font.text.medium.normal` token
 

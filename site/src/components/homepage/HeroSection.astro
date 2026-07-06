@@ -1,7 +1,7 @@
 ---
 import { getConfig } from '@libs/config'
 import { getChassisDocsPath } from '@libs/path'
-import Code from '@shortcodes/Code.astro'
+import Code from '@chassis-ui/docs/shortcodes/Code.astro'
 ---
 
 <div class="home-section py-3xlarge medium:py-6xlarge">
@@ -15,7 +15,7 @@ import Code from '@shortcodes/Code.astro'
         </p>
         <h1 class="font-hero mb-small medium:mb-medium large:mb-large">
           <span class="font-normal">Sync Design Tokens Across</span>
-          <span class="d-block">Brands, Themes & Platforms</span>
+          <span class="d-block">Brands, Themes &amp; Platforms</span>
         </h1>
         <p class="font-lead mb-medium medium:mb-large">
           One repository for unlimited brands and applications. Unify product, design, and
@@ -30,9 +30,10 @@ import Code from '@shortcodes/Code.astro'
     >
       <!-- Code snippet -->
       <Code
+        noToolbar
+        containerClass="medium:mx-auto medium:mw-100"
         lang="bash"
         code="git clone git@github.com:chassis-ui/assets.git"
-        containerClass="mx-auto mw-100"
       />
       <!-- Buttons -->
       <div class="d-grid medium:d-flex gap-medium medium:justify-content-center flex-wrap">

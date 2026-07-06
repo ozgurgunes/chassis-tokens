@@ -17,6 +17,7 @@ Space tokens follow a two-layer architecture where foundational spacing values a
 **How it works:**
 
 The system provides progressive specificity:
+
 1. **Base spacing** (`space.unit.*`) defines raw spacing values using an 8-point grid
 2. **Contextual spacing** (`space.context.*`) provides semantic spacing scales (xsmall, small, medium, large)
 3. **Component spacing** (`space.[component].*`) assigns specific spacing to component parts (padding-x, padding-y, gap)
@@ -113,6 +114,7 @@ Contextual spacing tokens provide semantic spacing values with clear sizing hier
 ### Spacing Hierarchy
 
 The contextual spacing scale follows a logical progression:
+
 - **Micro spacing** (4xsmall - 2xsmall): 1-4px for tight, compact layouts
 - **Component spacing** (xsmall - medium): 8-16px for within-component spacing
 - **Group spacing** (large - xlarge): 20-24px for related element groups
@@ -253,6 +255,7 @@ Component-specific spacing tokens define padding, gaps, and margins for individu
 ### Best Practices
 
 **Do:**
+
 - Use contextual spacing tokens for semantic, flexible layouts
 - Maintain consistent spacing for similar elements
 - Stick to the 8-point grid whenever possible
@@ -260,6 +263,7 @@ Component-specific spacing tokens define padding, gaps, and margins for individu
 - Increase spacing proportionally with element size
 
 **Don't:**
+
 - Use arbitrary spacing values—always reference tokens
 - Mix different spacing systems inconsistently
 - Use spacing smaller than 4px for visible gaps
