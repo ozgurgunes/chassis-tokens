@@ -44,10 +44,36 @@ export function chassis(): AstroIntegration[] {
     {
       name: 'chassis-integration',
       hooks: {
-        'astro:config:setup': ({ addWatchFile, command }) => {
+        'astro:config:setup': ({ addWatchFile, command, updateConfig }) => {
           cmd = command
           // Reload the config when the integration is modified.
           addWatchFile(path.join(getDocsFsPath(), 'src/libs/astro.ts'))
+
+          // Dev-only: multiple entry points import `@chassis-ui/css`, and Vite's dep
+          // optimizer can load separate instances of it, multiplying any module-scope
+          // state and event listeners it registers.
+          if (cmd === 'dev') {
+            updateConfig({
+              vite: {
+                resolve: {
+                  alias: [
+                    // Regex, not a string key — a string alias prefix-matches subpaths too,
+                    // breaking `@chassis-ui/css/scss/*` imports.
+                    {
+                      find: /^@chassis-ui\/css$/,
+                      replacement: path.join(
+                        process.cwd(),
+                        'node_modules/@chassis-ui/css/js/index.js'
+                      )
+                    }
+                  ]
+                },
+                optimizeDeps: {
+                  exclude: ['@chassis-ui/docs']
+                }
+              }
+            })
+          }
         },
         'astro:config:done': () => {
           if (cmd === 'sync') return
