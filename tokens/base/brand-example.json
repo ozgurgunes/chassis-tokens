@@ -241,7 +241,7 @@
           "$value": "{borderRadius.base.context.zero}"
         }
       },
-      "date-picker": {
+      "datepicker": {
         "main": {
           "$type": "borderRadius",
           "$value": "{borderRadius.base.context.medium}"

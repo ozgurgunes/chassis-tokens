@@ -2,7 +2,7 @@
 
 <!--
   Do not edit directly, this file was auto-generated.
-  Generated on Sat, 04 Jul 2026 14:27:26 GMT
+  Generated on Wed, 05 Aug 2026 07:52:17 GMT
   Chassis - Tokens v0.3.0
   Copyright 2026 Ozgur Gunes
   Licensed under MIT (https://github.com/chassis-ui/tokens/blob/main/LICENSE)
@@ -203,10 +203,10 @@
   <dimen name="size_list_icon">24dp</dimen>
   <dimen name="size_list_image">40dp</dimen>
   <dimen name="size_list_disclosure">8dp</dimen>
-  <dimen name="size_date_picker_day_width">40dp</dimen>
-  <dimen name="size_date_picker_day_height">40dp</dimen>
-  <dimen name="size_date_picker_week_width">280dp</dimen>
-  <dimen name="size_date_picker_menu_width">120dp</dimen>
+  <dimen name="size_datepicker_day_width">32dp</dimen>
+  <dimen name="size_datepicker_day_height">32dp</dimen>
+  <dimen name="size_datepicker_week_width">224dp</dimen>
+  <dimen name="size_datepicker_menu_width">120dp</dimen>
   <dimen name="size_dropdown_icon">20dp</dimen>
   <dimen name="size_dropdown_disclosure">16dp</dimen>
   <dimen name="size_form_input_medium_icon">20dp</dimen>
@@ -367,9 +367,9 @@
   <dimen name="space_chip_small_padding_x">2dp</dimen>
   <dimen name="space_chip_small_gap">8dp</dimen>
   <dimen name="space_chip_small_nudge">4dp</dimen>
-  <dimen name="space_date_picker_padding_y">8dp</dimen>
-  <dimen name="space_date_picker_padding_x">8dp</dimen>
-  <dimen name="space_date_picker_gap">4dp</dimen>
+  <dimen name="space_datepicker_padding_y">8dp</dimen>
+  <dimen name="space_datepicker_padding_x">8dp</dimen>
+  <dimen name="space_datepicker_gap">4dp</dimen>
   <dimen name="space_dropdown_padding_y">6dp</dimen>
   <dimen name="space_dropdown_padding_x">12dp</dimen>
   <dimen name="space_dropdown_gap">12dp</dimen>
@@ -553,6 +553,9 @@
   <dimen name="border_radius_base_chip_medium">256dp</dimen>
   <dimen name="border_radius_base_chip_large">256dp</dimen>
   <dimen name="border_radius_base_chip_small">256dp</dimen>
+  <dimen name="border_radius_base_datepicker_main">6dp</dimen>
+  <dimen name="border_radius_base_datepicker_day">4dp</dimen>
+  <dimen name="border_radius_base_datepicker_menu">4dp</dimen>
   <dimen name="border_radius_base_form_input_medium">6dp</dimen>
   <dimen name="border_radius_base_form_input_large">6dp</dimen>
   <dimen name="border_radius_base_form_input_small">6dp</dimen>
@@ -583,9 +586,9 @@
   <dimen name="border_radius_chip_large">256dp</dimen>
   <dimen name="border_radius_chip_small">256dp</dimen>
   <dimen name="border_radius_table_main">6dp</dimen>
-  <dimen name="border_radius_date_picker_main">6dp</dimen>
-  <dimen name="border_radius_date_picker_day">4dp</dimen>
-  <dimen name="border_radius_date_picker_menu">4dp</dimen>
+  <dimen name="border_radius_datepicker_main">6dp</dimen>
+  <dimen name="border_radius_datepicker_day">4dp</dimen>
+  <dimen name="border_radius_datepicker_menu">4dp</dimen>
   <dimen name="border_radius_dropdown_main">6dp</dimen>
   <dimen name="border_radius_dropdown_item">4dp</dimen>
   <dimen name="border_radius_form_input_medium">6dp</dimen>
@@ -1191,18 +1194,18 @@
   <dimen name="font_chip_small_font_size">12sp</dimen>
   <integer name="font_chip_small_letter_spacing">0</integer>
   <dimen name="font_chip_small_paragraph_spacing">0sp</dimen>
-  <dimen name="font_date_picker_day_line_height">20sp</dimen>
-  <dimen name="font_date_picker_day_font_size">14sp</dimen>
-  <integer name="font_date_picker_day_letter_spacing">0</integer>
-  <dimen name="font_date_picker_day_paragraph_spacing">0sp</dimen>
-  <dimen name="font_date_picker_today_line_height">20sp</dimen>
-  <dimen name="font_date_picker_today_font_size">14sp</dimen>
-  <integer name="font_date_picker_today_letter_spacing">0</integer>
-  <dimen name="font_date_picker_today_paragraph_spacing">0sp</dimen>
-  <dimen name="font_date_picker_label_line_height">20sp</dimen>
-  <dimen name="font_date_picker_label_font_size">14sp</dimen>
-  <integer name="font_date_picker_label_letter_spacing">0</integer>
-  <dimen name="font_date_picker_label_paragraph_spacing">0sp</dimen>
+  <dimen name="font_datepicker_day_line_height">20sp</dimen>
+  <dimen name="font_datepicker_day_font_size">14sp</dimen>
+  <integer name="font_datepicker_day_letter_spacing">0</integer>
+  <dimen name="font_datepicker_day_paragraph_spacing">0sp</dimen>
+  <dimen name="font_datepicker_today_line_height">20sp</dimen>
+  <dimen name="font_datepicker_today_font_size">14sp</dimen>
+  <integer name="font_datepicker_today_letter_spacing">0</integer>
+  <dimen name="font_datepicker_today_paragraph_spacing">0sp</dimen>
+  <dimen name="font_datepicker_label_line_height">20sp</dimen>
+  <dimen name="font_datepicker_label_font_size">14sp</dimen>
+  <integer name="font_datepicker_label_letter_spacing">0</integer>
+  <dimen name="font_datepicker_label_paragraph_spacing">0sp</dimen>
   <dimen name="font_dropdown_title_line_height">20sp</dimen>
   <dimen name="font_dropdown_title_font_size">14sp</dimen>
   <integer name="font_dropdown_title_letter_spacing">0</integer>
@@ -1376,7 +1379,7 @@
   <dimen name="border_width_button_main">1dp</dimen>
   <dimen name="border_width_card_main">1dp</dimen>
   <dimen name="border_width_chip_main">1dp</dimen>
-  <dimen name="border_width_date_picker_main">1dp</dimen>
+  <dimen name="border_width_datepicker_main">1dp</dimen>
   <dimen name="border_width_dropdown_main">1dp</dimen>
   <dimen name="border_width_table_main">1dp</dimen>
   <dimen name="border_width_form_input_regular">1dp</dimen>
@@ -1502,14 +1505,14 @@
   <dimen name="shadow_card_main_2_spread">2dp</dimen>
   <dimen name="shadow_card_main_2_offset_x">0dp</dimen>
   <dimen name="shadow_card_main_2_offset_y">1dp</dimen>
-  <dimen name="shadow_date_picker_main_1_blur">1dp</dimen>
-  <dimen name="shadow_date_picker_main_1_spread">0dp</dimen>
-  <dimen name="shadow_date_picker_main_1_offset_x">0dp</dimen>
-  <dimen name="shadow_date_picker_main_1_offset_y">0dp</dimen>
-  <dimen name="shadow_date_picker_main_2_blur">8dp</dimen>
-  <dimen name="shadow_date_picker_main_2_spread">2dp</dimen>
-  <dimen name="shadow_date_picker_main_2_offset_x">0dp</dimen>
-  <dimen name="shadow_date_picker_main_2_offset_y">1dp</dimen>
+  <dimen name="shadow_datepicker_main_1_blur">1dp</dimen>
+  <dimen name="shadow_datepicker_main_1_spread">0dp</dimen>
+  <dimen name="shadow_datepicker_main_1_offset_x">0dp</dimen>
+  <dimen name="shadow_datepicker_main_1_offset_y">0dp</dimen>
+  <dimen name="shadow_datepicker_main_2_blur">8dp</dimen>
+  <dimen name="shadow_datepicker_main_2_spread">2dp</dimen>
+  <dimen name="shadow_datepicker_main_2_offset_x">0dp</dimen>
+  <dimen name="shadow_datepicker_main_2_offset_y">1dp</dimen>
   <dimen name="shadow_dropdown_main_1_blur">1dp</dimen>
   <dimen name="shadow_dropdown_main_1_spread">0dp</dimen>
   <dimen name="shadow_dropdown_main_1_offset_x">0dp</dimen>

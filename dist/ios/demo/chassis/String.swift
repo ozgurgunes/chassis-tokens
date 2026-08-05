@@ -4,7 +4,7 @@
 //
 
 // Do not edit directly, this file was auto-generated.
-// Generated on Sat, 04 Jul 2026 14:27:12 GMT
+// Generated on Wed, 05 Aug 2026 07:51:58 GMT
 // Chassis - Tokens v0.3.0
 // Copyright 2026 Ozgur Gunes
 // Licensed under MIT (https://github.com/chassis-ui/tokens/blob/main/LICENSE)
@@ -798,21 +798,21 @@ public class ChassisTokens {
     @objc public static let FontChipSmallTextCase = "none"
     @objc public static let FontChipSmallTextDecoration = "none"
     @objc public static let FontChipSmallFontStyle = "normal"
-    @objc public static let FontDatePickerDayFontFamily = "Inter"
-    @objc public static let FontDatePickerDayFontWeight = "regular"
-    @objc public static let FontDatePickerDayTextCase = "none"
-    @objc public static let FontDatePickerDayTextDecoration = "none"
-    @objc public static let FontDatePickerDayFontStyle = "normal"
-    @objc public static let FontDatePickerTodayFontFamily = "Inter"
-    @objc public static let FontDatePickerTodayFontWeight = "semi-bold"
-    @objc public static let FontDatePickerTodayTextCase = "none"
-    @objc public static let FontDatePickerTodayTextDecoration = "none"
-    @objc public static let FontDatePickerTodayFontStyle = "normal"
-    @objc public static let FontDatePickerLabelFontFamily = "Inter"
-    @objc public static let FontDatePickerLabelFontWeight = "semi-bold"
-    @objc public static let FontDatePickerLabelTextCase = "none"
-    @objc public static let FontDatePickerLabelTextDecoration = "none"
-    @objc public static let FontDatePickerLabelFontStyle = "normal"
+    @objc public static let FontDatepickerDayFontFamily = "Inter"
+    @objc public static let FontDatepickerDayFontWeight = "regular"
+    @objc public static let FontDatepickerDayTextCase = "none"
+    @objc public static let FontDatepickerDayTextDecoration = "none"
+    @objc public static let FontDatepickerDayFontStyle = "normal"
+    @objc public static let FontDatepickerTodayFontFamily = "Inter"
+    @objc public static let FontDatepickerTodayFontWeight = "semi-bold"
+    @objc public static let FontDatepickerTodayTextCase = "none"
+    @objc public static let FontDatepickerTodayTextDecoration = "none"
+    @objc public static let FontDatepickerTodayFontStyle = "normal"
+    @objc public static let FontDatepickerLabelFontFamily = "Inter"
+    @objc public static let FontDatepickerLabelFontWeight = "semi-bold"
+    @objc public static let FontDatepickerLabelTextCase = "none"
+    @objc public static let FontDatepickerLabelTextDecoration = "none"
+    @objc public static let FontDatepickerLabelFontStyle = "normal"
     @objc public static let FontDropdownTitleFontFamily = "Inter"
     @objc public static let FontDropdownTitleFontWeight = "semi-bold"
     @objc public static let FontDropdownTitleTextCase = "none"
@@ -1041,8 +1041,8 @@ public class ChassisTokens {
     @objc public static let ShadowButtonDisabledType = "dropShadow"
     @objc public static let ShadowCardMain1Type = "dropShadow"
     @objc public static let ShadowCardMain2Type = "dropShadow"
-    @objc public static let ShadowDatePickerMain1Type = "dropShadow"
-    @objc public static let ShadowDatePickerMain2Type = "dropShadow"
+    @objc public static let ShadowDatepickerMain1Type = "dropShadow"
+    @objc public static let ShadowDatepickerMain2Type = "dropShadow"
     @objc public static let ShadowDropdownMain1Type = "dropShadow"
     @objc public static let ShadowDropdownMain2Type = "dropShadow"
     @objc public static let ShadowFormInputMainType = "dropShadow"

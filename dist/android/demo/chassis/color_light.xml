@@ -2,7 +2,7 @@
 
 <!--
   Do not edit directly, this file was auto-generated.
-  Generated on Sat, 04 Jul 2026 14:27:17 GMT
+  Generated on Wed, 05 Aug 2026 07:52:05 GMT
   Chassis - Tokens v0.3.0
   Copyright 2026 Ozgur Gunes
   Licensed under MIT (https://github.com/chassis-ui/tokens/blob/main/LICENSE)
@@ -841,26 +841,26 @@
   <color name="color_button_info_border_disabled">#001414f5</color>
   <color name="color_button_info_border_hover">#001414f5</color>
   <color name="color_button_info_border_press">#001414f5</color>
-  <color name="color_date_picker_fg_idle">#ff1c2021</color>
-  <color name="color_date_picker_bg_idle">#00000000</color>
-  <color name="color_date_picker_fg_hover">#ff1c2021</color>
-  <color name="color_date_picker_bg_hover">#fff5f6f6</color>
-  <color name="color_date_picker_fg_press">#ff1c2021</color>
-  <color name="color_date_picker_bg_press">#ffe9eced</color>
-  <color name="color_date_picker_fg_active">#ffffffff</color>
-  <color name="color_date_picker_bg_active">#ff00a4cc</color>
-  <color name="color_date_picker_fg_range">#ff1c2021</color>
-  <color name="color_date_picker_bg_range">#ffd9f1f7</color>
-  <color name="color_date_picker_fg_today">#ff00a4cc</color>
-  <color name="color_date_picker_bg_today">#00000000</color>
-  <color name="color_date_picker_fg_weekend">#801c2021</color>
-  <color name="color_date_picker_bg_weekend">#00000000</color>
-  <color name="color_date_picker_fg_outside">#401c2021</color>
-  <color name="color_date_picker_bg_outside">#00000000</color>
-  <color name="color_date_picker_fg_main">#ff1c2021</color>
-  <color name="color_date_picker_bg_main">#ffffffff</color>
-  <color name="color_date_picker_border_main">#00000000</color>
-  <color name="color_date_picker_border_subtle">#261c2021</color>
+  <color name="color_datepicker_fg_idle">#ff1c2021</color>
+  <color name="color_datepicker_bg_idle">#00000000</color>
+  <color name="color_datepicker_fg_hover">#ff1c2021</color>
+  <color name="color_datepicker_bg_hover">#fff5f6f6</color>
+  <color name="color_datepicker_fg_press">#ff1c2021</color>
+  <color name="color_datepicker_bg_press">#ffe9eced</color>
+  <color name="color_datepicker_fg_active">#ffffffff</color>
+  <color name="color_datepicker_bg_active">#ff00a4cc</color>
+  <color name="color_datepicker_fg_range">#ff1c2021</color>
+  <color name="color_datepicker_bg_range">#ffd9f1f7</color>
+  <color name="color_datepicker_fg_today">#ff00a4cc</color>
+  <color name="color_datepicker_bg_today">#00000000</color>
+  <color name="color_datepicker_fg_weekend">#801c2021</color>
+  <color name="color_datepicker_bg_weekend">#00000000</color>
+  <color name="color_datepicker_fg_outside">#401c2021</color>
+  <color name="color_datepicker_bg_outside">#00000000</color>
+  <color name="color_datepicker_fg_main">#ff1c2021</color>
+  <color name="color_datepicker_bg_main">#ffffffff</color>
+  <color name="color_datepicker_border_main">#00000000</color>
+  <color name="color_datepicker_border_subtle">#261c2021</color>
   <color name="color_dropdown_fg_idle">#ff1c2021</color>
   <color name="color_dropdown_bg_idle">#00000000</color>
   <color name="color_dropdown_icon_idle">#ff00a4cc</color>
@@ -1077,8 +1077,8 @@
   <color name="shadow_button_disabled_color">#00000000</color>
   <color name="shadow_card_main_1_color">#1a000000</color>
   <color name="shadow_card_main_2_color">#1a000000</color>
-  <color name="shadow_date_picker_main_1_color">#1a000000</color>
-  <color name="shadow_date_picker_main_2_color">#1a000000</color>
+  <color name="shadow_datepicker_main_1_color">#1a000000</color>
+  <color name="shadow_datepicker_main_2_color">#1a000000</color>
   <color name="shadow_dropdown_main_1_color">#1a000000</color>
   <color name="shadow_dropdown_main_2_color">#1a000000</color>
   <color name="shadow_form_input_main_color">#00000000</color>
