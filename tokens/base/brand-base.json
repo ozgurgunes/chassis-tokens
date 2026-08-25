@@ -7771,7 +7771,21 @@
           "$value": "{borderRadius.base.context.medium}"
         }
       },
-      "form-input": {
+      "datepicker": {
+        "main": {
+          "$type": "borderRadius",
+          "$value": "{borderRadius.base.context.medium}"
+        },
+        "day": {
+          "$type": "borderRadius",
+          "$value": "{borderRadius.base.context.small}"
+        },
+        "menu": {
+          "$type": "borderRadius",
+          "$value": "{borderRadius.base.context.small}"
+        }
+      },
+     "form-input": {
         "medium": {
           "$type": "borderRadius",
           "$value": "{borderRadius.base.context.medium}"

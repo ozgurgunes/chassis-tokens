@@ -1,5 +1,21 @@
 # Changelog
 
+## [0.4.0] - 2026-08-25
+
+### Changed
+- Renamed `date-picker` component tokens to `datepicker` across base, brand, and theme token files
+- Reduced datepicker day cell size from `size.unit.40` to `size.unit.32` and bound its border-radius tokens to a dedicated `borderRadius.base.datepicker` group instead of generic context tokens
+- Renamed datepicker `menu-width` size token to `preset-width`
+- Doubled the active pagination dot width (`dot-active-w`) from `size.unit.8` to `size.unit.16`
+- Moved Pagefind's search index under a `tokens/pagefind` subdirectory (`site:pagefind` output and dev-server copy path) to match the site's production path prefix
+- Reworked the dev-only Vite config in `site/src/libs/astro.ts` to alias `@chassis-ui/css` to its built JS entry and exclude `@chassis-ui/docs` from dependency optimization, preventing duplicate module instances during `astro dev`
+- Replaced inline `<svg><use></svg>` icon markup in the homepage hero with the `@chassis-ui/docs` `Icon` shortcode
+- Restructured `site/config.yml` social/org fields (`github_org`, `x` → `x_username`, added `figma_handle`) and updated the corresponding config schema
+- Upgraded `@chassis-ui/docs` and other dependencies; bumped `pnpm/action-setup` and `softprops/action-gh-release` versions in the publish-release workflow
+
+### Fixed
+- Hero section "Get Started" clone command referencing the wrong repository
+
 ## [0.3.0] - 2026-07-04
 
 ### Added
