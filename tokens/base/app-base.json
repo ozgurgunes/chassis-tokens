@@ -3335,7 +3335,7 @@
         "$type": "sizing",
         "$value": "{size.datepicker.day-width}*7"
       },
-      "menu-width": {
+      "preset-width": {
         "$type": "sizing",
         "$value": "{size.unit.120}"
       }
@@ -3451,7 +3451,7 @@
       },
       "dot-active-w": {
         "$type": "sizing",
-        "$value": "{size.unit.8}"
+        "$value": "{size.unit.16}"
       }
     }
   },
