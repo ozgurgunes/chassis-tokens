@@ -4,7 +4,7 @@
 //
 
 // Do not edit directly, this file was auto-generated.
-// Generated on Tue, 25 Aug 2026 16:04:38 GMT
+// Generated on Tue, 08 Sep 2026 08:19:12 GMT
 // Chassis - Tokens v0.4.0
 // Copyright 2026 Ozgur Gunes
 // Licensed under MIT (https://github.com/chassis-ui/tokens/blob/main/LICENSE)
@@ -236,6 +236,12 @@ public class ChassisTokens {
     @objc public static let SizePaginationDotIdleW = CGFloat(8)
     @objc public static let SizePaginationDotActiveH = CGFloat(8)
     @objc public static let SizePaginationDotActiveW = CGFloat(16)
+    @objc public static let SizeSegmentMediumMain = CGFloat(32)
+    @objc public static let SizeSegmentMediumIcon = CGFloat(20)
+    @objc public static let SizeSegmentLargeMain = CGFloat(40)
+    @objc public static let SizeSegmentLargeIcon = CGFloat(24)
+    @objc public static let SizeSegmentSmallMain = CGFloat(24)
+    @objc public static let SizeSegmentSmallIcon = CGFloat(16)
     @objc public static let SizeWebsiteSectionThumb = CGFloat(96)
     @objc public static let SizeWebsiteSectionIcon = CGFloat(80)
     @objc public static let SizeWebsiteFeatureThumb = CGFloat(56)
@@ -418,6 +424,18 @@ public class ChassisTokens {
     @objc public static let SpaceTableCellPaddingY = CGFloat(8)
     @objc public static let SpaceTableCellPaddingX = CGFloat(8)
     @objc public static let SpaceTableCellGap = CGFloat(8)
+    @objc public static let SpaceSegmentMediumBarPadding = CGFloat(4)
+    @objc public static let SpaceSegmentMediumPaddingY = CGFloat(6)
+    @objc public static let SpaceSegmentMediumPaddingX = CGFloat(12)
+    @objc public static let SpaceSegmentMediumGap = CGFloat(8)
+    @objc public static let SpaceSegmentLargeBarPadding = CGFloat(4)
+    @objc public static let SpaceSegmentLargePaddingY = CGFloat(8)
+    @objc public static let SpaceSegmentLargePaddingX = CGFloat(16)
+    @objc public static let SpaceSegmentLargeGap = CGFloat(8)
+    @objc public static let SpaceSegmentSmallBarPadding = CGFloat(4)
+    @objc public static let SpaceSegmentSmallPaddingY = CGFloat(3)
+    @objc public static let SpaceSegmentSmallPaddingX = CGFloat(8)
+    @objc public static let SpaceSegmentSmallGap = CGFloat(8)
     @objc public static let SpaceWebsiteSectionPaddingY = CGFloat(48)
     @objc public static let SpaceWebsiteSectionPaddingX = CGFloat(24)
     @objc public static let SpaceWebsiteSectionGap = CGFloat(48)
@@ -2103,6 +2121,11 @@ public class ChassisTokens {
     @objc public static let ColorSectionIconLarge = UIColor(red: 0.000, green: 0.643, blue: 0.800, alpha: 1)
     @objc public static let ColorSectionIconMedium = UIColor(red: 0.000, green: 0.643, blue: 0.800, alpha: 1)
     @objc public static let ColorSectionIconSmall = UIColor(red: 0.000, green: 0.643, blue: 0.800, alpha: 1)
+    @objc public static let ColorSegmentBgBar = UIColor(red: 0.000, green: 0.000, blue: 0.000, alpha: 0.05)
+    @objc public static let ColorSegmentBgIdle = UIColor(red: 0.000, green: 0.000, blue: 0.000, alpha: 0)
+    @objc public static let ColorSegmentFgIdle = UIColor(red: 0.110, green: 0.125, blue: 0.129, alpha: 1)
+    @objc public static let ColorSegmentBgActive = UIColor(red: 1.000, green: 1.000, blue: 1.000, alpha: 1)
+    @objc public static let ColorSegmentFgActive = UIColor(red: 0.110, green: 0.125, blue: 0.129, alpha: 1)
     @objc public static let ColorTableFgHead = UIColor(red: 0.110, green: 0.125, blue: 0.129, alpha: 1)
     @objc public static let ColorTableFgData = UIColor(red: 0.110, green: 0.125, blue: 0.129, alpha: 1)
     @objc public static let ColorTableBgHead = UIColor(red: 0.914, green: 0.925, blue: 0.929, alpha: 1)
@@ -2271,6 +2294,12 @@ public class ChassisTokens {
     @objc public static let BorderRadiusBaseFormInputSmall = CGFloat(6)
     @objc public static let BorderRadiusBaseFormInputFloatingBlunt = CGFloat(6)
     @objc public static let BorderRadiusBaseFormInputFloatingSharp = CGFloat(0)
+    @objc public static let BorderRadiusBaseSegmentMediumBar = CGFloat(6)
+    @objc public static let BorderRadiusBaseSegmentMediumItem = CGFloat(4)
+    @objc public static let BorderRadiusBaseSegmentLargeBar = CGFloat(6)
+    @objc public static let BorderRadiusBaseSegmentLargeItem = CGFloat(4)
+    @objc public static let BorderRadiusBaseSegmentSmallBar = CGFloat(6)
+    @objc public static let BorderRadiusBaseSegmentSmallItem = CGFloat(4)
     @objc public static let BorderRadiusContextZero = CGFloat(0)
     @objc public static let BorderRadiusContextXsmall = CGFloat(2)
     @objc public static let BorderRadiusContextSmall = CGFloat(4)
@@ -2312,6 +2341,12 @@ public class ChassisTokens {
     @objc public static let BorderRadiusPaginationDotIdle = CGFloat(256)
     @objc public static let BorderRadiusPaginationDotActive = CGFloat(256)
     @objc public static let BorderRadiusSectionMain = CGFloat(8)
+    @objc public static let BorderRadiusSegmentMediumBar = CGFloat(6)
+    @objc public static let BorderRadiusSegmentMediumItem = CGFloat(4)
+    @objc public static let BorderRadiusSegmentLargeBar = CGFloat(6)
+    @objc public static let BorderRadiusSegmentLargeItem = CGFloat(4)
+    @objc public static let BorderRadiusSegmentSmallBar = CGFloat(6)
+    @objc public static let BorderRadiusSegmentSmallItem = CGFloat(4)
     @objc public static let BorderRadiusTabMedium = CGFloat(6)
     @objc public static let BorderRadiusTabLarge = CGFloat(8)
     @objc public static let BorderRadiusTabSmall = CGFloat(6)
@@ -3909,6 +3944,33 @@ public class ChassisTokens {
     @objc public static let FontSectionHeaderSmallTextCase = "none"
     @objc public static let FontSectionHeaderSmallTextDecoration = "none"
     @objc public static let FontSectionHeaderSmallFontStyle = "normal"
+    @objc public static let FontSegmentMediumFontFamily = "Inter"
+    @objc public static let FontSegmentMediumFontWeight = "regular"
+    @objc public static let FontSegmentMediumLineHeight = CGFloat(20)
+    @objc public static let FontSegmentMediumFontSize = CGFloat(14)
+    @objc public static let FontSegmentMediumLetterSpacing = CGFloat(0)
+    @objc public static let FontSegmentMediumParagraphSpacing = CGFloat(0)
+    @objc public static let FontSegmentMediumTextCase = "none"
+    @objc public static let FontSegmentMediumTextDecoration = "none"
+    @objc public static let FontSegmentMediumFontStyle = "normal"
+    @objc public static let FontSegmentLargeFontFamily = "Inter"
+    @objc public static let FontSegmentLargeFontWeight = "regular"
+    @objc public static let FontSegmentLargeLineHeight = CGFloat(24)
+    @objc public static let FontSegmentLargeFontSize = CGFloat(16)
+    @objc public static let FontSegmentLargeLetterSpacing = CGFloat(0)
+    @objc public static let FontSegmentLargeParagraphSpacing = CGFloat(0)
+    @objc public static let FontSegmentLargeTextCase = "none"
+    @objc public static let FontSegmentLargeTextDecoration = "none"
+    @objc public static let FontSegmentLargeFontStyle = "normal"
+    @objc public static let FontSegmentSmallFontFamily = "Inter"
+    @objc public static let FontSegmentSmallFontWeight = "regular"
+    @objc public static let FontSegmentSmallLineHeight = CGFloat(18)
+    @objc public static let FontSegmentSmallFontSize = CGFloat(12)
+    @objc public static let FontSegmentSmallLetterSpacing = CGFloat(0)
+    @objc public static let FontSegmentSmallParagraphSpacing = CGFloat(0)
+    @objc public static let FontSegmentSmallTextCase = "none"
+    @objc public static let FontSegmentSmallTextDecoration = "none"
+    @objc public static let FontSegmentSmallFontStyle = "normal"
     @objc public static let FontTabMediumFontFamily = "Inter"
     @objc public static let FontTabMediumFontWeight = "semi-bold"
     @objc public static let FontTabMediumLineHeight = CGFloat(24)
@@ -4291,6 +4353,18 @@ public class ChassisTokens {
     @objc public static let ShadowNavLeftMain2Spread = CGFloat(-2.5)
     @objc public static let ShadowNavLeftMain2OffsetX = CGFloat(2.5)
     @objc public static let ShadowNavLeftMain2OffsetY = CGFloat(0)
+    @objc public static let ShadowSegmentItem1Color = UIColor(red: 0.000, green: 0.000, blue: 0.000, alpha: 0.1)
+    @objc public static let ShadowSegmentItem1Type = "dropShadow"
+    @objc public static let ShadowSegmentItem1Blur = CGFloat(1)
+    @objc public static let ShadowSegmentItem1Spread = CGFloat(0)
+    @objc public static let ShadowSegmentItem1OffsetX = CGFloat(0)
+    @objc public static let ShadowSegmentItem1OffsetY = CGFloat(0)
+    @objc public static let ShadowSegmentItem2Color = UIColor(red: 0.000, green: 0.000, blue: 0.000, alpha: 0.1)
+    @objc public static let ShadowSegmentItem2Type = "dropShadow"
+    @objc public static let ShadowSegmentItem2Blur = CGFloat(8)
+    @objc public static let ShadowSegmentItem2Spread = CGFloat(0)
+    @objc public static let ShadowSegmentItem2OffsetX = CGFloat(0)
+    @objc public static let ShadowSegmentItem2OffsetY = CGFloat(0)
     @objc public static let ShadowTableMainBlur = CGFloat(0)
     @objc public static let ShadowTableMainSpread = CGFloat(0)
     @objc public static let ShadowTableMainColor = UIColor(red: 0.000, green: 0.000, blue: 0.000, alpha: 0)

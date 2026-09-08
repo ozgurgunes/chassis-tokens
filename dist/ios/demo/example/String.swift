@@ -4,7 +4,7 @@
 //
 
 // Do not edit directly, this file was auto-generated.
-// Generated on Tue, 25 Aug 2026 16:04:42 GMT
+// Generated on Tue, 08 Sep 2026 08:19:13 GMT
 // Chassis - Tokens v0.4.0
 // Copyright 2026 Ozgur Gunes
 // Licensed under MIT (https://github.com/chassis-ui/tokens/blob/main/LICENSE)
@@ -948,6 +948,21 @@ public class ChassisTokens {
     @objc public static let FontSectionHeaderSmallTextCase = "none"
     @objc public static let FontSectionHeaderSmallTextDecoration = "none"
     @objc public static let FontSectionHeaderSmallFontStyle = "normal"
+    @objc public static let FontSegmentMediumFontFamily = "Figtree"
+    @objc public static let FontSegmentMediumFontWeight = "regular"
+    @objc public static let FontSegmentMediumTextCase = "none"
+    @objc public static let FontSegmentMediumTextDecoration = "none"
+    @objc public static let FontSegmentMediumFontStyle = "normal"
+    @objc public static let FontSegmentLargeFontFamily = "Figtree"
+    @objc public static let FontSegmentLargeFontWeight = "regular"
+    @objc public static let FontSegmentLargeTextCase = "none"
+    @objc public static let FontSegmentLargeTextDecoration = "none"
+    @objc public static let FontSegmentLargeFontStyle = "normal"
+    @objc public static let FontSegmentSmallFontFamily = "Figtree"
+    @objc public static let FontSegmentSmallFontWeight = "regular"
+    @objc public static let FontSegmentSmallTextCase = "none"
+    @objc public static let FontSegmentSmallTextDecoration = "none"
+    @objc public static let FontSegmentSmallFontStyle = "normal"
     @objc public static let FontTabMediumFontFamily = "Figtree"
     @objc public static let FontTabMediumFontWeight = "semibold"
     @objc public static let FontTabMediumTextCase = "none"
@@ -1056,6 +1071,8 @@ public class ChassisTokens {
     @objc public static let ShadowSectionMain2Type = "dropShadow"
     @objc public static let ShadowNavLeftMain1Type = "dropShadow"
     @objc public static let ShadowNavLeftMain2Type = "dropShadow"
+    @objc public static let ShadowSegmentItem1Type = "dropShadow"
+    @objc public static let ShadowSegmentItem2Type = "dropShadow"
     @objc public static let ShadowTableMainType = "dropShadow"
     @objc public static let ShadowElevationDefault101Type = "dropShadow"
     @objc public static let ShadowElevationDefault102Type = "dropShadow"

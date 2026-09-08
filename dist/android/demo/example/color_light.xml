@@ -2,7 +2,7 @@
 
 <!--
   Do not edit directly, this file was auto-generated.
-  Generated on Tue, 25 Aug 2026 16:04:55 GMT
+  Generated on Tue, 08 Sep 2026 08:19:20 GMT
   Chassis - Tokens v0.4.0
   Copyright 2026 Ozgur Gunes
   Licensed under MIT (https://github.com/chassis-ui/tokens/blob/main/LICENSE)
@@ -954,6 +954,11 @@
   <color name="color_section_icon_large">#ffff385c</color>
   <color name="color_section_icon_medium">#ffff385c</color>
   <color name="color_section_icon_small">#ffff385c</color>
+  <color name="color_segment_bg_bar">#0d000000</color>
+  <color name="color_segment_bg_idle">#00000000</color>
+  <color name="color_segment_fg_idle">#ff1b1b1b</color>
+  <color name="color_segment_bg_active">#ffffffff</color>
+  <color name="color_segment_fg_active">#ff1b1b1b</color>
   <color name="color_table_fg_head">#ff1b1b1b</color>
   <color name="color_table_fg_data">#ff1b1b1b</color>
   <color name="color_table_bg_head">#ffe9e9e9</color>
@@ -1092,6 +1097,8 @@
   <color name="shadow_section_main_2_color">#1a000000</color>
   <color name="shadow_nav_left_main_1_color">#33000000</color>
   <color name="shadow_nav_left_main_2_color">#1a000000</color>
+  <color name="shadow_segment_item_1_color">#1a000000</color>
+  <color name="shadow_segment_item_2_color">#1a000000</color>
   <color name="shadow_table_main_color">#00000000</color>
   <color name="shadow_elevation_default_10_1_color">#1a000000</color>
   <color name="shadow_elevation_default_10_2_color">#1a000000</color>

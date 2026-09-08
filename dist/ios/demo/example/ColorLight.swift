@@ -4,7 +4,7 @@
 //
 
 // Do not edit directly, this file was auto-generated.
-// Generated on Tue, 25 Aug 2026 16:04:53 GMT
+// Generated on Tue, 08 Sep 2026 08:19:18 GMT
 // Chassis - Tokens v0.4.0
 // Copyright 2026 Ozgur Gunes
 // Licensed under MIT (https://github.com/chassis-ui/tokens/blob/main/LICENSE)
@@ -958,6 +958,11 @@ public class ChassisTokens {
     @objc public static let ColorSectionIconLarge = UIColor(red: 1.000, green: 0.220, blue: 0.361, alpha: 1)
     @objc public static let ColorSectionIconMedium = UIColor(red: 1.000, green: 0.220, blue: 0.361, alpha: 1)
     @objc public static let ColorSectionIconSmall = UIColor(red: 1.000, green: 0.220, blue: 0.361, alpha: 1)
+    @objc public static let ColorSegmentBgBar = UIColor(red: 0.000, green: 0.000, blue: 0.000, alpha: 0.05)
+    @objc public static let ColorSegmentBgIdle = UIColor(red: 0.000, green: 0.000, blue: 0.000, alpha: 0)
+    @objc public static let ColorSegmentFgIdle = UIColor(red: 0.106, green: 0.106, blue: 0.106, alpha: 1)
+    @objc public static let ColorSegmentBgActive = UIColor(red: 1.000, green: 1.000, blue: 1.000, alpha: 1)
+    @objc public static let ColorSegmentFgActive = UIColor(red: 0.106, green: 0.106, blue: 0.106, alpha: 1)
     @objc public static let ColorTableFgHead = UIColor(red: 0.106, green: 0.106, blue: 0.106, alpha: 1)
     @objc public static let ColorTableFgData = UIColor(red: 0.106, green: 0.106, blue: 0.106, alpha: 1)
     @objc public static let ColorTableBgHead = UIColor(red: 0.914, green: 0.914, blue: 0.914, alpha: 1)
@@ -1096,6 +1101,8 @@ public class ChassisTokens {
     @objc public static let ShadowSectionMain2Color = UIColor(red: 0.000, green: 0.000, blue: 0.000, alpha: 0.1)
     @objc public static let ShadowNavLeftMain1Color = UIColor(red: 0.000, green: 0.000, blue: 0.000, alpha: 0.2)
     @objc public static let ShadowNavLeftMain2Color = UIColor(red: 0.000, green: 0.000, blue: 0.000, alpha: 0.1)
+    @objc public static let ShadowSegmentItem1Color = UIColor(red: 0.000, green: 0.000, blue: 0.000, alpha: 0.1)
+    @objc public static let ShadowSegmentItem2Color = UIColor(red: 0.000, green: 0.000, blue: 0.000, alpha: 0.1)
     @objc public static let ShadowTableMainColor = UIColor(red: 0.000, green: 0.000, blue: 0.000, alpha: 0)
     @objc public static let ShadowElevationDefault101Color = UIColor(red: 0.000, green: 0.000, blue: 0.000, alpha: 0.1)
     @objc public static let ShadowElevationDefault102Color = UIColor(red: 0.000, green: 0.000, blue: 0.000, alpha: 0.1)

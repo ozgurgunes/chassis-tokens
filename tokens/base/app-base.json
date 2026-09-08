@@ -1944,6 +1944,20 @@
         "$value": "{font.text.small.strong}"
       }
     },
+    "segment": {
+      "medium": {
+        "$type": "typography",
+        "$value": "{font.text.small.normal}"
+      },
+      "large": {
+        "$type": "typography",
+        "$value": "{font.text.medium.normal}"
+      },
+      "small": {
+        "$type": "typography",
+        "$value": "{font.text.xsmall.normal}"
+      }
+    },
     "tab": {
       "medium": {
         "$type": "typography",
@@ -3042,6 +3056,28 @@
         "$value": "{color.context.default.icon-main}"
       }
     },
+    "segment": {
+      "bg-bar": {
+        "$type": "color",
+        "$value": "{color.context.default.dim-slight}"
+      },
+      "bg-idle": {
+        "$type": "color",
+        "$value": "{color.context.default.transparent-color}"
+      },
+      "fg-idle": {
+        "$type": "color",
+        "$value": "{color.context.default.fg-main}"
+      },
+      "bg-active": {
+        "$type": "color",
+        "$value": "{color.context.default.bg-main}"
+      },
+      "fg-active": {
+        "$type": "color",
+        "$value": "{color.context.default.fg-main}"
+      }
+    },
     "table": {
       "fg-head": {
         "$type": "color",
@@ -3450,6 +3486,32 @@
         "$value": "{size.unit.8}"
       },
       "dot-active-w": {
+        "$type": "sizing",
+        "$value": "{size.unit.16}"
+      }
+    },
+    "segment": {
+      "medium-main": {
+        "$type": "sizing",
+        "$value": "{size.unit.32}"
+      },
+      "medium-icon": {
+        "$type": "sizing",
+        "$value": "{size.unit.20}"
+      },
+      "large-main": {
+        "$type": "sizing",
+        "$value": "{size.unit.40}"
+      },
+      "large-icon": {
+        "$type": "sizing",
+        "$value": "{size.unit.24}"
+      },
+      "small-main": {
+        "$type": "sizing",
+        "$value": "{size.unit.24}"
+      },
+      "small-icon": {
         "$type": "sizing",
         "$value": "{size.unit.16}"
       }
@@ -3989,6 +4051,56 @@
         "$type": "spacing",
         "$value": "{space.unit.8}"
       }
+    },
+    "segment": {
+      "medium-bar-padding": {
+        "$type": "spacing",
+        "$value": "{space.unit.4}"
+      },
+      "medium-padding-y": {
+        "$type": "spacing",
+        "$value": "{space.unit.6}"
+      },
+      "medium-padding-x": {
+        "$type": "spacing",
+        "$value": "{space.unit.12}"
+      },
+      "medium-gap": {
+        "$type": "spacing",
+        "$value": "{space.unit.8}"
+      },
+      "large-bar-padding": {
+        "$type": "spacing",
+        "$value": "{space.unit.4}"
+      },
+      "large-padding-y": {
+        "$type": "spacing",
+        "$value": "{space.unit.8}"
+      },
+      "large-padding-x": {
+        "$type": "spacing",
+        "$value": "{space.unit.16}"
+      },
+      "large-gap": {
+        "$type": "spacing",
+        "$value": "{space.unit.8}"
+      },
+      "small-bar-padding": {
+        "$type": "spacing",
+        "$value": "{space.unit.4}"
+      },
+      "small-padding-y": {
+        "$type": "spacing",
+        "$value": "{space.unit.3}"
+      },
+      "small-padding-x": {
+        "$type": "spacing",
+        "$value": "{space.unit.8}"
+      },
+      "small-gap": {
+        "$type": "spacing",
+        "$value": "{space.unit.8}"
+      }
     }
   },
   "borderRadius": {
@@ -4186,6 +4298,32 @@
       "main": {
         "$type": "borderRadius",
         "$value": "{borderRadius.context.large}"
+      }
+    },
+    "segment": {
+      "medium-bar": {
+        "$type": "borderRadius",
+        "$value": "{borderRadius.base.segment.medium-bar}"
+      },
+      "medium-item": {
+        "$type": "borderRadius",
+        "$value": "{borderRadius.base.segment.medium-item}"
+      },
+      "large-bar": {
+        "$type": "borderRadius",
+        "$value": "{borderRadius.base.segment.large-bar}"
+      },
+      "large-item": {
+        "$type": "borderRadius",
+        "$value": "{borderRadius.base.segment.large-item}"
+      },
+      "small-bar": {
+        "$type": "borderRadius",
+        "$value": "{borderRadius.base.segment.small-bar}"
+      },
+      "small-item": {
+        "$type": "borderRadius",
+        "$value": "{borderRadius.base.segment.small-item}"
       }
     },
     "tab": {
@@ -4710,6 +4848,12 @@
             "spread": "{dimension.base.nd25}"
           }
         ]
+      }
+    },
+    "segment": {
+      "item": {
+        "$type": "boxShadow",
+        "$value": "{shadow.context.small}"
       }
     },
     "table": {

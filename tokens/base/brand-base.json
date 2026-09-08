@@ -7806,6 +7806,32 @@
           "$type": "borderRadius",
           "$value": "{borderRadius.base.context.zero}"
         }
+      },
+      "segment": {
+        "medium-bar": {
+          "$type": "borderRadius",
+          "$value": "{borderRadius.base.context.medium}"
+        },
+        "medium-item": {
+          "$type": "borderRadius",
+          "$value": "{borderRadius.base.context.small}"
+        },
+        "large-bar": {
+          "$type": "borderRadius",
+          "$value": "{borderRadius.base.context.medium}"
+        },
+        "large-item": {
+          "$type": "borderRadius",
+          "$value": "{borderRadius.base.context.small}"
+        },
+        "small-bar": {
+          "$type": "borderRadius",
+          "$value": "{borderRadius.base.context.medium}"
+        },
+        "small-item": {
+          "$type": "borderRadius",
+          "$value": "{borderRadius.base.context.small}"
+        }
       }
     }
   }

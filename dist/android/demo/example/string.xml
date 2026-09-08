@@ -2,7 +2,7 @@
 
 <!--
   Do not edit directly, this file was auto-generated.
-  Generated on Tue, 25 Aug 2026 16:04:45 GMT
+  Generated on Tue, 08 Sep 2026 08:19:14 GMT
   Chassis - Tokens v0.4.0
   Copyright 2026 Ozgur Gunes
   Licensed under MIT (https://github.com/chassis-ui/tokens/blob/main/LICENSE)
@@ -944,6 +944,21 @@
   <string name="font_section_header_small_text_case">none</string>
   <string name="font_section_header_small_text_decoration">none</string>
   <string name="font_section_header_small_font_style">normal</string>
+  <string name="font_segment_medium_font_family">Figtree</string>
+  <string name="font_segment_medium_font_weight">regular</string>
+  <string name="font_segment_medium_text_case">none</string>
+  <string name="font_segment_medium_text_decoration">none</string>
+  <string name="font_segment_medium_font_style">normal</string>
+  <string name="font_segment_large_font_family">Figtree</string>
+  <string name="font_segment_large_font_weight">regular</string>
+  <string name="font_segment_large_text_case">none</string>
+  <string name="font_segment_large_text_decoration">none</string>
+  <string name="font_segment_large_font_style">normal</string>
+  <string name="font_segment_small_font_family">Figtree</string>
+  <string name="font_segment_small_font_weight">regular</string>
+  <string name="font_segment_small_text_case">none</string>
+  <string name="font_segment_small_text_decoration">none</string>
+  <string name="font_segment_small_font_style">normal</string>
   <string name="font_tab_medium_font_family">Figtree</string>
   <string name="font_tab_medium_font_weight">semibold</string>
   <string name="font_tab_medium_text_case">none</string>
@@ -1052,6 +1067,8 @@
   <string name="shadow_section_main_2_type">dropShadow</string>
   <string name="shadow_nav_left_main_1_type">dropShadow</string>
   <string name="shadow_nav_left_main_2_type">dropShadow</string>
+  <string name="shadow_segment_item_1_type">dropShadow</string>
+  <string name="shadow_segment_item_2_type">dropShadow</string>
   <string name="shadow_table_main_type">dropShadow</string>
   <string name="shadow_elevation_default_10_1_type">dropShadow</string>
   <string name="shadow_elevation_default_10_2_type">dropShadow</string>
