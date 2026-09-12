@@ -30,7 +30,9 @@
     "build": {
       "brands": [
         "chassis",
-        "example"
+        "example",
+        "voltlines",
+        "mundi"
       ],
       "themes": [
         "light",
