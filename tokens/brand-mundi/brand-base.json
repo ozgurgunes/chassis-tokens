@@ -72,13 +72,195 @@
             }
           },
           "secondary": {
-            "base": {
+            "10": {
+              "$value": "{color.base.primitive.light.secondary.50}",
               "$type": "color",
-              "$value": "#3527DD"
+              "$extensions": {
+                "studio.tokens": {
+                  "modify": {
+                    "type": "lighten",
+                    "value": "0.85",
+                    "space": "srgb"
+                  }
+                }
+              }
+            },
+            "20": {
+              "$value": "{color.base.primitive.light.secondary.50}",
+              "$type": "color",
+              "$extensions": {
+                "studio.tokens": {
+                  "modify": {
+                    "type": "lighten",
+                    "value": "0.7",
+                    "space": "srgb"
+                  }
+                }
+              }
+            },
+            "30": {
+              "$value": "{color.base.primitive.light.secondary.50}",
+              "$type": "color",
+              "$extensions": {
+                "studio.tokens": {
+                  "modify": {
+                    "type": "lighten",
+                    "value": "0.5",
+                    "space": "srgb"
+                  }
+                }
+              }
+            },
+            "40": {
+              "$value": "{color.base.primitive.light.secondary.50}",
+              "$type": "color",
+              "$extensions": {
+                "studio.tokens": {
+                  "modify": {
+                    "type": "lighten",
+                    "value": "0.25",
+                    "space": "srgb"
+                  }
+                }
+              }
+            },
+            "50": {
+              "$value": "#808080",
+              "$type": "color"
+            },
+            "60": {
+              "$value": "{color.base.primitive.light.secondary.50}",
+              "$type": "color",
+              "$extensions": {
+                "studio.tokens": {
+                  "modify": {
+                    "type": "darken",
+                    "value": "0.30",
+                    "space": "srgb"
+                  }
+                }
+              }
+            },
+            "70": {
+              "$value": "{color.base.primitive.light.secondary.50}",
+              "$type": "color",
+              "$extensions": {
+                "studio.tokens": {
+                  "modify": {
+                    "type": "darken",
+                    "value": "0.50",
+                    "space": "srgb"
+                  }
+                }
+              }
+            },
+            "80": {
+              "$value": "{color.base.primitive.light.secondary.50}",
+              "$type": "color",
+              "$extensions": {
+                "studio.tokens": {
+                  "modify": {
+                    "type": "darken",
+                    "value": "0.65",
+                    "space": "srgb"
+                  }
+                }
+              }
+            },
+            "90": {
+              "$value": "{color.base.primitive.light.secondary.50}",
+              "$type": "color",
+              "$extensions": {
+                "studio.tokens": {
+                  "modify": {
+                    "type": "darken",
+                    "value": "0.75",
+                    "space": "srgb"
+                  }
+                }
+              }
+            },
+            "95": {
+              "$value": "{color.base.primitive.light.secondary.50}",
+              "$type": "color",
+              "$extensions": {
+                "studio.tokens": {
+                  "modify": {
+                    "type": "darken",
+                    "value": "0.85",
+                    "space": "srgb"
+                  }
+                }
+              }
+            },
+            "05": {
+              "$value": "{color.base.primitive.light.secondary.50}",
+              "$type": "color",
+              "$extensions": {
+                "studio.tokens": {
+                  "modify": {
+                    "type": "lighten",
+                    "value": "0.93",
+                    "space": "srgb"
+                  }
+                }
+              }
+            },
+            "base": {
+              "$value": "{color.base.primitive.light.black.base}",
+              "$type": "color"
+            },
+            "transparent": {
+              "$value": "rgba({color.base.primitive.light.secondary.base}, 0)",
+              "$type": "color"
             },
             "contrast": {
-              "$type": "color",
-              "$value": "{color.base.primitive.light.white.base}"
+              "$value": "{color.base.primitive.light.black.contrast}",
+              "$type": "color"
+            },
+            "t-5005": {
+              "$value": "rgba({color.base.primitive.light.secondary.base}, {opacity.level.05})",
+              "$type": "color"
+            },
+            "t-5010": {
+              "$value": "rgba({color.base.primitive.light.secondary.base}, {opacity.level.10})",
+              "$type": "color"
+            },
+            "t-5020": {
+              "$value": "rgba({color.base.primitive.light.secondary.base}, {opacity.level.20})",
+              "$type": "color"
+            },
+            "t-5030": {
+              "$value": "rgba({color.base.primitive.light.secondary.base}, {opacity.level.30})",
+              "$type": "color"
+            },
+            "t-5040": {
+              "$value": "rgba({color.base.primitive.light.secondary.base}, {opacity.level.40})",
+              "$type": "color"
+            },
+            "t-5050": {
+              "$value": "rgba({color.base.primitive.light.secondary.base}, {opacity.level.50})",
+              "$type": "color"
+            },
+            "t-5060": {
+              "$value": "rgba({color.base.primitive.light.secondary.base}, {opacity.level.60})",
+              "$type": "color"
+            },
+            "t-5070": {
+              "$value": "rgba({color.base.primitive.light.secondary.base}, {opacity.level.70})",
+              "$type": "color"
+            },
+            "t-5080": {
+              "$value": "rgba({color.base.primitive.light.secondary.base}, {opacity.level.80})",
+              "$type": "color"
+            },
+            "t-5090": {
+              "$value": "rgba({color.base.primitive.light.secondary.base}, {opacity.level.90})",
+              "$type": "color"
+            },
+            "t-5095": {
+              "$value": "rgba({color.base.primitive.light.secondary.base}, {opacity.level.95})",
+              "$type": "color"
             }
           },
           "neutral": {
@@ -345,26 +527,6 @@
             "base": {
               "$type": "color",
               "$value": "#48A7F8"
-            },
-            "contrast": {
-              "$type": "color",
-              "$value": "{color.base.primitive.light.white.base}"
-            }
-          },
-          "brand": {
-            "base": {
-              "$type": "color",
-              "$value": "#3527DD"
-            }
-            },
-            "contrast": {
-              "$type": "color",
-              "$value": "{color.base.primitive.light.white.base}"
-          },
-          "accent": {
-            "base": {
-              "$type": "color",
-              "$value": "#000000"
             },
             "contrast": {
               "$type": "color",
