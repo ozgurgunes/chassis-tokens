@@ -310,7 +310,7 @@
               "$value": "{color.base.primitive.light.info.10}",
               "$type": "color"
             },
-            "indicator-main": {
+            "cue-main": {
               "$value": "{color.base.context.light.info.cue-main}",
               "$type": "color"
             }
@@ -324,7 +324,7 @@
               "$value": "{color.base.primitive.light.info.80}",
               "$type": "color"
             },
-            "indicator-main": {
+            "cue-main": {
               "$value": "{color.base.context.light.info.cue-main}",
               "$type": "color"
             }
@@ -414,7 +414,7 @@
               "$value": "{color.base.primitive.dark.info.80}",
               "$type": "color"
             },
-            "indicator-main": {
+            "cue-main": {
               "$value": "{color.base.context.dark.info.cue-main}",
               "$type": "color"
             }
@@ -428,7 +428,7 @@
               "$value": "{color.base.primitive.dark.info.80}",
               "$type": "color"
             },
-            "indicator-main": {
+            "cue-main": {
               "$value": "{color.base.context.dark.info.cue-main}",
               "$type": "color"
             }
@@ -550,7 +550,7 @@
               "$value": "{color.base.primitive.dark.secondary.t-5010}",
               "$type": "color"
             },
-            "bg-button": {
+            "bg-idle": {
               "$value": "{color.base.primitive.dark.secondary.base}",
               "$type": "color"
             },
@@ -566,7 +566,7 @@
               "$value": "{color.base.primitive.dark.secondary.80}",
               "$type": "color"
             },
-            "fg-button": {
+            "fg-idle": {
               "$value": "{color.base.primitive.dark.secondary.contrast}",
               "$type": "color"
             },
